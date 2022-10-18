@@ -1,0 +1,16 @@
+.float-right{
+    float:right;
+    margin-top: -22%;
+}
+.mt-17{
+margin-top: 17%;}
+
+@media screen and (max-width:1110px) {
+    .float-right{
+        float:none;
+    }
+    .float-right, .mt-17{
+        margin-top:5%;
+
+    }
+}

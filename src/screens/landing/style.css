@@ -1,0 +1,34 @@
+
+.mt-13{
+    margin-top: 13%;
+}
+.menu-one-txt{
+    margin-top: 14%;
+    margin-left: 7%;
+}
+.menu-two-txt{
+    margin-top: 9%;
+    margin-left: 3%;
+}
+.menu-three-txt{
+    position: absolute;
+    top: 47%;
+    right: -16%;
+}
+.menu-four-txt{
+    position: absolute;
+    top: 25%;
+    left: 61%;
+
+}
+
+@media only  screen and (max-width:800px) {
+    .mt-13{
+        margin-top: 0;
+    }
+    .menu-one-txt , .menu-two-txt , .menu-three-txt , .menu-four-txt{
+        margin: 5% auto;
+        position:static
+    }
+}
+

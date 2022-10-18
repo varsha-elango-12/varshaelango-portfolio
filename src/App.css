@@ -1,0 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'PR';
+  src: local('PR'), url(./assets/font/Poppins/Poppins-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PSBI';
+  src: local('PSBI'), url(./assets/font/Poppins/Poppins-SemiBoldItalic.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PSB';
+  src: local('PSB'), url(./assets/font/Poppins/Poppins-SemiBold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PB';
+  src: local('PB'), url(./assets/font/Poppins/Poppins-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PBI';
+  src: local('PBI'), url(./assets/font/Poppins/Poppins-BoldItalic.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PEB';
+  src: local('PEB'), url(./assets/font/Poppins/Poppins-ExtraBold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PM';
+  src: local('PM'), url(./assets/font/Poppins/Poppins-Medium.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PMI';
+  src: local('PMI'), url(./assets/font/Poppins/Poppins-MediumItalic.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PI';
+  src: local('PI'), url(./assets/font/Poppins/Poppins-Italic.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PLI';
+  src: local('PLI'), url(./assets/font/Poppins/Poppins-LightItalic.ttf) format('truetype');
+}
+
+h1, h2,h3,h4,h5,h6, p, a {
+  font-family: 'PR';
+  line-height: 1.4;
+}
+
+a{
+  text-decoration: none;
+}
+
+
