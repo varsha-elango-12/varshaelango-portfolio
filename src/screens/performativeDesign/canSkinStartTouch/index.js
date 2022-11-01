@@ -50,8 +50,8 @@ function CanSkinStarveForATouch() {
                   <BoldTxt>express the skin/world interface.</BoldTxt>
                 </ProjDesc>
                 <MITxt style={{ color: COLORS.TEXT_COLOR[600] }}>
-                  MA UX_ 2 week_ Group Project_2021 <br /> Teammates: Lara,
-                  Amber, Boxun, Kristen, Yixi
+                  UX Design, Research, Prototyping, Execution_2 weeks_ 2021
+                  <br /> Teammates: Lara, Amber, Boxun, Kristen, Yixi
                 </MITxt>
               </FlexCol>
               <div>
@@ -97,10 +97,10 @@ function CanSkinStarveForATouch() {
             </FlexTwo>
             <FlexOne></FlexOne>
           </FlexRowContainer>
-          <FlexRowContainer data-aos="fade-up">
+          <FlexRowContainer className="pb-0" data-aos="fade-up">
             <FlexOne>
-              <TitleThree>Exhibition </TitleThree>
-              <SubTitleThree>visit Inspirations</SubTitleThree>
+              <TitleThree>Exhibition visit</TitleThree>
+              <SubTitleThree>Inspirations</SubTitleThree>
             </FlexOne>
             <FlexTwo>
               <ProjDesc>
@@ -116,7 +116,7 @@ function CanSkinStarveForATouch() {
             </FlexTwo>
             <FlexOne></FlexOne>
           </FlexRowContainer>
-          <FlexRowContainer style={{ paddingTop: 0 }} data-aos="fade-up">
+          <FlexRowContainer className="p-0" data-aos="fade-up">
             <FlexOne></FlexOne>
             <FlexThree>
               <ImgContainer className="cs-grid-1">
@@ -197,7 +197,7 @@ function CanSkinStarveForATouch() {
             <FlexOne></FlexOne>
           </FlexRowContainer>
           {/*  */}
-          <FlexRowContainer data-aos="fade-up">
+          <FlexRowContainer className="pb-0" data-aos="fade-up">
             <FlexOne>
               <TitleThree>Speed Dating</TitleThree>
               <SubTitleThree>
@@ -220,7 +220,7 @@ function CanSkinStarveForATouch() {
             <FlexOne></FlexOne>
           </FlexRowContainer>
           {/*  */}
-          <FlexRowContainer style={{ paddingTop: 0 }} data-aos="fade-up">
+          <FlexRowContainer className="pt-0" data-aos="fade-up">
             <FlexOne></FlexOne>
             <FlexThree>
               <ImgContainer className="grid-1-1-1-105">
@@ -245,7 +245,7 @@ function CanSkinStarveForATouch() {
             </FlexThree>
           </FlexRowContainer>
           {/*  */}
-          <FlexRowContainer data-aos="fade-up">
+          <FlexRowContainer className="pb-0" data-aos="fade-up">
             <FlexOne>
               <TitleThree>Mid-week presentation</TitleThree>
               <SubTitleThree>
@@ -271,7 +271,7 @@ function CanSkinStarveForATouch() {
             <FlexOne></FlexOne>
           </FlexRowContainer>
           {/*  */}
-          <FlexRowContainer style={{ paddingTop: 0 }} data-aos="fade-up">
+          <FlexRowContainer className="pt-0" data-aos="fade-up">
             <FlexOne></FlexOne>
             <FlexThree>
               <ImgContainer className="grid-1-1-2-1">
@@ -383,7 +383,7 @@ function CanSkinStarveForATouch() {
             </FlexTwo>
             <FlexOne></FlexOne>
           </FlexRowContainer>
-          <FlexRowContainer data-aos="fade-up">
+          <FlexRowContainer className="pb-0" data-aos="fade-up">
             <FlexOne>
               <TitleThree>Making with materials</TitleThree>
               <SubTitleThree>Exploration</SubTitleThree>
@@ -402,7 +402,7 @@ function CanSkinStarveForATouch() {
             </FlexTwo>
             <FlexOne></FlexOne>
           </FlexRowContainer>{" "}
-          <FlexRowContainer data-aos="fade-up">
+          <FlexRowContainer className="pt-0" data-aos="fade-up">
             <FlexOne></FlexOne>
             <FlexThree>
               <ImgContainer className="cst">
@@ -426,7 +426,7 @@ function CanSkinStarveForATouch() {
               <SubDesc>Prototyping costumes for extended skin</SubDesc>
             </FlexThree>
           </FlexRowContainer>
-          <FlexRowContainer data-aos="fade-up">
+          <FlexRowContainer className="pb-0" data-aos="fade-up">
             <FlexOne>
               <TitleThree>Interactive theatre play</TitleThree>
               <SubTitleThree>Final performance</SubTitleThree>

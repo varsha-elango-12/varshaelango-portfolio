@@ -41,42 +41,42 @@ export const imageDetails = [
   },
   {
     i: 10,
-    desc: "Final concept after Trial & error",
+    desc: "The Outcome",
   },
   {
     i: 11,
-    desc: "Final concept after Trial & error",
+    desc: "The Outcome",
   },
   {
     i: 12,
-    desc: "Final concept after Trial & error",
+    desc: "The Outcome",
   },
   {
     i: 13,
-    desc: "Final concept after Trial & error",
+    desc: "The Outcome",
   },
   {
     i: 14,
-    desc: "Final concept after Trial & error",
+    desc: "The Outcome",
   },
   {
     i: 15,
-    desc: "Final concept after Trial & error",
+    desc: "The Outcome",
   },
   {
     i: 16,
-    desc: "Final concept after Trial & error",
+    desc: "The Outcome",
   },
   {
     i: 17,
-    desc: "Final concept after Trial & error",
+    desc: "The Outcome",
   },
   {
     i: 18,
-    desc: "Final concept after Trial & error",
+    desc: "The Outcome",
   },
   {
     i: 19,
-    desc: "Final concept after Trial & error",
+    desc: "The Outcome",
   },
 ];

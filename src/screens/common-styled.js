@@ -16,6 +16,9 @@ export const VideoFrame = styled.iframe`
   &.video-h25 {
     min-height: auto;
     height: 85%;
+    @media (max-width: 800px) {
+      height: 101%;
+    }
   }
   &.fme {
     @media (max-width: 800px) {
@@ -37,7 +40,7 @@ export const LeftCaret = styled(RightCaret)`
 `;
 
 export const ModalText = styled.p`
-  font-size: clamp(10px, 0.84vw, 15px);
+  font-size: clamp(12px, 0.84vw, 15px);
   color: ${COLORS.WHITE[1000]};
   font-family: "PM";
   text-align: center;

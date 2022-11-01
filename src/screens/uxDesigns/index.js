@@ -22,6 +22,7 @@ function UXDesign() {
                   imgSrc={item.imgSrc}
                   title={index + 1 + ". " + item.title}
                   desc={item.desc}
+                  subdesc={item.subdesc}
                   floatRight={item.floadtRight}
                   marginTop={item.marginTop}
                 />

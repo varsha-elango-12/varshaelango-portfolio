@@ -1,53 +1,54 @@
 import React, { useRef, useState } from "react";
 import { BlackBg } from "../myJourney/styled";
 import { ConnectFR, ConnectMain } from "./styled";
-import emailjs from "@emailjs/browser";
 
 function Connect() {
-  const form = useRef();
-  const [msg, setmsg] = useState("");
-  const [msgsent, setmsgsent] = useState(false);
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-    if (msg.length <= 0 || msg === "") {
-      alert("Please enter your comments");
-    } else {
-      const templateParams = {
-        from_name: "unknown",
-        message: msg,
-      };
-
-      emailjs
-        .send(
-          "service_re98x5a",
-          "template_cs412w2",
-          templateParams,
-          "6BLJWNv8i-Mln55sy"
-        )
-        .then(
-          (result) => {
-            console.log(result.text);
-            setmsgsent(true);
-            setmsg("");
-          },
-          (error) => {
-            console.log(error.text);
-            alert("Something wrong...Please try after sometime");
-          }
-        );
-    }
-  };
-
   return (
     <BlackBg className="connect-bg">
       <ConnectMain>
         <ConnectFR>
-          <p>UK: +44 7535243664</p>
-          <p>India: +91 9597804800</p>
-          <p>Email: varshaelango12@gmail.com</p>
+          <p data-aos="fade-up">
+            Email:{" "}
+            <a
+              href="mailto:varshaelango12@gmail.com"
+              className="a1"
+              target="_blank"
+            >
+              varshaelango12@gmail.com
+            </a>
+          </p>
+          <p data-aos="fade-up" data-aos-delay="300">
+            UK:<span> +44 7535243664</span>
+          </p>
+          <br />
+          <br />
+          <p data-aos="fade-up" data-aos-delay="400">
+            MA UX Project blogs:
+          </p>
+          <p data-aos="fade-up" data-aos-delay="500">
+            <a
+              className="a2"
+              href="https://blogs.varshaelango.com"
+              target="_blank"
+            >
+              https://blogs.varshaelango.com
+            </a>
+          </p>
+          <br />
+          <br />
+          <div className="sm-cont" data-aos="fade-up" data-aos-delay="600">
+            <a
+              href="https://www.linkedin.com/in/varsha-elango-383b7a126/"
+              target="_blank"
+            >
+              <img src={require("../../assets/images/linkedin.png")} />
+            </a>
+            <a href=" https://www.behance.net/varshaelango" target="_blank">
+              <img src={require("../../assets/images/behance.png")} />
+            </a>
+          </div>
         </ConnectFR>
-        <form ref={form} onSubmit={sendEmail}>
+        {/* <form ref={form} onSubmit={sendEmail}>
           <label>Any quick messages?</label>
           <textarea
             placeholder="Type here please."
@@ -61,7 +62,7 @@ function Connect() {
           ) : (
             <p>Message sent successfully!</p>
           )}
-        </form>
+        </form> */}
       </ConnectMain>
     </BlackBg>
   );

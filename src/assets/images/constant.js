@@ -22,3 +22,11 @@ export const STAR_ICONS = [
   require("../images/star-5.png"),
   require("../images/active-star.png"),
 ];
+export const MAIL_ICONS = [
+  require("../images/mail-1.png"),
+  require("../images/mail-3.png"),
+  require("../images/mail-1.png"),
+  require("../images/mail-4.png"),
+  require("../images/mail-2.png"),
+  require("../images/active-mail.png"),
+];

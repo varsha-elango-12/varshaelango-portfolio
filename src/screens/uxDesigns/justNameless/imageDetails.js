@@ -1,15 +1,15 @@
 export const imageDetails = [
   {
     i: 0,
-    desc: "Brainstorming and 'What if' ideations on Miro board",
+    desc: "Brainstorming",
   },
   {
     i: 1,
-    desc: "Brainstorming and 'What if' ideations on Miro board",
+    desc: "Brainstorming",
   },
   {
     i: 2,
-    desc: "Brainstorming and 'What if' ideations on Miro board",
+    desc: "'What if' ideations",
   },
   {
     i: 3,

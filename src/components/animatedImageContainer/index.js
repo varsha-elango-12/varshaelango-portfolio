@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import {
+  ImageAnimContainer,
   ListImg,
   MediumImg,
   ProjDescSub,
@@ -9,7 +10,7 @@ import {
 function AnimatedImageContainer(props) {
   return (
     <>
-      <motion.div
+      <ImageAnimContainer
         style={{ width: "100%", ...props.contStyle }}
         className={props.contCls}
         layoutId={props.lid}
@@ -31,7 +32,7 @@ function AnimatedImageContainer(props) {
         )}
         {props.subTxt && <ProjDescSub>{props.subTxt}</ProjDescSub>}
         {props.subTxtComp}
-      </motion.div>
+      </ImageAnimContainer>
     </>
   );
 }

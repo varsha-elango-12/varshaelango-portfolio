@@ -55,7 +55,14 @@ function ReincarnationOfViolet() {
               <FlexCol>
                 <ProjDesc style={{ color: COLORS.TEXT_COLOR[800] }}>
                   In collaboration with{" "}
-                  <a href="/" style={{ textDecoration: "underline" }}>
+                  <a
+                    href="https://www.youtube.com/watch?v=Fd982GEFWWA"
+                    target="_blank"
+                    style={{
+                      textDecoration: "underline",
+                      color: COLORS.TEXT_COLOR[800],
+                    }}
+                  >
                     <SBTxt>Violet Disruption</SBTxt>
                   </a>
                   , the latest mixed-reality incarnation of an unofficial deity
@@ -69,8 +76,8 @@ function ReincarnationOfViolet() {
                   by involving the character of Violet.
                 </ProjDesc>
                 <MITxt style={{ color: COLORS.TEXT_COLOR[800] }}>
-                  MA UX_ 1 week_Group project_2022 <br /> Teammates: Effy, Mu
-                  Lin, Zhihan
+                  UX Design, Prototyping, Execution_1 week_2022
+                  <br /> Teammates: Effy, Mu Lin, Zhihan
                 </MITxt>
               </FlexCol>
 
@@ -86,7 +93,11 @@ function ReincarnationOfViolet() {
           <TitleTwo data-aos="fade-up" data-aos-delay="300">
             Process
           </TitleTwo>
-          <FlexRowContainer data-aos="fade-up" data-aos-delay="500">
+          <FlexRowContainer
+            className="p-0"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <FlexOne>
               <TitleThree>
                 Body Storming to <br /> express emotions
@@ -115,7 +126,7 @@ function ReincarnationOfViolet() {
           </FlexRowContainer>
 
           <FlexRowContainer
-            style={{ paddingTop: 0 }}
+            className="p-0"
             data-aos="fade-up"
             data-aos-delay="600"
           >
@@ -176,7 +187,7 @@ function ReincarnationOfViolet() {
             </FlexTwo>
             <FlexOne></FlexOne>
           </FlexRowContainer>
-          <FlexRowContainer data-aos="fade-up">
+          <FlexRowContainer className="pb-0" data-aos="fade-up">
             <FlexOne>
               <TitleThree>Making with materials </TitleThree>
               <SubTitleThree>Spontaneous exploration </SubTitleThree>
@@ -197,7 +208,7 @@ function ReincarnationOfViolet() {
             </FlexTwo>
             <FlexOne></FlexOne>
           </FlexRowContainer>
-          <FlexRowContainer data-aos="fade-up">
+          <FlexRowContainer className="p-0" data-aos="fade-up">
             <FlexOne></FlexOne>
             <FlexThree>
               <ImgContainer>
@@ -224,7 +235,7 @@ function ReincarnationOfViolet() {
             </FlexThree>
           </FlexRowContainer>
           {/*  */}
-          <FlexRowContainer data-aos="fade-up">
+          <FlexRowContainer className="pb-0" data-aos="fade-up">
             <FlexOne>
               <TitleThree>Final concept</TitleThree>
               <SubTitleThree>after Trial & error</SubTitleThree>
@@ -252,7 +263,7 @@ function ReincarnationOfViolet() {
             <FlexOne></FlexOne>
           </FlexRowContainer>
           {/*  */}
-          <ImgContainerTwo data-aos="fade-up">
+          <ImgContainerTwo className="pt-0" data-aos="fade-up">
             {Array(6)
               .fill("")
               .map((x, i) => {

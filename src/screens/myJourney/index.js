@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { BoldTxt } from "../performativeDesign/styled";
 import { BlackBg, MI, MJBody, MJHead } from "./styled";
 
@@ -24,9 +25,14 @@ function MyJourney() {
           <BoldTxt>MA in User Experience Design</BoldTxt>
         </p>
         <p>
-          <BoldTxt>London college of Communication, </BoldTxt>
-          <br />
-          UAL, London, UK
+          <a
+            target="_blank"
+            href="https://www.arts.ac.uk/colleges/london-college-of-communication"
+          >
+            <BoldTxt>London college of Communication, </BoldTxt>
+            <br />
+            UAL, London, UK
+          </a>
         </p>
         <p className="pli">User Experience + performative design</p>
         <p>To make my mind think differently, beyond I could imagine.</p>
@@ -52,9 +58,11 @@ function MyJourney() {
           <BoldTxt>UI/UX Designer</BoldTxt>
         </p>
         <p>
-          <BoldTxt>Ramboll Pvt Ltd,</BoldTxt>
-          <br />
-          Chennai, India
+          <a target="_blank" href="https://ramboll.com/">
+            <BoldTxt>Ramboll Pvt Ltd,</BoldTxt>
+            <br />
+            Chennai, India
+          </a>
         </p>
         <p className="pli">
           Web applications catering internal teams, Ramboll brand guideline
@@ -77,9 +85,11 @@ function MyJourney() {
           <BoldTxt>UI/UX Designer</BoldTxt>
         </p>
         <p>
-          <BoldTxt>Quatics Tech Pvt Ltd,</BoldTxt>
-          <br />
-          Chennai, India
+          <a target="_blank" href="https://www.quaticstech.com/">
+            <BoldTxt>Quatics Tech Pvt Ltd,</BoldTxt>
+            <br />
+            Chennai, India
+          </a>
         </p>
         <p className="pli">
           8+ Web applications, catering school students, brand identity, web
@@ -108,9 +118,11 @@ function MyJourney() {
           <BoldTxt>Product designer, Final Project</BoldTxt>
         </p>
         <p>
-          <BoldTxt>Wallistry, </BoldTxt>
-          <br />
-          Chennai, India
+          <a target="_blank" href="https://www.wallistry.com/">
+            <BoldTxt>Wallistry, </BoldTxt>
+            <br />
+            Chennai, India
+          </a>
         </p>
         <p className="pli">
           Wellness & Stationery, packaging, brand identity + photography
@@ -131,9 +143,11 @@ function MyJourney() {
           <BoldTxt>Product design Intern</BoldTxt>
         </p>
         <p>
-          <BoldTxt>Wallistry, </BoldTxt>
-          <br />
-          Chennai, India
+          <a target="_blank" href="https://www.wallistry.com/">
+            <BoldTxt>Wallistry, </BoldTxt>
+            <br />
+            Chennai, India
+          </a>
         </p>
         <p className="pli">
           Lifestyle products, stationery, packaging, brand communication + some
@@ -155,8 +169,10 @@ function MyJourney() {
           <BoldTxt>Bachelor of Industrial Design</BoldTxt>
         </p>
         <p>
-          <BoldTxt>DJ Academy of Design,</BoldTxt> <br />
-          Coimbatore, India
+          <a target="_blank" href="https://djad.in/">
+            <BoldTxt>DJ Academy of Design,</BoldTxt> <br />
+            Coimbatore, India
+          </a>
         </p>
         <p className="pli">
           Lifestyle accessory, furniture and jewellry design + design thinking +

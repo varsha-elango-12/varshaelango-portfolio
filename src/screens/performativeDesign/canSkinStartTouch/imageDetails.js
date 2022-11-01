@@ -53,7 +53,7 @@ export const imageDetails = [
   },
   {
     i: 13,
-    desc: "Research method to situate our concept",
+    desc: "AEIOU",
   },
   {
     i: 14,
@@ -81,26 +81,26 @@ export const imageDetails = [
   },
   {
     i: 20,
-    desc: "Final Performance: Photo credits- Dr.John Fass (Course Leader, MA UX, LCC, UAL)",
+    desc: "Final Performance",
   },
   {
     i: 21,
-    desc: "Final Performance: Photo credits- Dr.John Fass (Course Leader, MA UX, LCC, UAL)",
+    desc: "Final Performance",
   },
   {
     i: 22,
-    desc: "Final Performance: Photo credits- Dr.John Fass (Course Leader, MA UX, LCC, UAL)",
+    desc: "Final Performance",
   },
   {
     i: 23,
-    desc: "Final Performance: Photo credits- Dr.John Fass (Course Leader, MA UX, LCC, UAL)",
+    desc: "Final Performance",
   },
   {
     i: 24,
-    desc: "Final Performance: Photo credits- Dr.John Fass (Course Leader, MA UX, LCC, UAL)",
+    desc: "Final Performance",
   },
   {
     i: 25,
-    desc: "Final Performance: Photo credits- Dr.John Fass (Course Leader, MA UX, LCC, UAL)",
+    desc: "Final Performance",
   },
 ];

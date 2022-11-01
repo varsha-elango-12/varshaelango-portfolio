@@ -46,7 +46,7 @@ function JustNameless() {
         <SingleProjectContainer>
           <FlexRowContainer data-aos="fade-up">
             <ProjTitle style={{ color: COLORS.TEXT_COLOR[400] }}>
-              1. Just Nameless
+              1. Sharing Codes
             </ProjTitle>
             <FlexThree className="top-cont">
               <FlexCol>
@@ -58,7 +58,9 @@ function JustNameless() {
                   </BoldITxt>
                 </ProjDesc>
                 <MITxt style={{ color: COLORS.TEXT_COLOR[400] }}>
-                  MA UX_ 5 weeks_ Group Project_ 2022
+                  <span> Project Partner: IBM, London</span>
+                  <br /> UX Design, Research, Prototyping, Execution_ 5 weeks_
+                  2022
                   <br /> Teammates: Bea, Malavika, Boxun, Zhe
                 </MITxt>
               </FlexCol>
@@ -75,7 +77,11 @@ function JustNameless() {
           <TitleTwo data-aos="fade-up" data-aos-delay="300">
             Process
           </TitleTwo>
-          <FlexRowContainer data-aos="fade-up" data-aos-delay="500">
+          <FlexRowContainer
+            className="pb-0"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <FlexOne>
               <TitleThree>Brainstorming words</TitleThree>
               <SubTitleThree>
@@ -94,7 +100,7 @@ function JustNameless() {
           </FlexRowContainer>
 
           <FlexRowContainer
-            style={{ paddingTop: 0 }}
+            className="pt-0"
             data-aos="fade-up"
             data-aos-delay="700"
           >
@@ -181,7 +187,7 @@ function JustNameless() {
             <FlexOne></FlexOne>
           </FlexRowContainer>
 
-          <FlexRowContainer data-aos="fade-up">
+          <FlexRowContainer className="pb-0" data-aos="fade-up">
             <FlexOne>
               <TitleThree>Narrowing down to one</TitleThree>
               <SubTitleThree>To zoom in</SubTitleThree>
@@ -207,7 +213,7 @@ function JustNameless() {
             </FlexTwo>
             <FlexOne></FlexOne>
           </FlexRowContainer>
-          <FlexRowContainer style={{ paddingTop: 0 }} data-aos="fade-up">
+          <FlexRowContainer className="pt-0" data-aos="fade-up">
             <FlexOne></FlexOne>
             <FlexThree>
               <ImgContainer className="jn-grid-2">
@@ -241,7 +247,7 @@ function JustNameless() {
             </FlexThree>
           </FlexRowContainer>
 
-          <FlexRowContainer data-aos="fade-up">
+          <FlexRowContainer className="pb-0" data-aos="fade-up">
             <FlexOne>
               <TitleThree>Weekly presentations</TitleThree>
               <SubTitleThree>
@@ -263,7 +269,7 @@ function JustNameless() {
             <FlexOne></FlexOne>
           </FlexRowContainer>
 
-          <FlexRowContainer className="p-0" data-aos="fade-up">
+          <FlexRowContainer className="pt-0" data-aos="fade-up">
             <FlexOne></FlexOne>
             <FlexThree>
               <VideoFrame
@@ -276,7 +282,7 @@ function JustNameless() {
             </FlexThree>
           </FlexRowContainer>
 
-          <FlexRowContainer data-aos="fade-up">
+          <FlexRowContainer className="pb-0" data-aos="fade-up">
             <FlexOne>
               <TitleThree>Prototyping ideas</TitleThree>
               <SubTitleThree>Trial and error</SubTitleThree>
@@ -291,7 +297,7 @@ function JustNameless() {
             </FlexTwo>
             <FlexOne></FlexOne>
           </FlexRowContainer>
-          <FlexRowContainer style={{ paddingTop: 0 }} data-aos="fade-up">
+          <FlexRowContainer className="p-0" data-aos="fade-up">
             <FlexOne></FlexOne>
             <FlexThree>
               <ImgContainer className="jn-grid-3">
@@ -320,7 +326,7 @@ function JustNameless() {
               </SubDesc>
             </FlexThree>
           </FlexRowContainer>
-          <FlexRowContainer data-aos="fade-up">
+          <FlexRowContainer className="pt-0" data-aos="fade-up">
             <FlexOne></FlexOne>
             <FlexTwo>
               <ProjDesc>
@@ -347,7 +353,7 @@ function JustNameless() {
             <FlexOne></FlexOne>
           </FlexRowContainer>
 
-          <FlexRowContainer data-aos="fade-up">
+          <FlexRowContainer className="pb-0" data-aos="fade-up">
             <FlexOne>
               <TitleThree>Conceptualisation</TitleThree>
               <SubTitleThree>Finalising with one</SubTitleThree>
@@ -362,7 +368,7 @@ function JustNameless() {
             </FlexTwo>
             <FlexOne></FlexOne>
           </FlexRowContainer>
-          <FlexRowContainer data-aos="fade-up">
+          <FlexRowContainer className="pt-0" data-aos="fade-up">
             <FlexOne></FlexOne>
             <FlexThree>
               <div className="w-100">
@@ -469,7 +475,7 @@ function JustNameless() {
             </FlexThree>
           </FlexRowContainer>
           {/*  */}
-          <FlexRowContainer data-aos="fade-up">
+          <FlexRowContainer className="pb-0" data-aos="fade-up">
             <FlexOne>
               <TitleThree>Business Origami</TitleThree>
               <SubTitleThree>
@@ -486,7 +492,7 @@ function JustNameless() {
             </FlexTwo>
             <FlexOne></FlexOne>
           </FlexRowContainer>
-          <FlexRowContainer data-aos="fade-up">
+          <FlexRowContainer className="pt-0" data-aos="fade-up">
             <FlexOne></FlexOne>
             <FlexThree>
               <ImgContainer className="jn-grid-4">
@@ -695,10 +701,10 @@ function JustNameless() {
             <FlexTwo>
               <ProjDesc>
                 The tangible quality of the output, along with keeping it off
-                the mainstream was quite appreciated. The constructive feedback
-                was to include the design of system growth in detail, and be
-                more specific rather than keeping it as open-ended as 'word of
-                mouth'.
+                the mainstream was quite appreciated by the partners. The
+                constructive feedback was to include the design of system growth
+                in detail, and be more specific rather than keeping it as
+                open-ended as 'word of mouth'.
               </ProjDesc>
             </FlexTwo>
             <FlexOne></FlexOne>

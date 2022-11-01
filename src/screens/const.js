@@ -23,14 +23,16 @@ export const PROJECTS = {
   ],
   "user-experience-design": [
     {
-      title: "Just Nameless",
+      title: "Sharing Codes",
       desc: "Design a way to take advantage of other peoples’ digital transactions without them knowing.",
+      subdesc: "Project Partner: IBM, London",
       imgSrc: require("../assets/images/ProjectTypes/justNameless/justNameless.png"),
-      to: "just-nameless",
+      to: "sharing-codes",
     },
     {
       title: "The Yellow Juice",
       desc: "Design a digital/physical marketplace for the buying and selling of human bodily fluids that prioritises trust.",
+      subdesc: "Project Partner: Gumtree, London",
       imgSrc: require("../assets/images/ProjectTypes/yellowJuice/yellowJuice.png"),
       floadtRight: true,
       to: "the-yellow-juice",

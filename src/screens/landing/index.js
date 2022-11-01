@@ -12,6 +12,7 @@ import "./style.css";
 import {
   FACE_ICONS,
   GIRL_ICONS,
+  MAIL_ICONS,
   STAR_ICONS,
 } from "../../assets/images/constant";
 import AnimatedTxt from "../../components/animatedTxt";
@@ -37,18 +38,18 @@ function Landing(props) {
     }
   };
   useEffect(() => {
-    if (window.innerWidth < 800) {
-      setcurrentFaceIcon(true);
-      setcurrentGirlIcon(true);
-      setcurrentMailIcon(true);
-      setcurrentStarIcon(true);
-    } else {
-      // console.log(window.innerWidth, window.innerHeight);
-      const ch = setInterval(() => {
-        changeImgIndex();
-      }, 1000);
-      return () => clearInterval(ch);
-    }
+    // if (window.innerWidth < 800) {
+    //   setcurrentFaceIcon(true);
+    //   setcurrentGirlIcon(true);
+    //   setcurrentMailIcon(true);
+    //   setcurrentStarIcon(true);
+    // } else {
+    // console.log(window.innerWidth, window.innerHeight);
+    const ch = setInterval(() => {
+      changeImgIndex();
+    }, 1000);
+    return () => clearInterval(ch);
+    // }
   }, [imgIndex]);
 
   const container = {
@@ -65,22 +66,31 @@ function Landing(props) {
     <LandingContainer>
       <LRowContainer>
         <ImgContainer>
-          <Link to="/performative-design">
-            <MenuImg
-              src={currentFaceIcon ? FACE_ICONS[5] : FACE_ICONS[imgIndex]}
-              onMouseEnter={() => {
-                setcurrentFaceIcon(true);
-              }}
-              onMouseLeave={() => {
-                setcurrentFaceIcon(false);
-              }}
-            />
-          </Link>
+          <Link
+            to="/performative-design"
+            className="menu-one icon-link face-icon"
+            onMouseEnter={() => {
+              setcurrentFaceIcon(true);
+            }}
+            onMouseLeave={() => {
+              setcurrentFaceIcon(false);
+            }}
+          ></Link>
+          <MenuImg
+            className="menu-one"
+            src={currentFaceIcon ? FACE_ICONS[5] : FACE_ICONS[imgIndex]}
+          />
 
           <motion.div
             className="menu-one-txt"
             initial="hidden"
-            animate={currentFaceIcon ? "visible" : "hidden"}
+            animate={
+              window.innerWidth < 800
+                ? "visible"
+                : currentFaceIcon
+                ? "visible"
+                : "hidden"
+            }
             variants={container}
           >
             <AnimatedTxt
@@ -89,22 +99,31 @@ function Landing(props) {
             />
           </motion.div>
         </ImgContainer>
-        <ImgContainer className="mt-13">
-          <Link to="/user-experience-design">
-            <GirlImg
-              src={currentGirlIcon ? GIRL_ICONS[5] : GIRL_ICONS[imgIndex]}
-              onMouseEnter={() => {
-                setcurrentGirlIcon(true);
-              }}
-              onMouseLeave={() => {
-                setcurrentGirlIcon(false);
-              }}
-            />
-          </Link>
+        <ImgContainer className="mt-13 menu-two-img">
+          <Link
+            className="menu-two icon-link"
+            to="/user-experience-design"
+            onMouseEnter={() => {
+              setcurrentGirlIcon(true);
+            }}
+            onMouseLeave={() => {
+              setcurrentGirlIcon(false);
+            }}
+          ></Link>
+          <GirlImg
+            className="menu-two"
+            src={currentGirlIcon ? GIRL_ICONS[5] : GIRL_ICONS[imgIndex]}
+          />
           <motion.div
             className="menu-two-txt"
             initial="hidden"
-            animate={currentGirlIcon ? "visible" : "hidden"}
+            animate={
+              window.innerWidth < 800
+                ? "visible"
+                : currentGirlIcon
+                ? "visible"
+                : "hidden"
+            }
             variants={container}
           >
             <AnimatedTxt
@@ -115,23 +134,32 @@ function Landing(props) {
         </ImgContainer>
       </LRowContainer>
       <LRowContainer>
-        <ImgContainer>
-          <Link to="/my-journey" className="secrow-link">
-            <StarImg
-              src={currentStarIcon ? STAR_ICONS[5] : STAR_ICONS[imgIndex]}
-              onMouseEnter={() => {
-                setcurrentStarIcon(true);
-              }}
-              onMouseLeave={() => {
-                setcurrentStarIcon(false);
-              }}
-            />
-          </Link>
+        <ImgContainer className="menu-three-img">
+          <Link
+            to="/my-journey"
+            className="secrow-link menu-three icon-link cv-icon"
+            onMouseEnter={() => {
+              setcurrentStarIcon(true);
+            }}
+            onMouseLeave={() => {
+              setcurrentStarIcon(false);
+            }}
+          ></Link>
+          <StarImg
+            className="menu-three"
+            src={currentStarIcon ? STAR_ICONS[5] : STAR_ICONS[imgIndex]}
+          />
 
           <motion.div
             className="menu-three-txt"
             initial="hidden"
-            animate={currentStarIcon ? "visible" : "hidden"}
+            animate={
+              window.innerWidth < 800
+                ? "visible"
+                : currentStarIcon
+                ? "visible"
+                : "hidden"
+            }
             variants={container}
           >
             <AnimatedTxt
@@ -140,26 +168,31 @@ function Landing(props) {
             />
           </motion.div>
         </ImgContainer>
-        <ImgContainer>
-          <Link to="/connect" className="connect-link">
-            <MailImg
-              src={
-                currentMailIcon
-                  ? require("../../assets/images/active-mail.png")
-                  : require("../../assets/images/mail.png")
-              }
-              onMouseEnter={() => {
-                setcurrentMailIcon(true);
-              }}
-              onMouseLeave={() => {
-                setcurrentMailIcon(false);
-              }}
-            />
-          </Link>
+        <ImgContainer className="menu-four-img">
+          <Link
+            to="/connect"
+            className="connect-link menu-four icon-link mail-icon"
+            onMouseEnter={() => {
+              setcurrentMailIcon(true);
+            }}
+            onMouseLeave={() => {
+              setcurrentMailIcon(false);
+            }}
+          ></Link>
+          <MailImg
+            className="menu-four"
+            src={currentMailIcon ? MAIL_ICONS[5] : MAIL_ICONS[imgIndex]}
+          />
           <motion.div
             className="menu-four-txt"
             initial="hidden"
-            animate={currentMailIcon ? "visible" : "hidden"}
+            animate={
+              window.innerWidth < 800
+                ? "visible"
+                : currentMailIcon
+                ? "visible"
+                : "hidden"
+            }
             variants={container}
           >
             <AnimatedTxt

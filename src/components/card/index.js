@@ -2,6 +2,7 @@ import React from "react";
 import {
   CardContainer,
   CardDesc,
+  CardDescSB,
   CardImg,
   CardImgCont,
   CardTitle,
@@ -22,6 +23,7 @@ function Card(props) {
       </CardImgCont>
       <CardTitle>{props.title}</CardTitle>
       <CardDesc>{props.desc}</CardDesc>
+      {props.subdesc && <CardDescSB>{props.subdesc}</CardDescSB>}
     </CardContainer>
   );
 }

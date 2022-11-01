@@ -13,16 +13,18 @@ export const BlackBg = styled.div`
   h2 {
     font-family: "PSB";
     color: ${COLORS.TEXT_COLOR[900]};
-    font-size: clamp(15px, 1.4vw, 26px);
+    font-size: clamp(14px, 1.4vw, 26px);
+    text-align: center;
   }
   @media (max-width: 800px) {
-    height: 100vh;
+    min-height: 100vh;
+    padding-top: 50px;
   }
 `;
 
 export const MI = styled.p`
   font-family: "PMI";
-  font-size: clamp(10px, 0.84vw, 24px);
+  font-size: clamp(11px, 0.84vw, 24px);
   color: ${COLORS.TEXT_COLOR[200]};
   text-align: center;
   margin: 20px 0;
@@ -39,7 +41,9 @@ export const commonGrid = styled.div`
 export const MJHead = styled(commonGrid)`
   padding: 0px 10px 20px;
   @media (max-width: 800px) {
-    display: none;
+    position: fixed;
+    top: 130px;
+    background: ${COLORS.PRIMARY[1000]};
   }
 `;
 export const MJBody = styled(commonGrid)`
@@ -54,6 +58,9 @@ export const MJBody = styled(commonGrid)`
     color: ${COLORS.TEXT_COLOR[150]};
     &.pli {
       font-family: "PLI";
+    }
+    a {
+      color: inherit;
     }
   }
 

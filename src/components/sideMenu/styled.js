@@ -10,7 +10,7 @@ export const SideNavMain = styled.div`
 
   @media (max-width: 800px) {
     width: 100%;
-    height: 100px;
+    height: 130px;
   }
 `;
 
@@ -29,11 +29,14 @@ export const SideCenterContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 20% 20px;
+  padding: 20% 20px 108px;
+  @media (max-width: 1537px) and (max-height: 728px) {
+    padding: 20% 20px 80px;
+  }
   @media (max-width: 800px) {
     padding: 10px;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     &:nth-child(2) {
       width: 60%;
     }
@@ -43,35 +46,65 @@ export const SideLogo = styled.img`
   width: 8vw;
   @media (max-width: 800px) {
     height: auto;
-    width: 12vw;
+    width: 21vw;
+    padding-left: 10px;
   }
 `;
 export const SideBottomText = styled.p`
   text-align: center;
-  font-size: clamp(10px, 1.1vw, 24px);
+  font-size: clamp(12px, 1.1vw, 24px);
   letter-spacing: 0px;
   color: #f24976;
   opacity: 1;
-  font-family: "PSBI";
+  font-family: "PMI";
   @media (max-width: 800px) {
-    width: 60%;
+    width: 70%;
+    font-size: clamp(12px, 1.1vw, 24px);
+    &.full-w {
+      width: 80%;
+      margin-left: auto;
+    }
   }
 `;
+export const PEBI = styled.span`
+  font-family: "PEBI";
+`;
+
 export const SideBottomImg = styled.img`
-  width: 7vw;
-  height: 7vw;
+  width: 5.45vw;
   object-fit: scale-down;
-  margin-bottom: 35px;
+  margin-bottom: 58px;
+  &.hcl {
+    transform: scale(1);
+    transition: all ease 0.3s !important;
+
+    &:hover {
+      transform: scale(1.06) !important;
+    }
+  }
+  &.grl-img {
+    margin-bottom: 38px;
+  }
   @media (max-width: 800px) {
     margin-bottom: 0;
     margin-right: 10px;
+    width: 8.45vw;
+    &.grl-img {
+      margin-bottom: auto;
+    }
+    &.connect-img {
+      width: 10.45vw;
+    }
   }
 `;
 export const ProjNavCont = styled.div`
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 0px 0 15px;
+  margin: 0px 0 36px;
+  @media (max-width: 800px) {
+    margin: 0 0 10px;
+  }
 `;
 
 export const ProjNavBtn = styled.span`
@@ -79,7 +112,7 @@ export const ProjNavBtn = styled.span`
   height: 36px;
   border-radius: 50%;
   background-color: ${COLORS.TEXT_COLOR[900]};
-  color: ${COLORS.WHITE[1000]};
+  color: ${COLORS.BLACK[1000]};
   margin: 0 1%;
   display: flex;
   align-items: center;
@@ -87,6 +120,10 @@ export const ProjNavBtn = styled.span`
   cursor: pointer;
   transition: all 0.3s ease;
   font-size: clamp(10px, 1vw, 24px);
+  font-family: "PB";
+  &:hover {
+    opacity: 0.7 !important;
+  }
   @media (max-width: 800px) {
     width: 20px;
     height: 20px;

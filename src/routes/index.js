@@ -32,7 +32,7 @@ export default function MainRoute() {
       {/* ux design */}
       <Route path="/user-experience-design" element={<UXDesign />} />
       <Route
-        path="/user-experience-design/just-nameless"
+        path="/user-experience-design/sharing-codes"
         element={<JustNameless />}
       />
       <Route

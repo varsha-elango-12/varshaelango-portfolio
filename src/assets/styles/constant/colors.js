@@ -15,9 +15,13 @@ export const TEXT_COLOR = {
   300: "#7DD3F9",
   200: "#CE7777",
   150: "#D8D074",
+  100: "#E4AA08",
 };
 export const WHITE = {
   1000: "#ffffff",
+};
+export const BLACK = {
+  1000: "#000",
 };
 
 export const SECONDARY = {

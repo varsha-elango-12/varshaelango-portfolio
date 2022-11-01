@@ -5,6 +5,7 @@
 .menu-one-txt{
     margin-top: 14%;
     margin-left: 7%;
+   
 }
 .menu-two-txt{
     margin-top: 9%;
@@ -18,8 +19,7 @@
 .menu-four-txt{
     position: absolute;
     top: 25%;
-    left: 61%;
-
+    left: 65%;
 }
 
 @media only  screen and (max-width:800px) {
@@ -29,6 +29,23 @@
     .menu-one-txt , .menu-two-txt , .menu-three-txt , .menu-four-txt{
         margin: 5% auto;
         position:static
+    }
+    .menu-one-txt{
+        margin-right: auto;
+        margin-left: 20px;
+    }
+    .menu-two-txt{
+        margin-left: auto;
+    margin-right: 5px;
+
+    }
+    .menu-three-txt{
+        margin-right: auto;
+    margin-left: 30px;
+    }
+    .menu-four-txt{
+        margin-left: auto;
+        margin-right: 46px;
     }
 }
 

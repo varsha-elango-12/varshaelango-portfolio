@@ -3,10 +3,10 @@
     pointer-events: auto;
     position: fixed;
     top: 50%;
-    left: 50%;
-    transform: translate(-37%, -50%);
-    width: 91%;
-    height: 100%;
+    left: 52%;
+    transform: translate(-42%, -50%);
+    width: 84%;
+    height: 101%;
     background-color: transparent;
     display:flex;
     justify-content: center;
@@ -48,11 +48,13 @@
     .pop-up-modal {
         width: 100%;
         transform: none;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, 0);
+        left:50%;
+        top:100px;
        
     }
 .full-pop-image{
-    height: auto;
+    height: 44%;
     width: 80%;
 }
 .pop-up-base-container{

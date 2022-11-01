@@ -3,90 +3,82 @@ import { COLORS } from "../../assets/styles/constant";
 
 export const ConnectMain = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   flex: 1;
-  padding: 12% 18% 7% 3%;
 
-  p,
-  label {
+  p {
+    font-size: clamp(12px, 1.2vw, 22px);
     color: ${COLORS.WHITE[1000]};
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
-    width: 25vw;
-    align-self: center;
-    label {
-      font-family: "PMI";
-      font-size: clamp(12px, 1.2vw, 18px);
-      margin-bottom: 10px;
-    }
-
-    textarea {
-      border: 1px solid #707070;
-      border-radius: 10px;
-      padding: 15px;
-      background: transparent;
-      resize: none;
-      font-family: "PI";
-      font-size: clamp(12px, 0.9vw, 15px);
-      color: ${COLORS.WHITE[1000]};
-      height: 21vh;
-      z-index: 2;
-      &::placeholder {
-        font-family: "PI";
-        font-size: clamp(12px, 0.9vw, 15px);
-        color: ${COLORS.WHITE[1000]};
-      }
-    }
-    button {
-      width: 20%;
-      display: flex;
-      color: ${COLORS.WHITE[1000]};
-      background: none;
-      border: 0;
-      margin: 10px 0;
-      font-family: "PB";
-      font-size: clamp(12px, 1.2vw, 18px);
-      cursor: pointer;
-      transition: all 0.3s ease;
-      &:hover {
-        color: ${COLORS.TEXT_COLOR[900]};
-      }
-    }
-    p {
+    font-family: "PSB";
+    margin: 10px 0;
+    span,
+    a {
       color: ${COLORS.TEXT_COLOR[900]};
-      margin-top: 10px;
+    }
+    span,
+    .a1 {
+      padding-left: 20px;
+    }
+
+    a {
+      &.a1 {
+        text-decoration: underline;
+        font-family: "PSBI";
+      }
+      &.a2 {
+        font-family: "PI";
+      }
     }
   }
+  .sm-cont {
+    a {
+      margin-right: 25px;
+    }
+    img {
+      width: 28px;
+      height: 28px;
+      transition: all ease 0.5s;
+
+      &:hover {
+        transform: rotate(360deg);
+      }
+      @media (max-width: 800px) {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
   &::before {
     content: "";
     background-image: url(${require("../../assets/images/varsha-potrait.png")});
     position: absolute;
-    top: 13%;
-    right: 6%;
-    width: 25vw;
-    height: 70%;
+    bottom: 0;
+    right: 0%;
+    width: 17vw;
+    height: 30%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
   }
   &::after {
-    content: "Yup, this is me, and I think I look best in my Indian outfit!";
+    content: "Thanks for your time, have a great day ahead :)";
     color: white;
     position: absolute;
-    top: 12%;
-    right: 24%;
-    width: 15%;
+    bottom: 15%;
+    right: 15%;
+    width: 17%;
     font-family: "PI";
     font-size: clamp(12px, 1.06vw, 15px);
+    color: ${COLORS.TEXT_COLOR[900]};
   }
 
   @media (max-width: 800px) {
     padding: 10px;
     justify-content: flex-start;
+    align-items: flex-start;
+
     form {
       align-self: flex-start;
       width: 100%;
@@ -109,8 +101,9 @@ export const ConnectMain = styled.div`
   }
 `;
 export const ConnectFR = styled.div`
-  p {
-    font-family: "PM";
-    font-size: clamp(12px, 1.6vw, 20px);
+  padding-right: 100px;
+  padding-bottom: 80px;
+  @media (max-width: 800px) {
+    padding: 100px 0 0;
   }
 `;

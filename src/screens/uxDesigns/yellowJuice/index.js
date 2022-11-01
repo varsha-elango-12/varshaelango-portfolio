@@ -47,20 +47,21 @@ function YellowJuice() {
       <AnimateSharedLayout type="crossfade">
         <SingleProjectContainer>
           <FlexRowContainer data-aos="fade-up">
-            <ProjTitle style={{ color: COLORS.TEXT_COLOR[400] }}>
+            <ProjTitle style={{ color: COLORS.TEXT_COLOR[100] }}>
               2. The Yellow Juice
             </ProjTitle>
             <FlexThree className="top-cont">
               <FlexCol>
-                <ProjDesc style={{ color: COLORS.TEXT_COLOR[400] }}>
+                <ProjDesc style={{ color: COLORS.TEXT_COLOR[100] }}>
                   Design a <BoldITxt>digital/physical marketplace</BoldITxt> for
                   the buying and selling of{" "}
                   <BoldITxt>human bodily fluids</BoldITxt> that prioritises
                   trust.
                 </ProjDesc>
-                <MITxt style={{ color: COLORS.TEXT_COLOR[400] }}>
-                  MA UX_ 7 weeks_ Group Project_ 2022 <br />
-                  Teammates: Ramya, Amber, Boxun
+                <MITxt style={{ color: COLORS.TEXT_COLOR[100] }}>
+                  <span>Project Partner: Gumtree, London</span> <br /> UX
+                  Design, Research, Prototyping, Execution_ 7 weeks_ 2022
+                  <br /> Teammates: Ramya, Amber, Boxun
                 </MITxt>
               </FlexCol>
 
@@ -76,7 +77,11 @@ function YellowJuice() {
           <TitleTwo data-aos="fade-up" data-aos-delay="300">
             Process
           </TitleTwo>
-          <FlexRowContainer data-aos="fade-up" data-aos-delay="500">
+          <FlexRowContainer
+            className="pb-0"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <FlexOne>
               <TitleThree>Brainstorming + Secondary research</TitleThree>
               <SubTitleThree>
@@ -106,7 +111,7 @@ function YellowJuice() {
             <FlexOne></FlexOne>
           </FlexRowContainer>
 
-          <FlexRowContainer style={{ paddingTop: 0 }} data-aos="fade-up">
+          <FlexRowContainer className="p-0" data-aos="fade-up">
             <FlexOne></FlexOne>
             <FlexThree className="w-80">
               <ImgContainer className="jn-grid-3">
@@ -135,7 +140,7 @@ function YellowJuice() {
             </FlexThree>
           </FlexRowContainer>
 
-          <FlexRowContainer style={{ paddingTop: 0 }} data-aos="fade-up">
+          <FlexRowContainer className="p-0" data-aos="fade-up">
             <FlexOne></FlexOne>
             <FlexThree className="w-80">
               <ImgContainer className="jn-grid-3">
@@ -204,7 +209,7 @@ function YellowJuice() {
             </FlexTwo>
             <FlexOne></FlexOne>
           </FlexRowContainer>
-          <FlexRowContainer data-aos="fade-up">
+          <FlexRowContainer className="pt-0" data-aos="fade-up">
             <FlexOne></FlexOne>
             <FlexThree className="w-100">
               <ImgContainer className="">
@@ -409,7 +414,7 @@ function YellowJuice() {
             </FlexTwo>
             <FlexOne></FlexOne>
           </FlexRowContainer>
-          <FlexRowContainer className="p-0" data-aos="fade-up">
+          <FlexRowContainer className="pt-0" data-aos="fade-up">
             <FlexOne></FlexOne>
             <FlexThree>
               <ImgContainer className="grid-1-2-1">
@@ -495,7 +500,7 @@ function YellowJuice() {
             </FlexTwo>
             <FlexOne></FlexOne>
           </FlexRowContainer>
-          <FlexRowContainer className="p-0" data-aos="fade-up">
+          <FlexRowContainer className="pt-0" data-aos="fade-up">
             <FlexOne></FlexOne>
             <FlexThree>
               <ImgContainer className="jn-grid-8 w-23">
@@ -543,7 +548,7 @@ function YellowJuice() {
             </FlexTwo>
             <FlexOne></FlexOne>
           </FlexRowContainer>
-          <FlexRowContainer className="p-0" data-aos="fade-up">
+          <FlexRowContainer className="pt-0" data-aos="fade-up">
             <FlexOne></FlexOne>
             <FlexThree>
               <ImgContainer className="grid-1-1-1-05">
@@ -599,7 +604,7 @@ function YellowJuice() {
               <div className="w-100">
                 <VideoFrame
                   className="video-h40"
-                  src="https://www.youtube.com/embed/Msn5vbVmEM0"
+                  src="https://www.youtube.com/embed/7Z1rBYMK0SE"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -670,7 +675,7 @@ function YellowJuice() {
             <FlexOne></FlexOne>
           </FlexRowContainer>
 
-          <FlexRowContainer className="p-0" data-aos="fade-up">
+          <FlexRowContainer className="pt-0" data-aos="fade-up">
             <FlexOne></FlexOne>
             <FlexThree>
               <div className="w-100">
@@ -708,10 +713,10 @@ function YellowJuice() {
             <FlexOne></FlexOne>
           </FlexRowContainer>
 
-          <FlexRowContainer className="p-0" data-aos="fade-up">
+          <FlexRowContainer className="pt-0" data-aos="fade-up">
             <FlexOne></FlexOne>
             <FlexThree>
-              <ImgContainer className="jn-grid-8">
+              <ImgContainer className="jn-grid-8 gr-gap">
                 {Array(6)
                   .fill("")
                   .map((x, i) => {
@@ -742,7 +747,6 @@ function YellowJuice() {
                     );
                   })}
               </ImgContainer>
-              <SubDesc>Around Southwark police station</SubDesc>
             </FlexThree>
           </FlexRowContainer>
 
@@ -791,7 +795,7 @@ function YellowJuice() {
             <FlexOne></FlexOne>
           </FlexRowContainer>
 
-          <FlexRowContainer data-aos="fade-up">
+          <FlexRowContainer className="pt-0" data-aos="fade-up">
             {/* <FlexOne></FlexOne> */}
             <FlexHalf></FlexHalf>
             <FlexThree className="p-0 w-100">
@@ -817,7 +821,7 @@ function YellowJuice() {
             </FlexThree>
           </FlexRowContainer>
 
-          <FlexRowContainer className="pb-0" data-aos="fade-up">
+          <FlexRowContainer className="p-0" data-aos="fade-up">
             <FlexThree className="p-0 w-100">
               <ImgContainer className="grid-1-1-1-105">
                 {Array(4)
@@ -855,7 +859,7 @@ function YellowJuice() {
             </FlexTwo>
             <FlexOne></FlexOne>
           </FlexRowContainer>
-          <FlexRowContainer className="p-0" data-aos="fade-up">
+          <FlexRowContainer className="pt-0" data-aos="fade-up">
             <FlexOne></FlexOne>
             <FlexThree>
               <ImgContainer className="grid-1-2-1-1">
@@ -866,7 +870,7 @@ function YellowJuice() {
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
+                    allowfullscreen="true"
                   />
                   <ProjDescSub>Bag for the container</ProjDescSub>
                 </div>
@@ -930,7 +934,7 @@ function YellowJuice() {
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
+              allowfullscreen="true"
             />
             <VideoContSubTxt>The Yellow Juice film</VideoContSubTxt>
           </VideoCont>

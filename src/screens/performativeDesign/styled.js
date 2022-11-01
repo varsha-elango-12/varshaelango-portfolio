@@ -1,5 +1,10 @@
 import styled from "styled-components";
 import { COLORS } from "../../assets/styles/constant";
+import { motion } from "framer-motion";
+
+export const ImageAnimContainer = styled(motion.div)`
+  overflow: hidden;
+`;
 
 export const ProjectsContainer = styled.div`
   padding: 7% 16% 5%;
@@ -29,6 +34,9 @@ export const FlexRowContainer = styled.div`
   &.pb-0 {
     padding-bottom: 0;
   }
+  &.pt-0 {
+    padding-top: 0;
+  }
   &.p-0 {
     padding: 0;
   }
@@ -53,27 +61,31 @@ export const FlexRowContainer = styled.div`
 `;
 
 export const ProjTitle = styled.h1`
-  font-size: clamp(15px, 1.5vw, 28px);
+  font-size: clamp(17px, 1.5vw, 28px);
   font-family: "PEB";
   flex: 1;
   padding: 0 1% 0 0;
+  line-height: 1;
+  @media (max-width: 800px) {
+    margin: 2% 0;
+  }
 `;
 export const TitleTwo = styled.h2`
-  font-size: clamp(13px, 1.15vw, 22px);
+  font-size: clamp(15px, 1.15vw, 22px);
   color: ${COLORS.TEXT_COLOR[500]};
   font-family: "PEB";
   margin: 4% 0;
   text-transform: uppercase;
 `;
 export const TitleThree = styled.h2`
-  font-size: clamp(12px, 1.05vw, 20px);
+  font-size: clamp(16px, 1.05vw, 20px);
   color: ${COLORS.TEXT_COLOR[500]};
   font-family: "PB";
   @media (max-width: 800px) {
   }
 `;
 export const SubTitleThree = styled.h3`
-  font-size: clamp(12px, 0.95vw, 18px);
+  font-size: clamp(14px, 0.95vw, 18px);
   color: ${COLORS.TEXT_COLOR[500]};
   font-family: "PR";
   font-weight: normal;
@@ -83,17 +95,17 @@ export const SubTitleThree = styled.h3`
 `;
 
 export const ProjDesc = styled.p`
-  font-size: clamp(10px, 0.84vw, 24px);
+  font-size: clamp(14px, 0.84vw, 24px);
   color: ${COLORS.TEXT_COLOR[500]};
   font-family: "PM";
-  margin-bottom: 3%;
+  margin-bottom: 4%;
   &.sbi-font {
     font-family: "PSBI";
   }
 `;
 export const ProjDescSub = styled(ProjDesc)`
   margin-top: 10px;
-  font-size: clamp(10px, 0.84vw, 24px);
+  font-size: clamp(12px, 0.84vw, 24px);
   &.float-txt {
     position: absolute;
     left: 0;
@@ -120,9 +132,7 @@ export const FlexCol = styled.div`
   flex-direction: column;
   justify-content: space-between;
   padding: 0 8% 0 0;
-  & p {
-    font-size: clamp(10px, 0.84vw, 24px);
-  }
+
   @media (max-width: 800px) {
   }
 `;
@@ -139,6 +149,14 @@ export const SBTxt = styled.span`
 export const MITxt = styled.p`
   font-family: "PMI";
   opacity: 0.68;
+  font-size: clamp(12px, 0.84vw, 24px);
+  span {
+    font-family: "PSBI";
+  }
+
+  @media (max-width: 800px) {
+    margin: 2% 0;
+  }
 `;
 export const MITxt1 = styled.p`
   font-family: "PMI";
@@ -182,7 +200,7 @@ export const MediumImg = styled.img`
   cursor: pointer;
   transition: all 0.3s ease;
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 `;
 export const MediumImgTop = styled.img`
@@ -192,7 +210,7 @@ export const MediumImgTop = styled.img`
   // cursor: pointer;
   transition: all 0.3s ease;
   // &:hover {
-  //   transform: scale(1.1);
+  //   transform: scale(1.05);
   // }
   @media (max-width: 800px) {
     width: 100%;
@@ -201,7 +219,7 @@ export const MediumImgTop = styled.img`
 `;
 
 export const SubDesc = styled(ProjDesc)`
-  font-size: clamp(10px, 0.84vw, 24px);
+  font-size: clamp(12px, 0.84vw, 24px);
   margin-top: 2%;
   @media (max-width: 800px) {
   }
@@ -214,10 +232,10 @@ export const ListImg = styled.img`
   cursor: pointer;
   transition: all 0.3s ease;
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
   &.bottom-img{
-    height: auto;
+    height: 100%;
     width: 100%;
   }
   &.cs-grid-img{
@@ -287,12 +305,18 @@ export const ImgContainer = styled.div`
   &.jn-grid-8 {
     grid-template-columns: 1fr 1fr;
   }
+  &.gr-gap {
+    grid-row-gap: 17px;
+  }
   &.grid-1-2-1 {
     grid-template-columns: 1fr 2fr 1fr;
   }
   &.grid-1-2-1-1 {
     grid-template-columns: 1fr 2fr 1fr 1fr;
     grid-template-rows: ;
+    @media (max-width: 800px) {
+      grid-template-columns: 1fr 1fr;
+    }
   }
   &.grid-1-1-1-05 {
     grid-template-columns: 1fr 1fr 1fr 0.5fr;
@@ -320,7 +344,7 @@ export const ImgContainer = styled.div`
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1%;
     ${ListImg} {
-      height: auto;
+      height: 100%;
       width: 100%;
       &:nth-child(4) {
         grid-row: 2;
@@ -346,6 +370,10 @@ export const ImgContainerTwo = styled.div`
       }
     }
   }
+  &.p-0 {
+    padding: 0;
+    margin: 0;
+  }
   &.grid-2-1-1 {
     grid-template-columns: 2fr 1fr 1fr;
   }
@@ -364,7 +392,7 @@ export const ImgContainerTwo = styled.div`
       grid-template-columns: 1fr;
       div {
         &:nth-child(3) {
-          width: 100%;
+          width: 100% !important;
           grid-column: 1;
         }
       }
@@ -386,7 +414,7 @@ export const VideoCont = styled.div`
 `;
 
 export const VideoContSubTxt = styled.p`
-  font-size: clamp(10px, 0.84vw, 24px);
+  font-size: clamp(12px, 0.84vw, 24px);
   color: ${COLORS.TEXT_COLOR[500]};
   font-family: "PM";
   margin: 3% auto;

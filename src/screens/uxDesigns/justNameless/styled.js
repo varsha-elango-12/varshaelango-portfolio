@@ -12,18 +12,18 @@ export const ImgContCol = styled.div`
   color: ${COLORS.TEXT_COLOR[500]};
   h4 {
     font-family: "PB";
-    font-size: clamp(11px, 1.2vw, 18px);
+    font-size: clamp(13px, 1.2vw, 18px);
     text-align: center;
     margin: 0 auto 15px;
   }
   .img-col-desc1 {
     font-family: "PSB";
-    font-size: clamp(10px, 1vw, 16px);
+    font-size: clamp(12px, 1vw, 16px);
     margin-bottom: 15px;
   }
   .img-col-desc2 {
     font-family: "PI";
-    font-size: clamp(9px, 0.9vw, 15px);
+    font-size: clamp(11px, 0.9vw, 15px);
     margin-bottom: 15px;
   }
   div {

@@ -6,21 +6,22 @@ function AnimatedTxt(props) {
   const item = {
     hidden: {
       opacity: 0,
-      y: 20,
+      transform: {
+        scale: 0,
+      },
+      x: 20,
       transition: {
-        type: "spring",
-        damping: 12,
-        stiffness: 200,
+        damping: 42,
       },
     },
     visible: {
       opacity: 1,
-      y: 0,
-
+      x: 0,
+      transform: {
+        scale: 1,
+      },
       transition: {
-        type: "spring",
-        damping: 12,
-        stiffness: 200,
+        damping: 42,
       },
     },
   };
@@ -58,9 +59,9 @@ function AnimatedTxt(props) {
                   <motion.p
                     style={{
                       display: "inline-block",
-                      color: "#FF0088",
+                      color: "#F24976",
                       fontFamily: "PB",
-                      fontSize: "clamp(11px, 1.1vw, 20px)",
+                      fontSize: "clamp(12px, 1.1vw, 20px)",
                     }}
                     variants={item}
                   >

@@ -119,8 +119,9 @@ function FormlessEmotion() {
                   conducted by Living Waters Museums, India.
                 </ProjDesc>
                 <MITxt style={{ color: COLORS.TEXT_COLOR[700] }}>
-                  Competition Entry_Solo performance_2021 <br /> Camera handle:
-                  Ranchana Elango
+                  Competition Entry_Solo performance
+                  <br /> Performance design, Acting, Execution_ 2 weeks_ 2021
+                  <br /> Camera handle: Ranchana Elango
                 </MITxt>
               </FlexCol>
               <div>
@@ -181,7 +182,7 @@ function FormlessEmotion() {
             </FlexTwo>
             <FlexOne></FlexOne>
           </FlexRowContainer>
-          <FlexRowContainer style={{ paddingTop: 0 }} data-aos="fade-up">
+          <FlexRowContainer className="pt-0" data-aos="fade-up">
             <FlexOne></FlexOne>
             <FlexThree>
               <ImgContainer className="fe-grid-1">
@@ -327,7 +328,7 @@ function FormlessEmotion() {
                   //   {returnImgSubFunc(ind)}
                   // </motion.div>
                   <AnimatedImageContainer
-                    contStyle={{ position: "relative" }}
+                    contStyle={{ position: "relative", overflow: "visible" }}
                     lid={ind}
                     imgSrc={require(`../../../assets/images/ProjectTypes/theFormlessEmotions/img${ind}.png`)}
                     setId={() => {
@@ -345,7 +346,7 @@ function FormlessEmotion() {
             {" "}
             <VideoFrame
               className="fme"
-              src="https://www.youtube.com/embed/fzAt7SEZ97k"
+              src="https://www.youtube.com/embed/XYBePXvr3oA"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
