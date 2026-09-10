@@ -76,8 +76,9 @@ function SideMenu() {
               data-aos-duration="800"
               data-aos-anchor-placement="top-bottom"
             >
-              I explore coalescing <PEBI>design and theatre arts</PEBI> in
-              creating mindful user experiences.
+              Experience designer bringing clarity by design and intent by choice.
+              {/* I explore coalescing <PEBI>design and theatre arts</PEBI> in
+              creating mindful user experiences. */}
             </SideBottomText>
           )}
           {locArr[1] === "performative-design" && (
@@ -98,9 +99,10 @@ function SideMenu() {
               data-aos-delay="200"
               data-aos-anchor-placement="top-bottom"
             >
-              Theatre arts has always been my big passion. I enjoy tying
+              I am passionate about creating impactful experiences at the intersection of design and performance.
+              {/* Theatre arts has always been my big passion. I enjoy tying
               <PEBI> performative</PEBI> elements to my <PEBI>design</PEBI>{" "}
-              solutions.
+              solutions. */}
             </SideBottomText>
           )}
           {locArr.length === 3 && locArr[1] === "performative-design" && (
@@ -143,8 +145,10 @@ function SideMenu() {
               data-aos-anchor-placement="top-bottom"
               data-aos-delay="200"
             >
-              I see <PEBI>user experience design</PEBI> as an opportunity to
-              enliven even the simplest interaction in a day for a user.
+              I believe less is more, even in complex systems, because there's 
+              always a human behind the platform who deserves simplicity.
+              {/* I see <PEBI>user experience design</PEBI> as an opportunity to
+              enliven even the simplest interaction in a day for a user. */}
             </SideBottomText>
           )}
           {locArr.length === 3 && locArr[1] === "user-experience-design" && (

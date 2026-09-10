@@ -41,7 +41,7 @@ export const ConnectMain = styled.div`
       transition: all ease 0.5s;
 
       &:hover {
-        transform: rotate(360deg);
+        // transform: rotate(360deg);
       }
       @media (max-width: 800px) {
         width: 20px;

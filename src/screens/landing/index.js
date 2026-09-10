@@ -88,8 +88,8 @@ function Landing(props) {
               window.innerWidth < 800
                 ? "visible"
                 : currentFaceIcon
-                ? "visible"
-                : "hidden"
+                  ? "visible"
+                  : "hidden"
             }
             variants={container}
           >
@@ -121,8 +121,8 @@ function Landing(props) {
               window.innerWidth < 800
                 ? "visible"
                 : currentGirlIcon
-                ? "visible"
-                : "hidden"
+                  ? "visible"
+                  : "hidden"
             }
             variants={container}
           >
@@ -135,7 +135,7 @@ function Landing(props) {
       </LRowContainer>
       <LRowContainer>
         <ImgContainer className="menu-three-img">
-          <Link
+          {/* <Link
             to="/my-journey"
             className="secrow-link menu-three icon-link cv-icon"
             onMouseEnter={() => {
@@ -148,7 +148,24 @@ function Landing(props) {
           <StarImg
             className="menu-three"
             src={currentStarIcon ? STAR_ICONS[5] : STAR_ICONS[imgIndex]}
-          />
+          /> */}
+          <a
+            href="https://drive.google.com/file/d/1hUsZD-BmzQ3OBN9l9r9zCljhO0G23LYf/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="secrow-link menu-three icon-link cv-icon"
+            onMouseEnter={() => {
+              setcurrentStarIcon(true);
+            }}
+            onMouseLeave={() => {
+              setcurrentStarIcon(false);
+            }}
+          >
+            <StarImg
+              className="menu-three"
+              src={currentStarIcon ? STAR_ICONS[5] : STAR_ICONS[imgIndex]}
+            />
+          </a>
 
           <motion.div
             className="menu-three-txt"
@@ -157,8 +174,8 @@ function Landing(props) {
               window.innerWidth < 800
                 ? "visible"
                 : currentStarIcon
-                ? "visible"
-                : "hidden"
+                  ? "visible"
+                  : "hidden"
             }
             variants={container}
           >
@@ -190,8 +207,8 @@ function Landing(props) {
               window.innerWidth < 800
                 ? "visible"
                 : currentMailIcon
-                ? "visible"
-                : "hidden"
+                  ? "visible"
+                  : "hidden"
             }
             variants={container}
           >
