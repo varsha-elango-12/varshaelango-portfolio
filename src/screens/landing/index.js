@@ -65,7 +65,40 @@ function Landing(props) {
   return (
     <LandingContainer>
       <LRowContainer>
-        <ImgContainer>
+        <ImgContainer className="menu-two-img">
+          <Link
+            className="menu-two icon-link"
+            to="/user-experience-design"
+            onMouseEnter={() => {
+              setcurrentGirlIcon(true);
+            }}
+            onMouseLeave={() => {
+              setcurrentGirlIcon(false);
+            }}
+          ></Link>
+          <GirlImg
+            className="menu-two"
+            src={currentGirlIcon ? GIRL_ICONS[5] : GIRL_ICONS[imgIndex]}
+          />
+          <motion.div
+            className="menu-two-txt"
+            initial="hidden"
+            animate={
+              window.innerWidth < 800
+                ? "visible"
+                : currentGirlIcon
+                  ? "visible"
+                  : "hidden"
+            }
+            variants={container}
+          >
+            <AnimatedTxt
+              visible={currentGirlIcon}
+              words={MainMenuText.menuTwo.text}
+            />
+          </motion.div>
+        </ImgContainer>
+        <ImgContainer className="menu-one-img">
           <Link
             to="/performative-design"
             className="menu-one icon-link face-icon"
@@ -96,39 +129,6 @@ function Landing(props) {
             <AnimatedTxt
               visible={currentFaceIcon}
               words={MainMenuText.menuOne.text}
-            />
-          </motion.div>
-        </ImgContainer>
-        <ImgContainer className="mt-13 menu-two-img">
-          <Link
-            className="menu-two icon-link"
-            to="/user-experience-design"
-            onMouseEnter={() => {
-              setcurrentGirlIcon(true);
-            }}
-            onMouseLeave={() => {
-              setcurrentGirlIcon(false);
-            }}
-          ></Link>
-          <GirlImg
-            className="menu-two"
-            src={currentGirlIcon ? GIRL_ICONS[5] : GIRL_ICONS[imgIndex]}
-          />
-          <motion.div
-            className="menu-two-txt"
-            initial="hidden"
-            animate={
-              window.innerWidth < 800
-                ? "visible"
-                : currentGirlIcon
-                  ? "visible"
-                  : "hidden"
-            }
-            variants={container}
-          >
-            <AnimatedTxt
-              visible={currentGirlIcon}
-              words={MainMenuText.menuTwo.text}
             />
           </motion.div>
         </ImgContainer>

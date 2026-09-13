@@ -4,9 +4,13 @@ import { COLORS } from "../../assets/styles/constant";
 export const LandingContainer = styled.div`
   padding: 5% 5% 0;
   background-color: ${COLORS.PRIMARY[1000]};
+  display: flex;
+  flex-direction: column;
+  gap: var(--menu-row-gap);
   @media (max-width: 800px) {
     width: 100%;
     margin: auto;
+    gap: 0;
   }
   @media (max-width: 800px) and (min-height: 720px) {
     padding-top: 20%;
@@ -14,26 +18,29 @@ export const LandingContainer = styled.div`
 `;
 export const LRowContainer = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  column-gap: var(--menu-column-gap);
   @media (max-width: 800px) {
     flex-wrap: wrap;
+    column-gap: 0;
   }
 `;
 
 export const MenuImg = styled.img`
-  height: 100%;
+  height: 70%;
   cursor: pointer;
   @media (max-width: 800px) {
     margin: auto;
-    height: 16vh;
+    height: 13vh;
   }
 `;
 
 export const GirlImg = styled(MenuImg)`
-  height: 70%;
+  height: 100%;
+  transform: scale(0.90);
   @media (max-width: 800px) {
     margin: auto;
-    height: 13vh;
+    height: 16vh;
   }
 `;
 export const StarImg = styled(MenuImg)`
@@ -85,6 +92,7 @@ export const ImgContainer = styled.div`
     height: 70%;
     background: transparent;
     position: absolute;
+    z-index: 2;
   }
 
   .cv-icon {

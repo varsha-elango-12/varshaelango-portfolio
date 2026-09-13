@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { COLORS } from "../../assets/styles/constant";
 
 export const SideNavMain = styled.div`
-  width: 16.927%;
+  width: 19%;
   height: 100%;
   position: fixed;
   z-index: 999;
@@ -27,16 +27,17 @@ export const SideNavContainer = styled.div`
 export const SideCenterContainer = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
-  padding: 20% 20px 108px;
+  padding: 20% 50px;
   @media (max-width: 1537px) and (max-height: 728px) {
-    padding: 20% 20px 80px;
+    padding: 20% 30px;
   }
   @media (max-width: 800px) {
     padding: 10px;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     &:nth-child(2) {
       width: 60%;
     }
@@ -51,15 +52,22 @@ export const SideLogo = styled.img`
   }
 `;
 export const SideBottomText = styled.p`
-  text-align: center;
-  font-size: clamp(12px, 1.1vw, 24px);
+  text-align: left;
+  font-size: clamp(12px, 0.95vw, 24px);
   letter-spacing: 0px;
   color: #f24976;
   opacity: 1;
   font-family: "PMI";
+  .side-description {
+    display: block;
+    margin-top: 1rem;
+  }
   @media (max-width: 800px) {
     width: 70%;
-    font-size: clamp(12px, 1.1vw, 24px);
+    font-size: clamp(12px, 1vw, 24px);
+    .side-description {
+      margin-top: 0.75rem;
+    }
     &.full-w {
       width: 80%;
       margin-left: auto;

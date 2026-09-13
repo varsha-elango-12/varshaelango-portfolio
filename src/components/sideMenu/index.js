@@ -16,6 +16,7 @@ import {
   SideNavMain,
 } from "./styled";
 import { motion } from "framer-motion";
+import AOS from "aos";
 import {
   FACE_ICONS,
   GIRL_ICONS,
@@ -30,6 +31,9 @@ function SideMenu() {
     console.log(locaArr);
     setlocArr(locaArr);
   }, [location]);
+  useEffect(() => {
+    AOS.refreshHard();
+  }, [locArr]);
   const container = {
     visible: {
       transition: {
@@ -76,9 +80,15 @@ function SideMenu() {
               data-aos-duration="800"
               data-aos-anchor-placement="top-bottom"
             >
-              Experience designer bringing clarity by design and intent by choice.
-              {/* I explore coalescing <PEBI>design and theatre arts</PEBI> in
-              creating mindful user experiences. */}
+              <PEBI>
+                Clarity by design.
+                <br />
+                Intent by choice.
+              </PEBI>
+              <span className="side-description">
+                Product Designer making complex, data-driven products clear and scalable. 
+I believe less is more, even in dense systems, because there's always a human behind the platform who deserves simplicity.
+              </span>
             </SideBottomText>
           )}
           {locArr[1] === "performative-design" && (
