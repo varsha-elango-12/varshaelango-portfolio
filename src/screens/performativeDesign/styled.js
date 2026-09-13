@@ -97,7 +97,7 @@ export const SubTitleThree = styled.h3`
 export const ProjDesc = styled.p`
   font-size: clamp(14px, 0.84vw, 24px);
   color: ${COLORS.TEXT_COLOR[500]};
-  font-family: "PM";
+  font-family: "PR";
   margin-bottom: 4%;
   &.sbi-font {
     font-family: "PSBI";
@@ -139,6 +139,9 @@ export const FlexCol = styled.div`
 
 export const BoldTxt = styled.span`
   font-family: "PB";
+`;
+export const SemiBoldTxt = styled.span`
+  font-family: "PSB";
 `;
 export const BoldITxt = styled.span`
   font-family: "PBI";
@@ -204,8 +207,8 @@ export const MediumImg = styled.img`
   }
 `;
 export const MediumImgTop = styled.img`
-  width: 18vw;
-  height: 100%;
+  width: 18.5vw;
+  height: 50%;
   // transform: scale(1);
   // cursor: pointer;
   transition: all 0.3s ease;
