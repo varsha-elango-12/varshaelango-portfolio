@@ -16,7 +16,7 @@ export const BlackBg = styled.div`
     font-size: clamp(14px, 1.4vw, 26px);
     text-align: center;
   }
-  @media (max-width: 800px) {
+  @media (max-width: 1024px) {
     min-height: 100vh;
     padding-top: 50px;
   }
@@ -34,13 +34,13 @@ export const commonGrid = styled.div`
   grid-template-columns: repeat(5, 1fr);
   place-items: center;
   grid-gap: 10px;
-  @media (max-width: 800px) {
+  @media (max-width: 1024px) {
     grid-template-columns: repeat(5, 1);
   }
 `;
 export const MJHead = styled(commonGrid)`
   padding: 0px 10px 20px;
-  @media (max-width: 800px) {
+  @media (max-width: 1024px) {
     position: fixed;
     top: 130px;
     background: ${COLORS.PRIMARY[1000]};

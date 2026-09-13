@@ -16,12 +16,12 @@ export const VideoFrame = styled.iframe`
   &.video-h25 {
     min-height: auto;
     height: 85%;
-    @media (max-width: 800px) {
+    @media (max-width: 1024px) {
       height: 101%;
     }
   }
   &.fme {
-    @media (max-width: 800px) {
+    @media (max-width: 1024px) {
       margin-top: 20px;
     }
   }
@@ -31,7 +31,7 @@ export const RightCaret = styled.img`
   width: 16px;
   cursor: pointer;
   object-fit: contain;
-  @media (max-width: 800px) {
+  @media (max-width: 1024px) {
     width: 10px;
   }
 `;

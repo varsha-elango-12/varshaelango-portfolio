@@ -84,7 +84,7 @@ function Landing(props) {
             className="menu-two-txt"
             initial="hidden"
             animate={
-              window.innerWidth < 800
+              window.innerWidth <= 1100
                 ? "visible"
                 : currentGirlIcon
                   ? "visible"
@@ -118,7 +118,7 @@ function Landing(props) {
             className="menu-one-txt"
             initial="hidden"
             animate={
-              window.innerWidth < 800
+              window.innerWidth <= 1100
                 ? "visible"
                 : currentFaceIcon
                   ? "visible"
@@ -171,7 +171,7 @@ function Landing(props) {
             className="menu-three-txt"
             initial="hidden"
             animate={
-              window.innerWidth < 800
+              window.innerWidth <= 1100
                 ? "visible"
                 : currentStarIcon
                   ? "visible"
@@ -204,7 +204,7 @@ function Landing(props) {
             className="menu-four-txt"
             initial="hidden"
             animate={
-              window.innerWidth < 800
+              window.innerWidth <= 1100
                 ? "visible"
                 : currentMailIcon
                   ? "visible"

@@ -55,7 +55,7 @@ export const FlexRowContainer = styled.div`
   .w-80 {
     width: 80%;
   }
-  @media (max-width: 800px) {
+  @media (max-width: 1024px) {
     flex-direction: column;
   }
 `;
@@ -66,7 +66,7 @@ export const ProjTitle = styled.h1`
   flex: 1;
   padding: 0 1% 0 0;
   line-height: 1;
-  @media (max-width: 800px) {
+  @media (max-width: 1024px) {
     margin: 2% 0;
   }
 `;
@@ -81,7 +81,7 @@ export const TitleThree = styled.h2`
   font-size: clamp(16px, 1.05vw, 20px);
   color: ${COLORS.TEXT_COLOR[500]};
   font-family: "PB";
-  @media (max-width: 800px) {
+  @media (max-width: 1024px) {
   }
 `;
 export const SubTitleThree = styled.h3`
@@ -89,7 +89,7 @@ export const SubTitleThree = styled.h3`
   color: ${COLORS.TEXT_COLOR[500]};
   font-family: "PR";
   font-weight: normal;
-  @media (max-width: 800px) {
+  @media (max-width: 1024px) {
     margin-bottom: 10px;
   }
 `;
@@ -119,7 +119,7 @@ export const ProjDescSub = styled(ProjDesc)`
     right: -10%;
     bottom: -5%;
   }
-  @media (max-width: 800px) {
+  @media (max-width: 1024px) {
     &.float-txt,
     &.float-txt1,
     &.float-txt2 {
@@ -133,7 +133,7 @@ export const FlexCol = styled.div`
   justify-content: space-between;
   padding: 0 8% 0 0;
 
-  @media (max-width: 800px) {
+  @media (max-width: 1024px) {
   }
 `;
 
@@ -154,7 +154,7 @@ export const MITxt = styled.p`
     font-family: "PSBI";
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 1024px) {
     margin: 2% 0;
   }
 `;
@@ -171,7 +171,7 @@ export const FlexOne = styled.div`
 export const FlexTwo = styled.div`
   flex: 2;
   padding: 0 2%;
-  @media (max-width: 800px) {
+  @media (max-width: 1024px) {
     padding: 2% 0;
   }
 `;
@@ -185,7 +185,7 @@ export const FlexThree = styled.div`
   &.p-0 {
     padding: 0;
   }
-  @media (max-width: 800px) {
+  @media (max-width: 1024px) {
     padding: 2% 0;
     &.top-cont {
       flex-direction: column;
@@ -212,7 +212,7 @@ export const MediumImgTop = styled.img`
   // &:hover {
   //   transform: scale(1.05);
   // }
-  @media (max-width: 800px) {
+  @media (max-width: 1024px) {
     width: 100%;
     margin: 2% 0;
   }
@@ -221,7 +221,7 @@ export const MediumImgTop = styled.img`
 export const SubDesc = styled(ProjDesc)`
   font-size: clamp(12px, 0.84vw, 24px);
   margin-top: 2%;
-  @media (max-width: 800px) {
+  @media (max-width: 1024px) {
   }
 `;
 export const ListImg = styled.img`
@@ -314,7 +314,7 @@ export const ImgContainer = styled.div`
   &.grid-1-2-1-1 {
     grid-template-columns: 1fr 2fr 1fr 1fr;
     grid-template-rows: ;
-    @media (max-width: 800px) {
+    @media (max-width: 1024px) {
       grid-template-columns: 1fr 1fr;
     }
   }
@@ -340,7 +340,7 @@ export const ImgContainer = styled.div`
     }
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 1024px) {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1%;
     ${ListImg} {
@@ -387,7 +387,7 @@ export const ImgContainerTwo = styled.div`
       height: 100%;
     }
   }
-  @media (max-width: 800px) {
+  @media (max-width: 1024px) {
     &.fe-grid-3 {
       grid-template-columns: 1fr;
       div {
@@ -403,7 +403,7 @@ export const ImgContainerTwoImg = styled.img`
   height: 43vh;
   width: 100%;
 
-  @media (max-width: 800px) {
+  @media (max-width: 1024px) {
     height: 125px;
     object-fit: cover;
   }

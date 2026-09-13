@@ -8,9 +8,18 @@ export const SideNavMain = styled.div`
   z-index: 999;
   background-color: ${COLORS.PRIMARY[1000]};
 
-  @media (max-width: 800px) {
+  @media (max-width: 1100px) {
     width: 100%;
-    height: 130px;
+    position: relative;
+    height: auto;
+    min-height: 130px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1100px) {
+    p,
+    p * {
+      font-size: 14px !important;
+    }
   }
 `;
 
@@ -19,8 +28,8 @@ export const SideNavContainer = styled.div`
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  @media (max-width: 800px) {
-    flex-direction: row;
+  @media (max-width: 1100px) {
+    flex-direction: column;
     padding: 10px;
   }
 `;
@@ -33,22 +42,24 @@ export const SideCenterContainer = styled.div`
   @media (max-width: 1537px) and (max-height: 728px) {
     padding: 20% 30px;
   }
-  @media (max-width: 800px) {
+  @media (max-width: 1100px) {
     padding: 10px;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     &:nth-child(2) {
-      width: 60%;
+      width: 100%;
     }
   }
 `;
 export const SideLogo = styled.img`
   width: 8vw;
-  @media (max-width: 800px) {
+  @media (max-width: 1100px) {
     height: auto;
     width: 21vw;
-    padding-left: 10px;
+    padding-left: 0;
+    margin: 0 auto;
+    display: block;
   }
 `;
 export const SideBottomText = styled.p`
@@ -62,15 +73,21 @@ export const SideBottomText = styled.p`
     display: block;
     margin-top: 1rem;
   }
-  @media (max-width: 800px) {
+  @media (max-width: 1100px) {
     width: 70%;
-    font-size: clamp(12px, 1vw, 24px);
+    max-width: 100%;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 14px;
     .side-description {
       margin-top: 0.75rem;
     }
     &.full-w {
       width: 80%;
       margin-left: auto;
+      margin-right: auto;
     }
   }
 `;
@@ -93,7 +110,7 @@ export const SideBottomImg = styled.img`
   &.grl-img {
     margin-bottom: 38px;
   }
-  @media (max-width: 800px) {
+  @media (max-width: 1100px) {
     margin-bottom: 0;
     margin-right: 10px;
     width: 8.45vw;
@@ -110,7 +127,7 @@ export const ProjNavCont = styled.div`
   justify-content: space-around;
   flex-wrap: wrap;
   margin: 0px 0 36px;
-  @media (max-width: 800px) {
+  @media (max-width: 1100px) {
     margin: 0 0 10px;
   }
 `;
@@ -132,7 +149,7 @@ export const ProjNavBtn = styled.span`
   &:hover {
     opacity: 0.7 !important;
   }
-  @media (max-width: 800px) {
+  @media (max-width: 1100px) {
     width: 20px;
     height: 20px;
     margin: 0 5px;

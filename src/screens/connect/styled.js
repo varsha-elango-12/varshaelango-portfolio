@@ -43,7 +43,7 @@ export const ConnectMain = styled.div`
       &:hover {
         // transform: rotate(360deg);
       }
-      @media (max-width: 800px) {
+      @media (max-width: 1024px) {
         width: 20px;
         height: 20px;
       }
@@ -74,7 +74,7 @@ export const ConnectMain = styled.div`
     color: ${COLORS.TEXT_COLOR[900]};
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 1024px) {
     padding: 10px;
     justify-content: flex-start;
     align-items: flex-start;
@@ -103,7 +103,7 @@ export const ConnectMain = styled.div`
 export const ConnectFR = styled.div`
   padding-right: 100px;
   padding-bottom: 80px;
-  @media (max-width: 800px) {
+  @media (max-width: 1024px) {
     padding: 100px 0 0;
   }
 `;

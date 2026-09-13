@@ -7,52 +7,98 @@ export const LandingContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: var(--menu-row-gap);
-  @media (min-width: 801px) {
+  @media (min-width: 1101px) {
     height: 100vh;
     overflow: hidden;
   }
-  @media (max-width: 800px) {
+  @media (max-width: 767px) {
     width: 100%;
     margin: auto;
-    gap: 0;
+    gap: 32px;
+    padding: 0;
+    overflow: visible;
   }
-  @media (max-width: 800px) and (min-height: 720px) {
-    padding-top: 20%;
+  @media (max-width: 767px) and (min-height: 720px) {
+    padding-top: 0;
+  }
+  @media (min-width: 768px) and (max-width: 1100px) {
+    display: block;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    height: auto;
+    min-height: 76vh;
+    overflow: visible;
+    padding: 4vh 5% 2vh;
+    padding-bottom: 6vh;
+    gap: 4vh;
   }
 `;
 export const LRowContainer = styled.div`
   display: flex;
   justify-content: flex-start;
   column-gap: var(--menu-column-gap);
-  @media (max-width: 800px) {
-    flex-wrap: wrap;
-    column-gap: 0;
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 32px;
+  }
+  @media (min-width: 768px) and (max-width: 1100px) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: 34vh;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    align-self: stretch;
+    box-sizing: border-box;
+    overflow: hidden;
+    gap: 4vw;
+    margin-bottom: 0.1vh;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 `;
 
 export const MenuImg = styled.img`
   height: 70%;
   cursor: pointer;
-  @media (max-width: 800px) {
-    margin: auto;
+  @media (max-width: 767px) {
+    margin: 12px auto 8px;
     height: 13vh;
+  }
+  @media (min-width: 768px) and (max-width: 1100px) {
+    height: 65%;
+    align-self: flex-start;
   }
 `;
 
 export const GirlImg = styled(MenuImg)`
   height: 100%;
   transform: scale(0.90);
-  @media (max-width: 800px) {
-    margin: auto;
+  @media (max-width: 767px) {
+    margin: 12px auto 8px;
     height: 16vh;
+  }
+  @media (min-width: 768px) and (max-width: 1100px) {
+    height: 82%;
+    align-self: flex-start;
+    transform: translateY(-8%) scale(0.95);
   }
 `;
 export const StarImg = styled(MenuImg)`
   height: 50%;
   margin: 0 15% 0 auto;
-  @media (max-width: 800px) {
-    margin: auto;
+  @media (max-width: 767px) {
+    margin: 12px auto 8px;
     height: 8vh;
+  }
+  @media (min-width: 768px) and (max-width: 1100px) {
+    height: 50%;
   }
 `;
 export const WaveAnim = keyframes`
@@ -70,9 +116,12 @@ export const MailImg = styled(StarImg)`
   &:hover {
     animation: none;
   }
-  @media (max-width: 800px) {
-    margin: auto;
+  @media (max-width: 767px) {
+    margin: 12px auto 8px;
     height: 7vh;
+  }
+  @media (min-width: 768px) and (max-width: 1100px) {
+    height: 40%;
   }
 `;
 
@@ -105,14 +154,19 @@ export const ImgContainer = styled.div`
   .mail-icon {
     right: 0;
   }
-  @media (max-width: 800px) {
+  @media (max-width: 767px) {
     width: 100%;
-    height: 20vh;
-    margin: 3% 0;
+    max-width: 520px;
+    height: 180px;
+    margin: 0;
+    padding: 0;
     flex-direction: column;
+    align-items: center;
     .icon-link {
-      width: 130px;
-      right: 0;
+      width: 100%;
+      left: 0;
+      right: auto;
+      top: 0;
       height: 100%;
     }
     .cv-icon {
@@ -128,36 +182,58 @@ export const ImgContainer = styled.div`
     }
     .secrow-link,
     .connect-link {
-      margin: auto;
+      position: static;
+      width: auto;
+      height: auto;
+      margin: 12px auto 8px;
       flex-direction: column;
     }
-    &.menu-two-img {
-      height: auto;
-    }
-    &.menu-three-img {
-      margin-top: -35px;
-      height: auto;
-      padding-bottom: 0;
-      margin-bottom: 0;
-    }
-    &.menu-four-img {
-      margin-top: -12px;
-      height: auto;
-    }
-    .menu-one {
-      margin-right: auto;
-      margin-left: 20px;
-    }
-    .menu-two {
-      margin-left: auto;
-      margin-right: 20px;
-      margin-top: -30px;
-    }
-    .menu-three {
-      margin: 0 auto 0 40px;
-    }
+    .menu-one,
+    .menu-two,
+    .menu-three,
     .menu-four {
-      margin: -21px 55px 0 auto;
+      margin: 12px auto 8px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1100px) {
+    width: 100%;
+    flex: none;
+    min-width: 0;
+    max-width: none;
+    height: 26vh;
+    min-height: 26vh;
+    max-height: 26vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 2%;
+    flex-direction: row;
+    align-items: center;
+    .icon-link {
+      width: 200px;
+      left: auto;
+      right: 0;
+      top: auto;
+      height: 70%;
+    }
+    .face-icon {
+      left: 0;
+      right: auto;
+    }
+    .secrow-link,
+    .connect-link {
+      position: relative;
+      width: auto;
+      height: auto;
+      margin: 0 auto;
+      flex-direction: column;
+    }
+    .connect-link {
+      margin: 0 auto;
+    }
+    img.menu-one {
+      height: 49%;
+      max-width: 100%;
+      object-fit: contain;
     }
   }
 `;

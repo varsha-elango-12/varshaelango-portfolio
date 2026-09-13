@@ -6,7 +6,7 @@ export const MainBg = styled.div`
   // width: 100vw;
   min-height: 100vh;
   display: flex;
-  @media (max-width: 800px) {
+  @media (max-width: 1100px) {
     display: block;
   }
 `;
@@ -17,10 +17,11 @@ export const ContentContainer = styled.div`
   position: absolute;
   left: 16.927%;
 
-  @media (max-width: 800px) {
+  @media (max-width: 1100px) {
     width: 100%;
     left: 0;
-    top: 130px;
+    position: relative;
+    top: auto;
     display: flex;
   }
 `;

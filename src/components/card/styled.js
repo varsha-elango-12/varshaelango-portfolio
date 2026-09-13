@@ -45,7 +45,7 @@ export const CardContainer = styled.div`
   &:hover ${CardTitle},&:hover ${CardDesc} {
     color: ${COLORS.TEXT_COLOR[900]};
   }
-  @media (max-width: 800px) {
+  @media (max-width: 1024px) {
     width: 100%;
   }
 `;
