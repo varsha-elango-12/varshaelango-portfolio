@@ -7,6 +7,10 @@ export const LandingContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: var(--menu-row-gap);
+  @media (min-width: 801px) {
+    height: 100vh;
+    overflow: hidden;
+  }
   @media (max-width: 800px) {
     width: 100%;
     margin: auto;
@@ -74,7 +78,7 @@ export const MailImg = styled(StarImg)`
 
 export const ImgContainer = styled.div`
   width: 40%;
-  height: 33vh;
+  height: 31vh;
   background: #060606;
   padding: 2%;
   display: flex;
