@@ -21,6 +21,30 @@ export const ConnectMain = styled.div`
       padding-left: 20px;
     }
 
+    .copied-message {
+      padding-left: 10px;
+      color: ${COLORS.TEXT_COLOR[900]};
+      font-family: "PI";
+      font-size: 0.75em;
+      white-space: nowrap;
+      pointer-events: none;
+    }
+
+    @media (max-width: 767px) {
+      .email-value {
+        display: inline-block;
+        max-width: calc(100% - 45px);
+        vertical-align: top;
+      }
+
+      .copied-message {
+        display: block;
+        padding-left: 0;
+        margin-top: 4px;
+        white-space: normal;
+      }
+    }
+
     a {
       &.a1 {
         text-decoration: underline;

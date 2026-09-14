@@ -17,7 +17,7 @@ function Connect() {
         <ConnectFR>
           <p data-aos="fade-up">
             Email:{" "}
-            <span style={{ position: "relative", display: "inline-block" }}>
+            <span className="email-value">
               <button
                 type="button"
                 onClick={handleCopy}
@@ -36,21 +36,7 @@ function Connect() {
               </button>
 
               {copied && (
-                <span
-                  style={{
-                    position: "absolute",
-                    left: "calc(100% + 10px)",
-                    top: "50%",
-                    transform: "translateY(-50%)",
-                    whiteSpace: "nowrap",
-                    fontSize: "12px",
-                    color: "rgb(188, 192, 188)",
-                    backgroundColor: "rgba(255, 255, 255, 0.1)",
-                    padding: "2px 6px",
-                    borderRadius: "4px",
-                    pointerEvents: "none",
-                  }}
-                >
+                <span className="copied-message" role="status">
                   Copied to clipboard!
                 </span>
               )}
