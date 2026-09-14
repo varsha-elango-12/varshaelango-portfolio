@@ -150,7 +150,7 @@ function Landing(props) {
             src={currentStarIcon ? STAR_ICONS[5] : STAR_ICONS[imgIndex]}
           /> */}
           <a
-            href="https://drive.google.com/file/d/1hUsZD-BmzQ3OBN9l9r9zCljhO0G23LYf/view?usp=drive_link"
+            href="https://drive.google.com/file/d/13L7U9Ghh-dHK9pby_V2UGivYMGrrLIzW/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="secrow-link menu-three icon-link cv-icon"

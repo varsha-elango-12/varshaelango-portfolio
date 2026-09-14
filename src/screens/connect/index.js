@@ -85,7 +85,7 @@ function Connect() {
           <br />
           <div className="sm-cont" data-aos="fade-up" data-aos-delay="600">
             <a
-              href="https://www.linkedin.com/in/varsha-elango-383b7a126/"
+              href="https://www.linkedin.com/in/varsha-elango/"
               target="_blank"
               rel="noopener noreferrer"
             >

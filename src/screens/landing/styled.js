@@ -182,11 +182,11 @@ export const ImgContainer = styled.div`
     }
     .secrow-link,
     .connect-link {
-      position: static;
-      width: auto;
-      height: auto;
-      margin: 12px auto 8px;
-      flex-direction: column;
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0;
     }
     .menu-one,
     .menu-two,
@@ -229,6 +229,7 @@ export const ImgContainer = styled.div`
     }
     .connect-link {
       margin: 0 auto;
+      height: 70%;
     }
     img.menu-one {
       height: 49%;
