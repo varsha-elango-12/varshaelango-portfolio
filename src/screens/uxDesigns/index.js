@@ -4,30 +4,58 @@ import Card from "../../components/card";
 import { PDBg } from "../common-styled";
 import { PROJECTS } from "../const";
 import { ProjectsContainer } from "../performativeDesign/styled";
+import styled from "styled-components";
+
+const ProjectSlot = styled.div`
+  display: flex;
+  justify-content: ${({ position }) =>
+    position === "right" ? "flex-end" : "flex-start"};
+  margin-top: ${({ yOffset }) => yOffset || 0}px;
+
+  @media (max-width: 1110px) {
+    width: 100%;
+    justify-content: center;
+    margin-top: 0;
+  }
+`;
 
 function UXDesign() {
   return (
     <PDBg>
       <ProjectsContainer>
         {PROJECTS["user-experience-design"].map((item, index) => {
+          const card = (
+            <div
+              data-aos="fade-up"
+              data-aos-delay={index * 200}
+              data-aos-anchor="id1"
+              id={"ind" + index}
+            >
+              <Card
+                imgSrc={item.imgSrc}
+                title={index + 1 + ". " + item.title}
+                desc={item.desc}
+                subdesc={item.subdesc}
+                subdescX={item.subdescX}
+                subdescY={item.subdescY}
+                floatRight={item.floadtRight}
+                marginTop={item.marginTop}
+              />
+            </div>
+          );
+
           return (
-            <Link to={`/user-experience-design/${item.to}`} key={index}>
-              <div
-                data-aos="fade-up"
-                data-aos-delay={index * 200}
-                data-aos-anchor="id1"
-                id={"ind" + index}
-              >
-                <Card
-                  imgSrc={item.imgSrc}
-                  title={index + 1 + ". " + item.title}
-                  desc={item.desc}
-                  subdesc={item.subdesc}
-                  floatRight={item.floadtRight}
-                  marginTop={item.marginTop}
-                />
-              </div>
-            </Link>
+            <ProjectSlot
+              key={index}
+              position={item.position}
+              yOffset={item.yOffset}
+            >
+              {item.to ? (
+                <Link to={`/user-experience-design/${item.to}`}>{card}</Link>
+              ) : (
+                <React.Fragment>{card}</React.Fragment>
+              )}
+            </ProjectSlot>
           );
         })}
       </ProjectsContainer>

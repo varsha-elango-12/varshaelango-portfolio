@@ -33,6 +33,10 @@ export const CardDesc = styled.p`
 export const CardDescSB = styled(CardDesc)`
   font-family: "PSB";
   margin-top: 0;
+  transform: translate(
+    ${({ $subdescX }) => $subdescX || 0}px,
+    ${({ $subdescY }) => $subdescY || 0}px
+  );
 `;
 
 export const CardContainer = styled.div`

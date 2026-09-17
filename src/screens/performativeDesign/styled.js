@@ -17,6 +17,7 @@ export const ProjectsContainer = styled.div`
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    gap: 5%;
   }
 `;
 

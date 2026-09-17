@@ -23,7 +23,14 @@ function Card(props) {
       </CardImgCont>
       <CardTitle>{props.title}</CardTitle>
       <CardDesc>{props.desc}</CardDesc>
-      {props.subdesc && <CardDescSB>{props.subdesc}</CardDescSB>}
+      {props.subdesc && (
+        <CardDescSB
+          $subdescX={props.subdescX}
+          $subdescY={props.subdescY}
+        >
+          {props.subdesc}
+        </CardDescSB>
+      )}
     </CardContainer>
   );
 }
