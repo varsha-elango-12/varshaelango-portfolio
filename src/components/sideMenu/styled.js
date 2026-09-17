@@ -157,6 +157,11 @@ export const ProjNavCont = styled.div`
   flex-wrap: wrap;
   margin: 0px 0 36px;
   @media (max-width: 1100px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px 24px;
+    width: 100%;
     margin: 0 0 10px;
   }
 `;
@@ -170,7 +175,10 @@ export const ProjNavHeading = styled.h2`
   line-height: 1;
   text-transform: uppercase;
   @media (max-width: 1100px) {
+    display: none;
     margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
   }
 `;
 
@@ -190,6 +198,6 @@ export const ProjNavBtn = styled.span`
     opacity: 0.7 !important;
   }
   @media (max-width: 1100px) {
-    margin-bottom: 12px;
+    margin: 0;
   }
 `;
