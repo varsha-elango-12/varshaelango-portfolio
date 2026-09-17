@@ -30,6 +30,8 @@ export const PROJECTS = {
       subdescY: 5,
       imgSrc: require("../assets/images/ProjectTypes/boolean/thumbnail.png"),
       pdf: "/projects/project_boolean_protected.pdf",
+      titleNote: "Contact for password",
+      titleNoteLink: "/connect",
       position: "left",
       yOffset: 0,
     },

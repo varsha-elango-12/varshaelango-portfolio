@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   CardContainer,
   CardDesc,
@@ -6,6 +7,9 @@ import {
   CardImg,
   CardImgCont,
   CardTitle,
+  CardTitleRow,
+  CardTitleNote,
+  CardTitleIcon,
 } from "./styled";
 import "./styles.css";
 
@@ -21,7 +25,15 @@ function Card(props) {
       <CardImgCont>
         <CardImg src={props.imgSrc} />
       </CardImgCont>
-      <CardTitle>{props.title}</CardTitle>
+      <CardTitleRow>
+        <CardTitle>{props.title}</CardTitle>
+        {props.titleNote && props.titleNoteLink && (
+          <CardTitleNote to={props.titleNoteLink}>
+            <CardTitleIcon src={require("../../assets/images/lock.png")} alt="" />
+            <span>{props.titleNote}</span>
+          </CardTitleNote>
+        )}
+      </CardTitleRow>
       <CardDesc>{props.desc}</CardDesc>
       {props.subdesc && (
         <CardDescSB

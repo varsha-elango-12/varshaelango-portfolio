@@ -38,6 +38,8 @@ function UXDesign() {
                 subdesc={item.subdesc}
                 subdescX={item.subdescX}
                 subdescY={item.subdescY}
+                titleNote={item.titleNote}
+                titleNoteLink={item.titleNoteLink}
                 floatRight={item.floadtRight}
                 marginTop={item.marginTop}
               />

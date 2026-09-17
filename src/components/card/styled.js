@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import { COLORS } from "../../assets/styles/constant";
 
 export const CardImg = styled.img`
@@ -20,6 +21,35 @@ export const CardTitle = styled.h3`
   font-size: clamp(13px, 0.9vw, 24px);
   color: ${COLORS.TEXT_COLOR[1000]};
   transition: all ease 0.3s;
+  margin: 0;
+`;
+
+export const CardTitleRow = styled.div`
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+`;
+
+export const CardTitleNote = styled(Link)`
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  font-family: "PR";
+  font-size: clamp(14px, 0.7vw, 16px);
+  color: #5d5d5d;
+  text-align: right;
+  white-space: nowrap;
+  text-decoration: none;
+`;
+
+export const CardTitleIcon = styled.img`
+  width: 13px;
+  height: 15px;
+  object-fit: contain;
+  display: block;
+  padding-bottom: 2px;
 `;
 
 export const CardDesc = styled.p`
