@@ -39,14 +39,37 @@ export const SideCenterContainer = styled.div`
   align-items: flex-start;
   flex-direction: column;
   padding: 20% 50px;
-  @media (max-width: 1537px) and (max-height: 728px) {
-    padding: 20% 30px;
+  @media (min-width: 1538px) {
+    &:last-child {
+      padding-bottom: 10%;
+    }
   }
-  @media (max-width: 1100px) {
+  @media (min-width: 1101px) and (max-width: 1537px) {
+    padding: 20% 30px;
+    &:last-child {
+      padding-bottom: 4%;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1100px) {
     padding: 10px;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    &:last-child {
+      padding-bottom: 10px;
+    }
+    &:nth-child(2) {
+      width: 100%;
+    }
+  }
+  @media (max-width: 767px) {
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    &:last-child {
+      padding-bottom: 10px;
+    }
     &:nth-child(2) {
       width: 100%;
     }
@@ -129,7 +152,8 @@ export const SideBottomImg = styled.img`
 `;
 export const ProjNavCont = styled.div`
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: flex-start;
   flex-wrap: wrap;
   margin: 0px 0 36px;
   @media (max-width: 1100px) {
@@ -137,26 +161,35 @@ export const ProjNavCont = styled.div`
   }
 `;
 
+export const ProjNavHeading = styled.h2`
+  margin: 0 0 72px;
+  color: ${COLORS.TEXT_COLOR[900]};
+  font-family: "PM";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: uppercase;
+  @media (max-width: 1100px) {
+    margin-bottom: 20px;
+  }
+`;
+
 export const ProjNavBtn = styled.span`
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background-color: ${COLORS.TEXT_COLOR[900]};
-  color: ${COLORS.BLACK[1000]};
-  margin: 0 1%;
+  color: ${COLORS.TEXT_COLOR[900]};
+  margin: 0 0 25px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: all 0.3s ease;
-  font-size: clamp(10px, 1vw, 24px);
+  font-size: clamp(12px, 1vw, 24px);
   font-family: "PB";
+  line-height: 1;
+  text-decoration: underline;
   &:hover {
     opacity: 0.7 !important;
   }
   @media (max-width: 1100px) {
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
+    margin-bottom: 12px;
   }
 `;

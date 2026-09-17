@@ -9,6 +9,7 @@ import {
   PEBI,
   ProjNavBtn,
   ProjNavCont,
+  ProjNavHeading,
   SideBottomImg,
   SideBottomText,
   SideCenterContainer,
@@ -118,18 +119,25 @@ function SideMenu() {
           )}
           {locArr.length === 3 && locArr[1] === "performative-design" && (
             <div>
+              <ProjNavHeading>Projects</ProjNavHeading>
               <ProjNavCont>
-                {PROJECTS[locArr[1]].map((item, ind) => {
+                {PROJECTS[locArr[1]].map((item) => {
+                  const ProjectNavLink = item.pdf ? "a" : Link;
                   return (
-                    <Link to={`${locArr[1]}/${item.to}`}>
+                    <ProjectNavLink
+                      key={item.title}
+                      {...(item.pdf
+                        ? { href: item.pdf }
+                        : { to: `${locArr[1]}/${item.to}` })}
+                    >
                       <ProjNavBtn
                         style={{
                           opacity: item.to === locArr[2] ? 1 : 0.5,
                         }}
                       >
-                        {ind + 1}
+                        {item.title}
                       </ProjNavBtn>
-                    </Link>
+                    </ProjectNavLink>
                   );
                 })}
               </ProjNavCont>
@@ -162,22 +170,32 @@ function SideMenu() {
           )}
           {locArr.length === 3 && locArr[1] === "user-experience-design" && (
             <div>
+              <ProjNavHeading>Projects</ProjNavHeading>
               <ProjNavCont>
-                {PROJECTS[locArr[1]].map((item, ind) => {
+                {PROJECTS[locArr[1]].map((item) => {
+                  const ProjectNavLink = item.pdf ? "a" : Link;
                   return (
-                    <Link to={`${locArr[1]}/${item.to}`}>
+                    <ProjectNavLink
+                      key={item.title}
+                      {...(item.pdf
+                        ? {
+                            href: `${process.env.PUBLIC_URL}${item.pdf}`,
+                            target: "_blank",
+                            rel: "noopener noreferrer",
+                          }
+                        : { to: `${locArr[1]}/${item.to}` })}
+                    >
                       <ProjNavBtn
                         style={{
                           opacity: item.to === locArr[2] ? 1 : 0.5,
                         }}
                       >
-                        {ind + 1}
+                        {item.title}
                       </ProjNavBtn>
-                    </Link>
+                    </ProjectNavLink>
                   );
                 })}
               </ProjNavCont>
-              {projTitle()}
             </div>
           )}
           {/* my journey */}
