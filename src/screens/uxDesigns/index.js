@@ -50,7 +50,15 @@ function UXDesign() {
               position={item.position}
               yOffset={item.yOffset}
             >
-              {item.to ? (
+              {item.pdf ? (
+                <a
+                  href={`${process.env.PUBLIC_URL}${item.pdf}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {card}
+                </a>
+              ) : item.to ? (
                 <Link to={`/user-experience-design/${item.to}`}>{card}</Link>
               ) : (
                 <React.Fragment>{card}</React.Fragment>

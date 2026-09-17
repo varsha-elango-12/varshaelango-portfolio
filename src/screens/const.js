@@ -29,6 +29,7 @@ export const PROJECTS = {
       subdescX: 0,
       subdescY: 5,
       imgSrc: require("../assets/images/ProjectTypes/boolean/thumbnail.png"),
+      pdf: "/projects/project_boolean_protected.pdf",
       position: "left",
       yOffset: 0,
     },
