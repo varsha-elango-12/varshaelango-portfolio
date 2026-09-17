@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { COLORS } from "../../assets/styles/constant";
 
 export const SideNavMain = styled.div`
-  width: 19%;
+  width: 20%;
   height: 100%;
   position: fixed;
   z-index: 999;
@@ -91,14 +91,19 @@ export const SideBottomText = styled.p`
     }
   }
 `;
+
+export const PB = styled.span`
+  font-family: "PB";
+`;
 export const PEBI = styled.span`
   font-family: "PEBI";
 `;
 
+
 export const SideBottomImg = styled.img`
   width: 5.45vw;
   object-fit: scale-down;
-  margin-bottom: 58px;
+  margin-bottom: 45px;
   &.hcl {
     transform: scale(1);
     transition: all ease 0.3s !important;

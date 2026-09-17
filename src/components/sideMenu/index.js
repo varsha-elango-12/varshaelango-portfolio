@@ -5,6 +5,7 @@ import { Link, useLocation } from "react-router-dom";
 import { PROJECTS } from "../../screens/const";
 import AnimatedTxt from "../animatedTxt";
 import {
+  PB,
   PEBI,
   ProjNavBtn,
   ProjNavCont,
@@ -80,14 +81,16 @@ function SideMenu() {
               data-aos-duration="800"
               data-aos-anchor-placement="top-bottom"
             >
-              <PEBI>
+              <PB>
                 Clarity by design.
                 <br />
                 Intent by choice.
-              </PEBI>
+              </PB>
               <span className="side-description">
-                Product Designer making complex, data-driven products clear and scalable. 
-I believe less is more, even in dense systems, because there's always a human behind the platform who deserves simplicity.
+                Product Designer at Altrata, making complex, data driven systems clear 
+                and scalable. I believe less is more, even in dense products, because 
+                there's always a human behind the platform who deserves simplicity. 
+                My practice extends into storytelling, performance and tangible artefacts.
               </span>
             </SideBottomText>
           )}
@@ -109,10 +112,8 @@ I believe less is more, even in dense systems, because there's always a human be
               data-aos-delay="200"
               data-aos-anchor-placement="top-bottom"
             >
-              I am passionate about creating impactful experiences at the intersection of design and performance.
-              {/* Theatre arts has always been my big passion. I enjoy tying
-              <PEBI> performative</PEBI> elements to my <PEBI>design</PEBI>{" "}
-              solutions. */}
+              Design as a performance. Work that uses the body, the space and the 
+              audience to carry an idea.
             </SideBottomText>
           )}
           {locArr.length === 3 && locArr[1] === "performative-design" && (
@@ -155,10 +156,8 @@ I believe less is more, even in dense systems, because there's always a human be
               data-aos-anchor-placement="top-bottom"
               data-aos-delay="200"
             >
-              I believe less is more, even in complex systems, because there's 
-              always a human behind the platform who deserves simplicity.
-              {/* I see <PEBI>user experience design</PEBI> as an opportunity to
-              enliven even the simplest interaction in a day for a user. */}
+              Complex systems, made simple. Projects across shipped enterprise 
+              platforms, speculative briefs, and public interventions.
             </SideBottomText>
           )}
           {locArr.length === 3 && locArr[1] === "user-experience-design" && (
@@ -219,8 +218,7 @@ I believe less is more, even in dense systems, because there's always a human be
               data-aos-anchor-placement="top-bottom"
               data-aos-delay="200"
             >
-              I am a people's person, and believe in <PEBI>networking</PEBI> as
-              a medium to exchange knowledge.
+              The bird is real, and waiting. Say hello.
             </SideBottomText>
           )}
         </SideCenterContainer>

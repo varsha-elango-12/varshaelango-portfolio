@@ -3,7 +3,7 @@ export const MainMenuText = {
     text: "Performative Design",
   },
   menuTwo: {
-    text: "User Experience Design",
+    text: "Product & Experience Design",
   },
   menuThree: {
     text: "My Résumé",
