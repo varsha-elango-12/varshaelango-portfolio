@@ -17,7 +17,10 @@ export const ProjectsContainer = styled.div`
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    gap: 5%;
+    row-gap: 64px;
+  }
+  @media (max-width: 767px) {
+    row-gap: 48px;
   }
 `;
 
