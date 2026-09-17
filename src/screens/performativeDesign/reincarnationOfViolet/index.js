@@ -80,12 +80,9 @@ function ReincarnationOfViolet() {
                   <br /> Teammates: Effy, Mu Lin, Zhihan
                 </MITxt>
               </FlexCol>
-
-              <div>
-                <MediumImgTop
-                  src={require("../../../assets/images/ProjectTypes/reincarnationofViolet/reincarnation.png")}
-                />
-              </div>
+              <MediumImgTop
+                src={require("../../../assets/images/ProjectTypes/reincarnationofViolet/reincarnation.png")}
+              />
             </FlexThree>
           </FlexRowContainer>
 

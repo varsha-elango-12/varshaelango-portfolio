@@ -65,11 +65,10 @@ function YellowJuice() {
                 </MITxt>
               </FlexCol>
 
-              <div>
-                <MediumImgTop
-                  src={require("../../../assets/images/ProjectTypes/yellowJuice/yellowJuice.png")}
-                />
-              </div>
+              
+              <MediumImgTop
+                src={require("../../../assets/images/ProjectTypes/yellowJuice/yellowJuice.png")}
+              />
             </FlexThree>
           </FlexRowContainer>
 

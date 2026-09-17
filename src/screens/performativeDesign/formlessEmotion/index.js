@@ -124,11 +124,10 @@ function FormlessEmotion() {
                   <br /> Camera handle: Ranchana Elango
                 </MITxt>
               </FlexCol>
-              <div>
-                <MediumImgTop
-                  src={require("../../../assets/images/ProjectTypes/theFormlessEmotions/theFormlessEmotion.png")}
-                />
-              </div>
+              
+              <MediumImgTop
+                src={require("../../../assets/images/ProjectTypes/theFormlessEmotions/theFormlessEmotion.png")}
+              />
             </FlexThree>
           </FlexRowContainer>
 

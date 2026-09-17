@@ -54,11 +54,10 @@ function CanSkinStarveForATouch() {
                   <br /> Teammates: Lara, Amber, Boxun, Kristen, Yixi
                 </MITxt>
               </FlexCol>
-              <div>
-                <MediumImgTop
-                  src={require("../../../assets/images/ProjectTypes/canSkin/canSkin.png")}
-                />
-              </div>
+              
+              <MediumImgTop
+                src={require("../../../assets/images/ProjectTypes/canSkin/canSkin.png")}
+              />
             </FlexThree>
           </FlexRowContainer>
           {/* second row */}
