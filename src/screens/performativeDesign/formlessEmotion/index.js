@@ -109,7 +109,7 @@ function FormlessEmotion() {
         <SingleProjectContainer>
           <FlexRowContainer data-aos="fade-up">
             <ProjTitle style={{ color: COLORS.TEXT_COLOR[700] }}>
-              2. The Formless Emotion
+              The Formless Emotion
             </ProjTitle>
             <FlexThree className="top-cont">
               <FlexCol>

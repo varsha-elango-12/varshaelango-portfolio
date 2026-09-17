@@ -49,7 +49,7 @@ function ReincarnationOfViolet() {
         <SingleProjectContainer>
           <FlexRowContainer data-aos="fade-up">
             <ProjTitle style={{ color: COLORS.TEXT_COLOR[800] }}>
-              1. Reincarnation of Violet
+              Reincarnation of Violet
             </ProjTitle>
             <FlexThree className="top-cont">
               <FlexCol>

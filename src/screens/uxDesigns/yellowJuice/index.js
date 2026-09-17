@@ -48,7 +48,7 @@ function YellowJuice() {
         <SingleProjectContainer>
           <FlexRowContainer data-aos="fade-up">
             <ProjTitle style={{ color: COLORS.TEXT_COLOR[100] }}>
-              2. The Yellow Juice
+              The Yellow Juice
             </ProjTitle>
             <FlexThree className="top-cont">
               <FlexCol>

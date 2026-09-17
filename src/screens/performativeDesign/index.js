@@ -20,7 +20,7 @@ function PerformativeDesign() {
               >
                 <Card
                   imgSrc={item.imgSrc}
-                  title={index + 1 + ". " + item.title}
+                  title={item.title}
                   desc={item.desc}
                   floatRight={item.floadtRight}
                   marginTop={item.marginTop}

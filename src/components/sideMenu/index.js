@@ -141,7 +141,6 @@ function SideMenu() {
                   );
                 })}
               </ProjNavCont>
-              {projTitle()}
             </div>
           )}
 

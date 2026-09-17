@@ -41,7 +41,7 @@ function CanSkinStarveForATouch() {
         <SingleProjectContainer>
           <FlexRowContainer data-aos="fade-up">
             <ProjTitle style={{ color: COLORS.TEXT_COLOR[600] }}>
-              3. Can skin starve for a touch?
+              Can skin starve for a touch?
             </ProjTitle>
             <FlexThree className="top-cont">
               <FlexCol>

@@ -33,7 +33,7 @@ function UXDesign() {
             >
               <Card
                 imgSrc={item.imgSrc}
-                title={index + 1 + ". " + item.title}
+                title={item.title}
                 desc={item.desc}
                 subdesc={item.subdesc}
                 subdescX={item.subdescX}
