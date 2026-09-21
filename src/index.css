@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@400;500;600;700&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -18,6 +20,8 @@ code {
   flex-wrap: wrap;
   gap: 4px 3px; /* Spacing between tags */
   padding: 10px 0px 0px 0px;
+
+  font-size: clamp(12px, 0.75vw, 16px);
 }
 
 /* Static text badge styling */
@@ -29,6 +33,48 @@ code {
   padding: 3px 9px; /* Internal spacing */
 
 }
+
+.pill-tag-green {
+  border: 1px solid #333432; /* Light grey outline */
+  border-radius: 24px; /* Rounded pill shape */
+  padding: 8px; /* Internal spacing */
+  background: #d0ece0;
+
+  box-shadow: 0 4px 4px 0 #00000033;
+
+  display: block;
+  width: max-content
+}
+
+.pill-tag-red {
+  border: 3px solid #da0f0f; /* Light grey outline */
+  border-radius: 75px; /* Rounded pill shape */
+  padding: 16px 24px 16px 24px; /* Internal spacing */
+  background-color: transparent;
+  display: block;
+  width: max-content
+}
+
+.pill-tag-brown {
+  border-radius: 100px;
+  padding: 16px 24px;
+
+  background-color: #4c3725;
+  border: 1px solid #4c3725;
+
+  position: absolute;
+  right: -175px;
+  top: 75%;
+  transform: translateY(-50%);
+
+  width: clamp(250px, 30vw, 35%);
+  box-sizing: border-box;
+
+  z-index: 2;
+}
+
+
+
 
 .project-detail-row {
   display: flex;

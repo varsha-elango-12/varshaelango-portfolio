@@ -10,6 +10,7 @@ import ReincarnationOfViolet from "../screens/performativeDesign/reincarnationOf
 import UXDesign from "../screens/uxDesigns";
 import JustNameless from "../screens/uxDesigns/justNameless";
 import YellowJuice from "../screens/uxDesigns/yellowJuice";
+import USNotTexas from "../screens/uxDesigns/usNotTexas";
 
 export default function MainRoute() {
   return (
@@ -31,6 +32,10 @@ export default function MainRoute() {
 
       {/* ux design */}
       <Route path="/user-experience-design" element={<UXDesign />} />
+      <Route
+        path="/user-experience-design/us-not-texas"
+        element={<USNotTexas />}
+      />
       <Route
         path="/user-experience-design/sharing-codes"
         element={<JustNameless />}

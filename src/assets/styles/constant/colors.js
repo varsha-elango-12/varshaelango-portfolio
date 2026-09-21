@@ -4,6 +4,9 @@ export const PRIMARY = {
 };
 
 export const TEXT_COLOR = {
+  1150: "#1A1A1A",
+  1100: "#001A3D",
+  1050: "#143764",
   1000: "#4A4A4A",
   900: "#F24976",
   950: "#F2497650",
@@ -22,7 +25,7 @@ export const WHITE = {
   1000: "#ffffff",
 };
 export const BLACK = {
-  1000: "#000",
+  1000: "#00000",
 };
 
 export const SECONDARY = {

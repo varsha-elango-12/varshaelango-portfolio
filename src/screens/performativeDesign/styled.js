@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { COLORS } from "../../assets/styles/constant";
 import { motion } from "framer-motion";
 
+import "../../../src/index.css"
+
 export const ImageAnimContainer = styled(motion.div)`
   overflow: hidden;
 `;
@@ -25,7 +27,7 @@ export const ProjectsContainer = styled.div`
 `;
 
 export const SingleProjectContainer = styled.div`
-  padding: 4% 7% 5%;
+  padding: 4% 4.5% 5% 8%;
 `;
 export const FlexRowContainer = styled.div`
   display: flex;
@@ -78,7 +80,7 @@ export const TitleTwo = styled.h2`
   font-size: clamp(15px, 1.15vw, 22px);
   color: ${COLORS.TEXT_COLOR[500]};
   font-family: "PEB";
-  margin: 4% 0;
+  margin: 1% 0;
   text-transform: uppercase;
 `;
 export const TitleThree = styled.h2`
@@ -105,6 +107,18 @@ export const ProjDesc = styled.p`
   margin-bottom: 4%;
   &.sbi-font {
     font-family: "PSBI";
+  }
+  &.shantell-sans-font {
+    font-family: "Shantell Sans", sans-serif;
+  }
+  &.pb-0 {
+    padding-bottom: 0;
+  }
+  &.pt-0 {
+    padding-top: 0;
+  }
+  &.p-0 {
+    padding: 0;
   }
 `;
 export const ProjDescSub = styled(ProjDesc)`
@@ -140,6 +154,22 @@ export const FlexCol = styled.div`
   @media (max-width: 1024px) {
   }
 `;
+
+export const RegularTxt = styled.span`
+  font-family: "PR";
+`
+
+export const RegularITxt = styled.span`
+  font-family: "PI";
+`
+
+export const MediumTxt = styled.span`
+  font-family: "PM";
+`
+
+export const LightITxt = styled.span`
+  font-family: "PLI";
+`
 
 export const BoldTxt = styled.span`
   font-family: "PB";
@@ -198,7 +228,22 @@ export const FlexThree = styled.div`
       flex-direction: column;
     }
   }
+
+  &.right-aligned-content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 20px;
+}
+  
+  &.left-aligned-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
 `;
+
 export const MediumImg = styled.img`
   width: 100%;
   height: 100%;
