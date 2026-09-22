@@ -51,6 +51,7 @@ import {
     EntryFullViewButton
 } from "./styled"
 import "../../performativeDesign/style.css";
+import { trackEvent } from "../../../analytics";
 import {
     LeftCaret,
     ModalText,
@@ -100,6 +101,10 @@ function JustNameless() {
                                 <EntryFullViewButton
                                     type="button"
                                     onClick={() => {
+                                        trackEvent("full_view_click", {
+                                            project: "is-united-states-not-texas",
+                                            destination: "/projects/project_boolean_protected.pdf",
+                                        });
                                         window.open('/projects/project_boolean_protected.pdf', '_blank', 'noopener,noreferrer');
                                         setIsEntryGateOpen(false);
                                     }}
@@ -1242,7 +1247,13 @@ function JustNameless() {
                                 </FullWidthBannerText>
 
                                 <FullViewButton
-                                    onClick={() => window.open('/projects/project_boolean_protected.pdf', '_blank')}
+                                    onClick={() => {
+                                        trackEvent("full_view_click", {
+                                            project: "is-united-states-not-texas",
+                                            destination: "/projects/project_boolean_protected.pdf",
+                                        });
+                                        window.open('/projects/project_boolean_protected.pdf', '_blank');
+                                    }}
                                 >
                                     <img
                                         src={require('../../../assets/icons/lock.png')}
