@@ -95,6 +95,7 @@ export const SideBottomText = styled.p`
   .side-description {
     display: block;
     margin-top: 1rem;
+    margin-bottom: 2rem;
   }
   @media (max-width: 1100px) {
     width: 70%;
@@ -106,6 +107,7 @@ export const SideBottomText = styled.p`
     font-size: 14px;
     .side-description {
       margin-top: 0.75rem;
+      margin-bottom: 1.5rem;
     }
     &.full-w {
       width: 80%;
@@ -193,7 +195,6 @@ export const ProjNavBtn = styled.span`
   font-size: clamp(12px, 1vw, 24px);
   font-family: "PB";
   line-height: 1;
-  text-decoration: underline;
   &:hover {
     opacity: 0.7 !important;
   }

@@ -17,29 +17,40 @@ function Connect() {
         <ConnectFR>
           <p data-aos="fade-up">
             Email:{" "}
-            <span className="email-value">
-              <button
-                type="button"
-                onClick={handleCopy}
-                className="a1"
-                style={{
-                  background: "none",
-                  border: "none",
-                  cursor: "pointer",
-                  padding: 0,
-                  font: "inherit",
-                  color: "inherit",
-                  textDecoration: "underline",
-                }}
-              >
-                varshaelango12@gmail.com
-              </button>
-
+            <span 
+              className="email-value" 
+              style={{ position: "relative", display: "inline-block", }} > 
+              <button 
+                type="button" 
+                onClick={handleCopy} 
+                className="a1" 
+                style={{ 
+                  background: "none", 
+                  border: "none", 
+                  cursor: "pointer", 
+                  padding: 0, 
+                  font: "inherit", 
+                  color: "inherit", 
+                  textDecoration: 
+                  "underline", 
+                }} > 
+                  varshaelango12@gmail.com 
+              </button> 
+              
               {copied && (
-                <span className="copied-message" role="status">
-                  Copied to clipboard!
+                <span 
+                  className="copied-message" 
+                  role="status" 
+                  style={{ 
+                    position: "absolute", 
+                    left: "calc(100% + 10px)", 
+                    top: "50%", 
+                    transform: "translateY(-50%)", 
+                    whiteSpace: "nowrap", 
+                  }} > 
+                  Copied to clipboard! 
                 </span>
-              )}
+              )} 
             </span>
           </p>
           <p data-aos="fade-up" data-aos-delay="300">

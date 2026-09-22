@@ -31,7 +31,7 @@ export const PROJECTS = {
       imgSrc: require("../assets/images/ProjectTypes/usNotTexas/thumbnail.png"),
       to: "us-not-texas",
       // pdf: "/projects/project_boolean_protected.pdf",
-      titleNote: "Contact for password",
+      // titleNote: "Contact for password",
       titleNoteLink: "/connect",
       position: "left",
       yOffset: 0,

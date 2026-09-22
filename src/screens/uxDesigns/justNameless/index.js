@@ -48,28 +48,31 @@ function JustNameless() {
     <PDBg>
       <AnimateSharedLayout type="crossfade">
         <SingleProjectContainer>
-          <FlexRowContainer data-aos="fade-up">
+          <FlexRowContainer data-aos="fade-up" className='pb-0' style={{ alignItems: 'stretch' }}>
             <ProjTitle style={{ color: COLORS.TEXT_COLOR[850] }}>
               Sharing Codes
             </ProjTitle>
             <FlexThree className="top-cont">
-              <FlexCol>
+              <FlexCol style={{ padding: '0 4% 0 0' }}>
                 <ProjDesc style={{ color: COLORS.TEXT_COLOR[850] }}>
                   <BoldTxt>
                     Design a way to take advantage of other peoples’ digital transactions without them knowing.
                   </BoldTxt>
+                </ProjDesc>
+                <ProjDesc style={{ color: COLORS.TEXT_COLOR[850], marginBottom: '0' }}>
                   <br /><br /><br />
-                  <SemiBoldTxt>Summary:</SemiBoldTxt> A speculative IBM brief on how one person's digital transaction could be turned to someone else's benefit, without them knowing. We worked on unused subscription allowances, the coffee plan with a drink always left over. The work moved from a system built for shelters to a single physical intervention. QR codes stencilled onto a graffiti wall, holding unclaimed coupons for whoever scanned them.
+                  <SemiBoldTxt>Summary:</SemiBoldTxt> We worked on unused subscription allowances, the coffee plan with a drink always left over. The work moved from a system built for shelters to a single physical intervention. QR codes stencilled onto a graffiti wall, holding unclaimed coupons for whoever scanned them.
                   <br /><br />
-                  <SemiBoldTxt>My focus:</SemiBoldTxt> Framing the research question the project ran on, role-playing the system to surface its interactions, the poster correction during the live trial, the student discount economy concept, and co-editing the film with Bea.
+                  <SemiBoldTxt>My focus:</SemiBoldTxt> Framing the research question, role-playing the system to surface its interactions, the poster correction during the live trial, the student discount economy concept, and co-editing the film.
                   <br /><br />
-                  <SemiBoldTxt>Outcome:</SemiBoldTxt> A live execution at Leake Street, London, used by 2–4 people a day on an if-you-know-you-know basis (IYKYK). IBM was impressed by the tangible quality of the output and keeping it off the mainstream.
+                  <SemiBoldTxt>Outcome:</SemiBoldTxt> A live execution at Leake Street, London, used by ~5 people a day on an IYKYK basis. IBM praised the tangible quality of the output and keeping it off the mainstream.
                 </ProjDesc>
               </FlexCol>
 
-              <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100%' }}>
                 <MediumImgTop
                   src={require("../../../assets/images/ProjectTypes/justNameless/justNameless.png")}
+                  style={{ height: 'max-content', width: '16.25vw' }}
                 />
                 <ProjDesc style={{ color: COLORS.TEXT_COLOR[850] }}>
                   <div className="project-detail-row">

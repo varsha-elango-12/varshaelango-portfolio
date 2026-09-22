@@ -113,8 +113,8 @@ function SideMenu() {
               data-aos-delay="200"
               data-aos-anchor-placement="top-bottom"
             >
-              Design as a performance. Work that uses the body, the space and the 
-              audience to carry an idea.
+              <span className="side-description">Design as a performance. Work that uses the body, the space and the 
+              audience to carry an idea.</span>
             </SideBottomText>
           )}
           {locArr.length === 3 && locArr[1] === "performative-design" && (
@@ -163,8 +163,8 @@ function SideMenu() {
               data-aos-anchor-placement="top-bottom"
               data-aos-delay="200"
             >
-              Complex systems, made simple. Projects across shipped enterprise 
-              platforms, speculative briefs, and public interventions.
+              <span className="side-description">Complex systems, made simple. Projects across shipped enterprise 
+              platforms, speculative briefs, and public interventions.</span>
             </SideBottomText>
           )}
           {locArr.length === 3 && locArr[1] === "user-experience-design" && (
@@ -235,7 +235,7 @@ function SideMenu() {
               data-aos-anchor-placement="top-bottom"
               data-aos-delay="200"
             >
-              The bird is real, and waiting. Say hello.
+              <span className="side-description">The bird is real, and waiting. Say hello.</span>
             </SideBottomText>
           )}
         </SideCenterContainer>

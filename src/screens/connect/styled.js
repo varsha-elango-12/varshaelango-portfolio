@@ -125,9 +125,14 @@ export const ConnectMain = styled.div`
   }
 `;
 export const ConnectFR = styled.div`
-  padding-right: 100px;
+  padding-right: 350px;
   padding-bottom: 80px;
   @media (max-width: 1024px) {
     padding: 100px 0 0;
+  }
+
+  &.copied-message {
+    font-size: 12px;
+    opacity: 0.8;
   }
 `;

@@ -85,7 +85,7 @@ function JustNameless() {
                     >
                         <EntryGateContent>
                             <EntryGateText id="entry-gate-text">
-                                Some parts of this page are protected. View a limited public version, or enter the password to see the full project.
+                                Some parts of this page are protected. View a limited public version, or contact for password to see the full project.
                             </EntryGateText>
                             <EntryGateActions>
                                 <PublicViewButton type="button" onClick={() => setIsEntryGateOpen(false)}>
@@ -131,7 +131,7 @@ function JustNameless() {
                                     </BoldTxt>
                                 </ProjDesc>
                                 <ProjDesc style={{ color: COLORS.TEXT_COLOR[1050],  marginBottom:'0'}}>
-                                    <br /><br /><br /><br />
+                                    <br /><br /><br /><br /><br/><br/>
                                     <SemiBoldTxt>The problem:</SemiBoldTxt> Users couldn't search for "CEOs in the US but not Texas, who donated $20k to education but not to Harvard." AND/OR/NOT didn't extend across all available filters.
                                     <br /><br />
                                     <SemiBoldTxt>Why it mattered:</SemiBoldTxt> Four legacy brands already did this in some capacity, and we were migrating their users to Altrata. Parity was the condition of the migration, not a feature request. The cost of missing it was churn and lost renewals.
