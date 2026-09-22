@@ -47,7 +47,7 @@ code {
 }
 
 .pill-tag-red {
-  border: 3px solid #da0f0f; /* Light grey outline */
+  border: 2.5px solid #da0f0f; /* Light grey outline */
   border-radius: 75px; /* Rounded pill shape */
   padding: 16px 24px 16px 24px; /* Internal spacing */
   background-color: transparent;

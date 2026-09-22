@@ -110,6 +110,7 @@ export const ProjDesc = styled.p`
   }
   &.shantell-sans-font {
     font-family: "Shantell Sans", sans-serif;
+    font-weight: 500;
   }
   &.pb-0 {
     padding-bottom: 0;

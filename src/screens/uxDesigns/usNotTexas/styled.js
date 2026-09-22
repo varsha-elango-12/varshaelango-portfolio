@@ -59,7 +59,7 @@ export const ResearchCalloutIcon = styled.div`
 `;
 
 export const ResearchCalloutTitle = styled.div`
-    font-size: clamp(18px, 0.75vw, 22px);
+    font-size: clamp(16px, 0.75vw, 22px);
 `;
 
 export const ResearchCalloutBody = styled.div`
@@ -325,9 +325,9 @@ export const FullViewButton = styled.button`
   background: #000;
   color: #fff;
 
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
-  line-height: 21px;
+  line-height: 16px;
   cursor: pointer;
 `;
 

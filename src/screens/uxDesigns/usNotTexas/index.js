@@ -61,6 +61,7 @@ import {
 import AnimatedImageContainer from "../../../components/animatedImageContainer";
 import { imageDetails } from "./imageDetails";
 
+const MotionEntryGate = motion(EntryGate);
 
 function JustNameless() {
     const [isEntryGateOpen, setIsEntryGateOpen] = useState(true);
@@ -71,54 +72,66 @@ function JustNameless() {
     }, []);
     return (
         <PDBg>
-            {isEntryGateOpen && (
-                <EntryGate role="dialog" aria-modal="true" aria-labelledby="entry-gate-text">
-                    <EntryGateContent>
-                        <EntryGateText id="entry-gate-text">
-                            Some parts of this page are protected. View a limited public version, or enter the password to see the full project.
-                        </EntryGateText>
-                        <EntryGateActions>
-                            <PublicViewButton type="button" onClick={() => setIsEntryGateOpen(false)}>
-                                <img
-                                    src={require('../../../assets/icons/seen.png')}
-                                    alt=""
-                                    width="24"
-                                    height="24"
-                                />
-                                <MediumTxt style={{ fontSize: '20px' }}>Public View</MediumTxt>
-                            </PublicViewButton>
-                            <EntryFullViewButton
-                                type="button"
-                                onClick={() => {
-                                    window.open('/projects/project_boolean_protected.pdf', '_blank', 'noopener,noreferrer');
-                                    setIsEntryGateOpen(false);
-                                }}
-                            >
-                                <img
-                                    src={require('../../../assets/icons/lock.png')}
-                                    alt=""
-                                    width="24"
-                                    height="24"
-                                />
-                                <MediumTxt style={{ fontSize: '20px' }}>Full View</MediumTxt>
-                            </EntryFullViewButton>
-                        </EntryGateActions>
-                    </EntryGateContent>
-                </EntryGate>
-            )}
+            <AnimatePresence>
+                {isEntryGateOpen && (
+                    <MotionEntryGate
+                        role="dialog"
+                        aria-modal="true"
+                        aria-labelledby="entry-gate-text"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.4, ease: 'easeInOut' }}
+                    >
+                        <EntryGateContent>
+                            <EntryGateText id="entry-gate-text">
+                                Some parts of this page are protected. View a limited public version, or enter the password to see the full project.
+                            </EntryGateText>
+                            <EntryGateActions>
+                                <PublicViewButton type="button" onClick={() => setIsEntryGateOpen(false)}>
+                                    <img
+                                        src={require('../../../assets/icons/seen.png')}
+                                        alt=""
+                                        width="24"
+                                        height="24"
+                                    />
+                                    <MediumTxt style={{ fontSize: '20px' }}>Public View</MediumTxt>
+                                </PublicViewButton>
+                                <EntryFullViewButton
+                                    type="button"
+                                    onClick={() => {
+                                        window.open('/projects/project_boolean_protected.pdf', '_blank', 'noopener,noreferrer');
+                                        setIsEntryGateOpen(false);
+                                    }}
+                                >
+                                    <img
+                                        src={require('../../../assets/icons/lock.png')}
+                                        alt=""
+                                        width="24"
+                                        height="24"
+                                    />
+                                    <MediumTxt style={{ fontSize: '20px' }}>Full View</MediumTxt>
+                                </EntryFullViewButton>
+                            </EntryGateActions>
+                        </EntryGateContent>
+                    </MotionEntryGate>
+                )}
+            </AnimatePresence>
             <AnimateSharedLayout type="crossfade">
                 <SingleProjectContainer>
-                    <FlexRowContainer data-aos="fade-up" className='pb-0'>
+                    <FlexRowContainer data-aos="fade-up" className='pb-0' style={{ alignItems: 'stretch' }}>
                         <ProjTitle style={{ color: COLORS.TEXT_COLOR[1050] }}>
                             Is United States, <br />Not Texas.
                         </ProjTitle>
                         <FlexThree className="top-cont">
                             <FlexCol style={{ padding: '0 4% 0 0' }}>
-                                <ProjDesc style={{ color: COLORS.TEXT_COLOR[1050] }}>
+                                <ProjDesc style={{ color: COLORS.TEXT_COLOR[1050]}}>
                                     <BoldTxt>
                                         Design boolean logic conditions (AND/OR/NOT) into the Advanced search filters of a people intelligence platform.
                                     </BoldTxt>
-                                    <br /><br /><br /><br /><br /><br />
+                                </ProjDesc>
+                                <ProjDesc style={{ color: COLORS.TEXT_COLOR[1050],  marginBottom:'0'}}>
+                                    <br /><br /><br /><br />
                                     <SemiBoldTxt>The problem:</SemiBoldTxt> Users couldn't search for "CEOs in the US but not Texas, who donated $20k to education but not to Harvard." AND/OR/NOT didn't extend across all available filters.
                                     <br /><br />
                                     <SemiBoldTxt>Why it mattered:</SemiBoldTxt> Four legacy brands already did this in some capacity, and we were migrating their users to Altrata. Parity was the condition of the migration, not a feature request. The cost of missing it was churn and lost renewals.
@@ -127,10 +140,10 @@ function JustNameless() {
                                 </ProjDesc>
                             </FlexCol>
 
-                            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100%' }}>
                                 <MediumImgTop
                                     src={require("../../../assets/images/ProjectTypes/usNotTexas/thumbnail.png")}
-                                    style={{ height: 'max-content', width: '16.25vw', paddingBottom: '2%' }}
+                                    style={{ height: 'max-content', width: '16.25vw'}}
                                 />
                                 <ProjDesc style={{ color: COLORS.TEXT_COLOR[1050] }}>
                                     <div className="project-detail-row">
@@ -243,20 +256,20 @@ function JustNameless() {
                         <FlexThree>
                             <ProjDesc style={{ display: 'flex', gap: '3px', alignItems: 'center', fontFamily: 'PM', color: COLORS.TEXT_COLOR[1100] }}>
                                 <span>Ticket</span>
-                                <span style={{ fontSize: '30px', paddingBottom: '1%' }}>&#8594;</span>
+                                <span style={{ fontSize: '30px', lineHeight: 1, alignSelf: 'center', transform: 'translateY(-0.2em)' }}>&#8594;</span>
                                 <span>Define the bigger scope</span>
-                                <span style={{ fontSize: '30px', paddingBottom: '1%' }}>&#8594;</span>
+                                <span style={{ fontSize: '30px', lineHeight: 1, alignSelf: 'center', transform: 'translateY(-0.2em)' }}>&#8594;</span>
                                 <span>Research</span>
-                                <span style={{ fontSize: '30px', paddingBottom: '1%' }}>&#8594;</span>
+                                <span style={{ fontSize: '30px', lineHeight: 1, alignSelf: 'center', transform: 'translateY(-0.2em)' }}>&#8594;</span>
                                 <span>Design</span>
-                                <span style={{ fontSize: '30px', paddingBottom: '1%' }}>&#8594;</span>
+                                <span style={{ fontSize: '30px', lineHeight: 1, alignSelf: 'center', transform: 'translateY(-0.2em)' }}>&#8594;</span>
                                 <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px' }}>
                                     <span style={{ color: COLORS.TEXT_COLOR[900] }}>Test concepts with users</span>
                                     <span className="pill-tag-green"><RegularTxt>faster with </RegularTxt><SBTxt>AI</SBTxt></span>
                                 </span>
-                                <span style={{ fontSize: '30px', paddingBottom: '1%' }}>&#8594;</span>
+                                <span style={{ fontSize: '30px', lineHeight: 1, alignSelf: 'center', transform: 'translateY(-0.2em)' }}>&#8594;</span>
                                 <span>Find out</span>
-                                <span style={{ fontSize: '30px', paddingBottom: '1%' }}>&#8594;</span>
+                                <span style={{ fontSize: '30px', lineHeight: 1, alignSelf: 'center', transform: 'translateY(-0.2em)' }}>&#8594;</span>
                                 <span>Build</span>
                             </ProjDesc>
                         </FlexThree>
@@ -290,17 +303,23 @@ function JustNameless() {
                                 </span>
                             </ProjDesc>
 
-                            <div style={{ width: "100%" }}>
-                                <AnimatedImageContainer
-                                    lid={1}
-                                    imgSrc={require(`../../../assets/images/ProjectTypes/usNotTexas/1.png`)}
-                                    setId={() => {
-                                        setSelectedId(1);
-                                        setSelectedText(imageDetails[0].desc);
+                            <div
+                                style={{
+                                    width: '100%',
+                                    margin: 0,
+                                    padding: 0,
+                                }}
+                            >
+                                <img
+                                    src={require('../../../assets/images/ProjectTypes/usNotTexas/1.png')}
+                                    style={{
+                                        display: 'block',
+                                        width: '100%',
+                                        height: 'auto',
+                                        margin: '-10px',
+                                        padding: 0,
                                     }}
-                                    mediumImg={true}
-                                ></AnimatedImageContainer>
-
+                                />
                             </div>
                         </FlexTwo>
                         <FlexOne></FlexOne>
@@ -315,16 +334,81 @@ function JustNameless() {
                         <FlexThree>
 
 
-                            <div>
-                                <AnimatedImageContainer
-                                    lid={2}
-                                    imgSrc={require(`../../../assets/images/ProjectTypes/usNotTexas/2.png`)}
-                                    setId={() => {
-                                        setSelectedId(2);
-                                        setSelectedText(imageDetails[1].desc);
+                            <div
+                                style={{
+                                    display: 'grid',
+                                    gridTemplateColumns: '1fr 1fr 1fr',
+                                    columnGap: '10px',
+                                    rowGap: '10px',
+                                    alignItems: 'start',
+                                }}
+                            >
+                                <ProjDesc className="pb-0" style={{ margin: 0 }}>
+                                    Inline operators - one flat list, operator lives between rows
+                                </ProjDesc>
+                                <ProjDesc className="pb-0" style={{ margin: 0 }}>
+                                    Query groups - nested brackets, operator owned by the group
+                                </ProjDesc>
+                                <ProjDesc className="pb-0" style={{ margin: 0 }}>
+                                    Buckets - drag fields into must / any / exclude columns
+                                </ProjDesc>
+
+                                <div
+                                    style={{
+                                        width: '100%',
+                                        margin: 0,
+                                        padding: 0,
                                     }}
-                                    mediumImg={true}
-                                ></AnimatedImageContainer>
+                                >
+                                    <img
+                                        src={require('../../../assets/images/ProjectTypes/usNotTexas/2a.png')}
+                                        style={{
+                                            display: 'block',
+                                            width: '100%',
+                                            height: 'auto',
+                                            margin: '-10px',
+                                            padding: 0,
+                                        }}
+                                    />
+                                </div>
+
+                                <div
+                                    style={{
+                                        width: '100%',
+                                        margin: 0,
+                                        padding: 0,
+                                    }}
+                                >
+                                    <img
+                                        src={require('../../../assets/images/ProjectTypes/usNotTexas/2b.png')}
+                                        style={{
+                                            display: 'block',
+                                            width: '100%',
+                                            height: 'auto',
+                                            margin: '-10px',
+                                            padding: 0,
+                                        }}
+                                    />
+                                </div>
+
+                                <div
+                                    style={{
+                                        width: '100%',
+                                        margin: 0,
+                                        padding: 0,
+                                    }}
+                                >
+                                    <img
+                                        src={require('../../../assets/images/ProjectTypes/usNotTexas/2c.png')}
+                                        style={{
+                                            display: 'block',
+                                            width: '100%',
+                                            height: 'auto',
+                                            margin: '-10px',
+                                            padding: 0,
+                                        }}
+                                    />
+                                </div>
                             </div>
 
 
@@ -335,7 +419,7 @@ function JustNameless() {
                     </FlexRowContainer>
 
                     <FlexRowContainer
-                        className="pt-0 pb-0"
+                        className="pb-0"
                         data-aos="fade-up"
                         data-aos-delay="500"
                     >
@@ -425,7 +509,7 @@ function JustNameless() {
                                     />
                                 </div>
                             </div>
-                            
+
                         </FlexThree>
                     </FlexRowContainer>
 
@@ -517,10 +601,10 @@ function JustNameless() {
                     </FlexRowContainer>
 
                     <FlexRowContainer
-                        
+
                         data-aos="fade-up"
                         data-aos-delay="500"
-                        style={{paddingTop:'2%'}}
+                        style={{ paddingTop: '2%' }}
                     >
                         <ResearchCallout>
                             <ResearchCalloutIcon>
@@ -530,18 +614,18 @@ function JustNameless() {
                                 />
                             </ResearchCalloutIcon>
 
-                            <ResearchCalloutTitle style={{marginRight: '20%'}}>
+                            <ResearchCalloutTitle style={{ marginRight: '12%' }}>
                                 <MediumTxt>Speed as a research method.</MediumTxt>
                             </ResearchCalloutTitle>
 
-                            <ResearchCalloutBody style={{marginLeft: '10%'}}>
+                            <ResearchCalloutBody style={{ marginLeft: '10%' }}>
                                 <RegularTxt>Claude turned sketches into low-fi wireframes and interactive prototypes
-                                fast enough to test with evidence. That meant <SemiBoldTxt>28 participants across
-                                    3 rounds in 6 weeks</SemiBoldTxt>, clicking real interactions rather than static
-                                screens.</RegularTxt>
+                                    fast enough to test with evidence. That meant <SemiBoldTxt>28 participants across
+                                        3 rounds in 6 weeks</SemiBoldTxt>, clicking real interactions rather than static
+                                    screens.</RegularTxt>
                             </ResearchCalloutBody>
 
-                            <ResearchCalloutBody style={{marginLeft: '10%'}}>
+                            <ResearchCalloutBody style={{ marginLeft: '10%' }}>
                                 <RegularITxt>For a problem this abstract, that was the difference between opinion and evidence.</RegularITxt>
                             </ResearchCalloutBody>
                         </ResearchCallout>
@@ -557,7 +641,7 @@ function JustNameless() {
                             <SubTitleThree>Round 1</SubTitleThree>
                         </FlexOne>
                         <FlexThree>
-                            <ProjDesc className="pb-0" style={{marginBottom:'2%'}}>Testing returned a <SemiBoldTxt>tie.</SemiBoldTxt></ProjDesc>
+                            <ProjDesc className="pb-0" style={{ marginBottom: '2%' }}>Testing returned a <SemiBoldTxt>tie.</SemiBoldTxt></ProjDesc>
 
                             <div style={{
                                 display: 'grid',
@@ -568,12 +652,12 @@ function JustNameless() {
                                 <ProjDesc><SemiBoldTxt style={{ color: '#206dc0', fontSize: 'clamp(20px, 0.84vw, 28px)' }}>we love Concept A!  (50%)</SemiBoldTxt></ProjDesc>
                                 <ProjDesc><SemiBoldTxt style={{ color: '#0b7d4c', fontSize: 'clamp(20px, 0.84vw, 28px)' }}>we love Concept B!  (50%)</SemiBoldTxt></ProjDesc>
 
-                                <ProjDesc className="shantell-sans-font">“Rule builders are the new age filters now.” <span style={{ color: '#206dc0' }}>(Data Product Manager)</span></ProjDesc>
-                                <ProjDesc className="shantell-sans-font">“I like to see all the options available to me. That helps me make a decision.” <span style={{ color: '#0b7d4c' }}>(Developer)</span></ProjDesc>
-                                <ProjDesc className="shantell-sans-font">“I got something pretty complex in like a minute and a half, that’s very helpful.” <span style={{ color: '#206dc0' }}>(Account Manager)</span></ProjDesc>
-                                <ProjDesc className="shantell-sans-font">“I feel like it should just be baked in. It's just an extra step that I don't think I need to take.” <span style={{ color: '#0b7d4c' }}>(Senior Product Manager)</span></ProjDesc>
-                                <ProjDesc className="shantell-sans-font">“Having and/or idea on each filter makes it quite confusing for me. Whereas this makes it incredibly simple." <span style={{ color: '#206dc0' }}>(Product Director)</span></ProjDesc>
-                                <ProjDesc className="shantell-sans-font">“It opens a completely new UI for us to build a query, and it was not very intuitive for me.” <span style={{ color: '#0b7d4c' }}>(Product Manager)</span></ProjDesc>
+                                <ProjDesc className="shantell-sans-font">“Rule builders are the new age filters now.” <span style={{ color: '#206dc0', fontWeight: '100' }}>(Data Product Manager)</span></ProjDesc>
+                                <ProjDesc className="shantell-sans-font">“I like to see all the options available to me. That helps me make a decision.” <span style={{ color: '#0b7d4c', fontWeight: '100' }}>(Developer)</span></ProjDesc>
+                                <ProjDesc className="shantell-sans-font">“I got something pretty complex in like a minute and a half, that’s very helpful.” <span style={{ color: '#206dc0', fontWeight: '100' }}>(Account Manager)</span></ProjDesc>
+                                <ProjDesc className="shantell-sans-font">“I feel like it should just be baked in. It's just an extra step that I don't think I need to take.” <span style={{ color: '#0b7d4c', fontWeight: '100' }}>(Senior Product Manager)</span></ProjDesc>
+                                <ProjDesc className="shantell-sans-font">“Having and/or idea on each filter makes it quite confusing for me. Whereas this makes it incredibly simple." <span style={{ color: '#206dc0', fontWeight: '100' }}>(Product Director)</span></ProjDesc>
+                                <ProjDesc className="shantell-sans-font">“It opens a completely new UI for us to build a query, and it was not very intuitive for me.” <span style={{ color: '#0b7d4c', fontWeight: '100' }}>(Product Manager)</span></ProjDesc>
 
 
                             </div>
@@ -618,7 +702,7 @@ function JustNameless() {
                         className="pb-0"
                         data-aos="fade-up"
                         data-aos-delay="500"
-                        style={{paddingTop:'1%'}}
+                        style={{ paddingTop: '1%' }}
                     >
                         <FlexOne></FlexOne>
                         <FlexThree className="right-aligned-content">
@@ -699,7 +783,7 @@ function JustNameless() {
                                     <div style={{ fontSize: 'clamp(14px, 0.84vw, 24px)' }}>week</div>
                                 </div>
                             </div>
-                            
+
                             <div style={{ textAlign: 'center', marginTop: '20px', fontSize: 'clamp(14px, 0.84vw, 24px)' }}>
                                 <span className="pill-tag-green" style={{ display: 'inline-block' }}>
                                     with interactive prototypes, built with <SBTxt>Claude AI</SBTxt>
@@ -716,7 +800,7 @@ function JustNameless() {
                         <FlexOne></FlexOne>
                         <FlexTwo>
                             <ProjDesc>
-                                <br/>
+                                <br />
                                 Round 2 gave us a lot of insight, alongside a pattern of
                                 bias. Close as they were to clients, their read was
                                 still secondhand.
@@ -755,90 +839,80 @@ function JustNameless() {
                     >
                         <FlexOne />
 
-                        <FlexThree className="right-aligned-content">
-                            <div
+                        <FlexThree className="left-aligned-content">
+                            <HighlightCard
+                                className="color-1"
                                 style={{
-                                    display: 'grid',
-                                    gridTemplateColumns: '6.8fr 3.2fr',
-                                    gridTemplateRows: 'auto auto',
-                                    width: '100%',
-                                    marginLeft: 'auto',
-                                    columnGap: '15px',
-                                    alignItems: 'start',
+                                    width: '60%',
+                                    marginBottom: '12px',
                                 }}
                             >
-                                {/* LEFT: card + image */}
-                                <div
-                                    style={{
-                                        gridColumn: '1',
-                                        gridRow: '1',
-                                        display: 'flex',
-                                        flexDirection: 'column',
-                                        height: '100%',
-                                        alignItems: 'flex-end'
-                                    }}
-                                >
-                                    <HighlightCard
-                                        className="color-1"
+                                <div className="grain" />
+
+                                <h3>Key highlight & what AI couldn't see.</h3>
+
+                                <p>
+                                    Five of eight participants, all experienced at training clients,
+                                    first tried to type their <SemiBoldTxt>whole query into a single keyword</SemiBoldTxt>
+                                    {' '}field using parentheses, quotation marks and AND/OR/NOT directly.
+                                    Muscle memory, acted out silently. No transcript captures that. So I
+                                    directed the team to run a <SemiBoldTxt>manual pass on interactions,
+                                        facial reactions, and physical movement</SemiBoldTxt> toward the screen.
+                                </p>
+                            </HighlightCard>
+                        </FlexThree>
+                    </FlexRowContainer>
+
+                    <FlexRowContainer
+                        className="pt-0 pb-0"
+                        data-aos="fade-up"
+                        data-aos-delay="500"
+                    >
+                        <FlexOne></FlexOne>
+                        <FlexThree className="left-aligned-content">
+                            <div
+                                style={{
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    alignItems: 'flex-end',
+                                    width: '100%',
+                                    rowGap: '10px',
+                                }}
+                            >
+                                <div style={{ width: '80%' }}>
+                                    <img
+                                        src={require('../../../assets/images/ProjectTypes/usNotTexas/12.png')}
                                         style={{
+                                            display: 'block',
                                             width: '100%',
+                                            height: 'auto',
                                         }}
-                                    >
-                                        <div className="grain" />
-
-                                        <h3>Key highlight & what AI couldn't see.</h3>
-
-                                        <p>
-                                            Five of eight participants, all experienced at training clients,
-                                            first tried to type their <SemiBoldTxt>whole query into a single keyword</SemiBoldTxt>
-                                            {' '}field using parentheses, quotation marks and AND/OR/NOT directly.
-                                            Muscle memory, acted out silently. No transcript captures that. So I
-                                            directed the team to run a <SemiBoldTxt>manual pass on interactions,
-                                                facial reactions, and physical movement</SemiBoldTxt> toward the screen.
-                                        </p>
-                                    </HighlightCard>
+                                    />
 
                                     <img
                                         src={require('../../../assets/images/ProjectTypes/usNotTexas/11.png')}
                                         style={{
                                             display: 'block',
-                                            width: '65%',
+                                            width: '100%',
                                             height: 'auto',
-                                            // marginTop: 'auto',
-                                            marginRight: '-1.5%',
+                                            marginTop: '10px',
+                                            padding: '0 1% 0 1%'
                                         }}
                                     />
-                                </div>
 
-                                {/* RIGHT IMAGE */}
-                                <img
-                                    src={require('../../../assets/images/ProjectTypes/usNotTexas/12.png')}
-                                    style={{
-                                        gridColumn: '2',
-                                        gridRow: '1',
-                                        display: 'block',
-                                        width: '100%',
-                                        height: '100%',
-                                        // paddingTop: '5px'
-                                    }}
-                                />
-
-                                {/* CAPTION */}
-                                <div
-                                    style={{
-                                        gridColumn: '1',
-                                        gridRow: '2',
-                                        width: '63%',
-                                        marginTop: '6px',
-                                        marginLeft: 'auto',
-                                        textAlign: 'center',
-                                        fontFamily: '"PR"',
-                                        fontSize: 'clamp(12px, 0.7vw, 16px)',
-                                        lineHeight: '1.2',
-                                    }}
-                                >
-                                    Director of Client Success leading in. The kind of signal no
-                                    transcript captures.
+                                    <div
+                                        style={{
+                                            marginTop: '6px',
+                                            width: '100%',
+                                            textAlign: 'center',
+                                            fontFamily: '"PR"',
+                                            fontSize: 'clamp(12px, 0.7vw, 16px)',
+                                            lineHeight: '1.2',
+                                        }}
+                                    >
+                                        Director of Client Success leading in. The kind of signal no
+                                        transcript captures.
+                                    </div>
                                 </div>
                             </div>
                         </FlexThree>
@@ -851,7 +925,7 @@ function JustNameless() {
                     >
                         <FlexOne />
                         <FlexThree>
-                            <HighlightCard className="color-2" style={{marginBottom: '12px'}}>
+                            <HighlightCard className="color-2" style={{ marginBottom: '12px' }}>
                                 <div className="grain" />
                                 <h3>Insights that fed into the design.</h3>
                                 <ul>
@@ -863,7 +937,7 @@ function JustNameless() {
                                 </ul>
 
 
-                                <span className="pill-tag-brown" style={{ display: 'inline-block', color: '#f5f5f5', fontSize: 'clamp(14px, 0.75vw, 16px)', right:'-225px', top:'50%'}}><SBTxt>Sharpened both concepts considerably.</SBTxt></span>
+                                <span className="pill-tag-brown" style={{ display: 'inline-block', color: '#f5f5f5', fontSize: 'clamp(14px, 0.75vw, 16px)', right: '-225px', top: '75%' }}><SBTxt>Sharpened both concepts considerably.</SBTxt></span>
 
                             </HighlightCard>
 
@@ -919,11 +993,11 @@ function JustNameless() {
                                     />
                                 </div>
 
-                                <ProjDesc style={{marginLeft:'1%'}}>
+                                <ProjDesc style={{ marginLeft: '1%' }}>
                                     Concept A, allowing search by values while adding conditions.
                                 </ProjDesc>
 
-                                <ProjDesc style={{marginLeft:'1%'}}>
+                                <ProjDesc style={{ marginLeft: '1%' }}>
                                     Concept A, extending the search summary export into sharing an ongoing
                                     search with teammates.
                                 </ProjDesc>
@@ -942,7 +1016,7 @@ function JustNameless() {
                             <span className="pill-tag-red" style={{ marginTop: '-8px' }}><SBTxt>but...</SBTxt></span>
 
 
-                            <HighlightCard2 style={{ width: '60%' }}>
+                            <HighlightCard2 style={{ width: '68%' }}>
                                 <div className="grain" />
                                 <h3>Growing pattern.</h3>
 
@@ -979,10 +1053,10 @@ function JustNameless() {
                         <FlexOne></FlexOne>
                         <FlexThree className="left-aligned-content">
 
-                            <span className="pill-tag-red" style={{ marginTop: '-8px' }}><SBTxt>but...</SBTxt></span>
+                            <span className="pill-tag-red" style={{ marginTop: '-8px' }}><SBTxt>and...</SBTxt></span>
 
 
-                            <HighlightCard2 style={{ width: '80%' }}>
+                            <HighlightCard2 style={{ width: '68%' }}>
                                 <div className="grain" />
                                 <h3>What should be improved.</h3>
 
@@ -1016,12 +1090,12 @@ function JustNameless() {
                         </FlexOne>
                         <FlexTwo>
                             <ProjDesc>
-                                To <SemiBoldTxt>tackle concept bias, I proposed an A/B split</SemiBoldTxt>
+                                To <SemiBoldTxt>tackle concept bias, I proposed an A/B split </SemiBoldTxt>
                                 for round 3, tracking discoverability, onboarding and
                                 feature adoption unaided rather than hand-held.
                                 <br />
                                 In my experience across enterprise products,
-                                <SemiBoldTxt>client time is the scarcest resource.</SemiBoldTxt>
+                                <SemiBoldTxt> client time is the scarcest resource.</SemiBoldTxt>
                                 What comes back from commercial is consistently
                                 "clients are busy," "we can't bother them now,"
                                 "show them the final version." Round 3 took Two
@@ -1076,7 +1150,7 @@ function JustNameless() {
                                     <div style={{ fontSize: 'clamp(14px, 0.84vw, 24px)' }}>weeks</div>
                                 </div>
                             </div>
-                            <div style={{ textAlign: 'center', marginTop: '20px', fontSize: 'clamp(14px, 0.84vw, 24px)'}}>
+                            <div style={{ textAlign: 'center', marginTop: '20px', fontSize: 'clamp(14px, 0.84vw, 24px)' }}>
                                 <span className="pill-tag-green" style={{ display: 'inline-block' }}>
                                     with interactive prototypes, built with <SBTxt>Claude AI</SBTxt>
                                 </span>
@@ -1108,7 +1182,7 @@ function JustNameless() {
                                     }}
                                 />
 
-                                <ProjDesc style={{paddingLeft:'1%'}}>
+                                <ProjDesc style={{ paddingLeft: '1%' }}>
                                     Concept A, extending the search summary export into sharing an ongoing
                                     search with teammates.
                                 </ProjDesc>
@@ -1173,8 +1247,8 @@ function JustNameless() {
                                     <img
                                         src={require('../../../assets/icons/lock.png')}
                                         alt=""
-                                        width="24"
-                                        height="24"
+                                        width="19"
+                                        height="19"
                                     />
                                     <RegularTxt>Full View</RegularTxt>
                                 </FullViewButton>
