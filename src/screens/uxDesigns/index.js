@@ -57,11 +57,17 @@ function UXDesign() {
                   href={`${process.env.PUBLIC_URL}${item.pdf}`}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={`Open ${item.title} project PDF`}
                 >
                   {card}
                 </a>
               ) : item.to ? (
-                <Link to={`/user-experience-design/${item.to}`}>{card}</Link>
+                <Link
+                  to={`/user-experience-design/${item.to}`}
+                  aria-label={`View ${item.title} project`}
+                >
+                  {card}
+                </Link>
               ) : (
                 <React.Fragment>{card}</React.Fragment>
               )}

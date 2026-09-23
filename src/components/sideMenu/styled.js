@@ -125,7 +125,7 @@ export const PEBI = styled.span`
 `;
 
 
-export const SideBottomImg = styled.img`
+export const SideBottomImg = styled.img.attrs({ alt: "Portfolio section" })`
   width: 5.45vw;
   object-fit: scale-down;
   margin-bottom: 45px;

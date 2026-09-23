@@ -22,9 +22,17 @@ function Main() {
   return (
     <BrowserRouter>
       <AnalyticsTracker />
+      <a className="skip-link" href="#main-content">
+        Skip to main content
+      </a>
       <MainBg>
         <SideMenu />
-        <ContentContainer>
+        <ContentContainer
+          as="main"
+          id="main-content"
+          tabIndex="-1"
+          aria-label="Portfolio content"
+        >
           <MainRoute />
         </ContentContainer>
       </MainBg>

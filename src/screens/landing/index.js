@@ -69,6 +69,7 @@ function Landing(props) {
           <Link
             className="menu-two icon-link"
             to="/user-experience-design"
+            aria-label="Explore user experience design projects"
             onMouseEnter={() => {
               setcurrentGirlIcon(true);
             }}
@@ -79,6 +80,7 @@ function Landing(props) {
           <GirlImg
             className="menu-two"
             src={currentGirlIcon ? GIRL_ICONS[5] : GIRL_ICONS[imgIndex]}
+            alt="User experience design"
           />
           <motion.div
             className="menu-two-txt"
@@ -102,6 +104,7 @@ function Landing(props) {
           <Link
             to="/performative-design"
             className="menu-one icon-link face-icon"
+            aria-label="Explore performative design projects"
             onMouseEnter={() => {
               setcurrentFaceIcon(true);
             }}
@@ -112,6 +115,7 @@ function Landing(props) {
           <MenuImg
             className="menu-one"
             src={currentFaceIcon ? FACE_ICONS[5] : FACE_ICONS[imgIndex]}
+            alt="Performative design"
           />
 
           <motion.div
@@ -154,6 +158,7 @@ function Landing(props) {
             target="_blank"
             rel="noopener noreferrer"
             className="secrow-link menu-three icon-link cv-icon"
+            aria-label="Open Varsha Elango's resume"
             onMouseEnter={() => {
               setcurrentStarIcon(true);
             }}
@@ -164,6 +169,7 @@ function Landing(props) {
             <StarImg
               className="menu-three"
               src={currentStarIcon ? STAR_ICONS[5] : STAR_ICONS[imgIndex]}
+              alt="Varsha Elango's resume"
             />
           </a>
 
@@ -189,6 +195,7 @@ function Landing(props) {
           <Link
             to="/connect"
             className="connect-link menu-four icon-link mail-icon"
+            aria-label="Contact Varsha Elango"
             onMouseEnter={() => {
               setcurrentMailIcon(true);
             }}
@@ -199,6 +206,7 @@ function Landing(props) {
           <MailImg
             className="menu-four"
             src={currentMailIcon ? MAIL_ICONS[5] : MAIL_ICONS[imgIndex]}
+            alt="Contact Varsha Elango"
           />
           <motion.div
             className="menu-four-txt"

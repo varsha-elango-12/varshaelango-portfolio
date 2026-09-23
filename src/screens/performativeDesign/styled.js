@@ -248,7 +248,7 @@ export const FlexThree = styled.div`
 }
 `;
 
-export const MediumImg = styled.img`
+export const MediumImg = styled.img.attrs({ alt: "Project image" })`
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -259,7 +259,7 @@ export const MediumImg = styled.img`
     transform: scale(1.05);
   }
 `;
-export const MediumImgTop = styled.img`
+export const MediumImgTop = styled.img.attrs({ alt: "Project image" })`
   width: 18.5vw;
   height: 50%;
   // transform: scale(1);
@@ -280,7 +280,7 @@ export const SubDesc = styled(ProjDesc)`
   @media (max-width: 1024px) {
   }
 `;
-export const ListImg = styled.img`
+export const ListImg = styled.img.attrs({ alt: "Project image" })`
   height: 26vh;
   width:100%;
   object-fit:cover;
@@ -455,7 +455,7 @@ export const ImgContainerTwo = styled.div`
     }
   }
 `;
-export const ImgContainerTwoImg = styled.img`
+export const ImgContainerTwoImg = styled.img.attrs({ alt: "Project image" })`
   height: 43vh;
   width: 100%;
 

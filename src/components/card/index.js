@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import {
   CardContainer,
   CardDesc,
@@ -23,7 +22,7 @@ function Card(props) {
       `}
     >
       <CardImgCont>
-        <CardImg src={props.imgSrc} />
+        <CardImg src={props.imgSrc} alt={props.title} />
       </CardImgCont>
       <CardTitleRow>
         <CardTitle>{props.title}</CardTitle>

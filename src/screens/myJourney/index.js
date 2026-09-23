@@ -28,6 +28,7 @@ function MyJourney() {
           <a
             target="_blank"
             href="https://www.arts.ac.uk/colleges/london-college-of-communication"
+            rel="noopener noreferrer"
           >
             <BoldTxt>London college of Communication, </BoldTxt>
             <br />
@@ -58,7 +59,7 @@ function MyJourney() {
           <BoldTxt>UI/UX Designer</BoldTxt>
         </p>
         <p>
-          <a target="_blank" href="https://ramboll.com/">
+          <a target="_blank" rel="noopener noreferrer" href="https://ramboll.com/">
             <BoldTxt>Ramboll Pvt Ltd,</BoldTxt>
             <br />
             Chennai, India
@@ -85,7 +86,7 @@ function MyJourney() {
           <BoldTxt>UI/UX Designer</BoldTxt>
         </p>
         <p>
-          <a target="_blank" href="https://www.quaticstech.com/">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.quaticstech.com/">
             <BoldTxt>Quatics Tech Pvt Ltd,</BoldTxt>
             <br />
             Chennai, India
@@ -118,7 +119,7 @@ function MyJourney() {
           <BoldTxt>Product designer, Final Project</BoldTxt>
         </p>
         <p>
-          <a target="_blank" href="https://www.wallistry.com/">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.wallistry.com/">
             <BoldTxt>Wallistry, </BoldTxt>
             <br />
             Chennai, India
@@ -143,7 +144,7 @@ function MyJourney() {
           <BoldTxt>Product design Intern</BoldTxt>
         </p>
         <p>
-          <a target="_blank" href="https://www.wallistry.com/">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.wallistry.com/">
             <BoldTxt>Wallistry, </BoldTxt>
             <br />
             Chennai, India
@@ -169,7 +170,7 @@ function MyJourney() {
           <BoldTxt>Bachelor of Industrial Design</BoldTxt>
         </p>
         <p>
-          <a target="_blank" href="https://djad.in/">
+          <a target="_blank" rel="noopener noreferrer" href="https://djad.in/">
             <BoldTxt>DJ Academy of Design,</BoldTxt> <br />
             Coimbatore, India
           </a>

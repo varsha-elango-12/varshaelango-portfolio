@@ -21,12 +21,17 @@ function AnimatedImageContainer(props) {
         }}
       >
         {props.mediumImg && (
-          <MediumImg src={props.imgSrc} onClick={props.setId} />
+          <MediumImg
+            src={props.imgSrc}
+            alt={props.alt || props.subTxt || "Project image"}
+            onClick={props.setId}
+          />
         )}
         {props.listImg && (
           <ListImg
             className={props.imgCls}
             src={props.imgSrc}
+            alt={props.alt || props.subTxt || "Project image"}
             onClick={props.setId}
           />
         )}

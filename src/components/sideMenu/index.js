@@ -66,11 +66,11 @@ function SideMenu() {
     });
   };
   return (
-    <SideNavMain>
+    <SideNavMain as="nav" aria-label="Primary navigation">
       <SideNavContainer>
         <SideCenterContainer>
-          <Link to="/" style={{ textAlign: "center" }}>
-            <SideLogo src={require("../../assets/images/logo.png")} />
+          <Link to="/" style={{ textAlign: "center" }} aria-label="Go to Varsha Elango's portfolio home">
+            <SideLogo src={require("../../assets/images/logo.png")} alt="Varsha Elango" />
           </Link>
         </SideCenterContainer>
 
@@ -96,13 +96,14 @@ function SideMenu() {
             </SideBottomText>
           )}
           {locArr[1] === "performative-design" && (
-            <Link to="/performative-design">
+            <Link to="/performative-design" aria-label="View performative design projects">
               <SideBottomImg
                 className="hcl"
                 data-aos="fade-up"
                 data-aos-duration="800"
                 data-aos-anchor-placement="top-bottom"
                 src={FACE_ICONS[5]}
+                alt="Performative design"
               />
             </Link>
           )}
@@ -146,13 +147,14 @@ function SideMenu() {
 
           {/* ux design */}
           {locArr[1] === "user-experience-design" && (
-            <Link to="/user-experience-design">
+            <Link to="/user-experience-design" aria-label="View user experience design projects">
               <SideBottomImg
                 className="grl-img hcl connect-img"
                 data-aos="fade-up"
                 data-aos-duration="800"
                 data-aos-anchor-placement="top-bottom"
                 src={GIRL_ICONS[5]}
+                alt="User experience design"
               />
             </Link>
           )}
@@ -205,6 +207,7 @@ function SideMenu() {
               data-aos-duration="800"
               data-aos-anchor-placement="top-bottom"
               src={STAR_ICONS[5]}
+              alt="My journey"
             />
           )}
           {locArr.length === 2 && locArr[1] === "my-journey" && (
@@ -226,6 +229,7 @@ function SideMenu() {
               data-aos-duration="800"
               data-aos-anchor-placement="top-bottom"
               src={require("../../assets/images/active-mail.png")}
+              alt="Contact"
             />
           )}
           {locArr.length === 2 && locArr[1] === "connect" && (

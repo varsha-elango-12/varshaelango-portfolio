@@ -318,6 +318,7 @@ function JustNameless() {
                             >
                                 <img
                                     src={require('../../../assets/images/ProjectTypes/usNotTexas/1.png')}
+                                    alt="Boolean search concept exploration"
                                     style={{
                                         display: 'block',
                                         width: '100%',
@@ -368,6 +369,7 @@ function JustNameless() {
                                 >
                                     <img
                                         src={require('../../../assets/images/ProjectTypes/usNotTexas/2a.png')}
+                                        alt="Inline operators concept"
                                         style={{
                                             display: 'block',
                                             width: '100%',
@@ -387,6 +389,7 @@ function JustNameless() {
                                 >
                                     <img
                                         src={require('../../../assets/images/ProjectTypes/usNotTexas/2b.png')}
+                                        alt="Query groups concept"
                                         style={{
                                             display: 'block',
                                             width: '100%',
@@ -406,6 +409,7 @@ function JustNameless() {
                                 >
                                     <img
                                         src={require('../../../assets/images/ProjectTypes/usNotTexas/2c.png')}
+                                        alt="Buckets concept"
                                         style={{
                                             display: 'block',
                                             width: '100%',
@@ -486,6 +490,7 @@ function JustNameless() {
                                 >
                                     <img
                                         src={require('../../../assets/images/ProjectTypes/usNotTexas/3.png')}
+                                        alt="Concept B filter interface"
                                         style={{
                                             display: 'block',
                                             width: '100%',
@@ -505,6 +510,7 @@ function JustNameless() {
                                 >
                                     <img
                                         src={require('../../../assets/images/ProjectTypes/usNotTexas/4.png')}
+                                        alt="Concept B interaction detail"
                                         style={{
                                             display: 'block',
                                             width: '100%',
@@ -685,14 +691,14 @@ function JustNameless() {
                                 <h3>Insights that fed into the design.</h3>
                                 <ul>
                                     <li>The live query statement reassured people their filter selections had registered.</li>
-                                    <img src={require('../../../assets/images/ProjectTypes/usNotTexas/6.png')} />
+                                    <img src={require('../../../assets/images/ProjectTypes/usNotTexas/6.png')} alt="Search interface detail" />
                                     <li>Colour contrast between "is" and "is not" also reassured selection.</li>
-                                    <img className="width-45" src={require('../../../assets/images/ProjectTypes/usNotTexas/7.png')} />
+                                    <img className="width-45" src={require('../../../assets/images/ProjectTypes/usNotTexas/7.png')} alt="Search interface variation" />
                                     <li>Group multiple values of the same field together rather than stacking them separately. The UI automatically combine values of duplicate fields.</li>
                                     <li>Reduce the burden of knowing what sits behind each filter when the list isn't laid out. Searchable filters.</li>
-                                    <img className="width-45" src={require('../../../assets/images/ProjectTypes/usNotTexas/8.png')} />
+                                    <img className="width-45" src={require('../../../assets/images/ProjectTypes/usNotTexas/8.png')} alt="Search interface variation" />
                                     <li>Provide undo for an accidentally removed rule.</li>
-                                    <img className="width-45" src={require('../../../assets/images/ProjectTypes/usNotTexas/9.png')} />
+                                    <img className="width-45" src={require('../../../assets/images/ProjectTypes/usNotTexas/9.png')} alt="Search interface variation" />
 
                                 </ul>
 
@@ -827,6 +833,7 @@ function JustNameless() {
                             <div style={{ width: '100%', maxWidth: '100%', overflow: 'hidden' }}>
                                 <img
                                     src={require('../../../assets/images/ProjectTypes/usNotTexas/10.png')}
+                                    alt="Boolean search testing material"
                                     style={{
                                         display: 'block',
                                         width: '100%',
@@ -888,6 +895,7 @@ function JustNameless() {
                                 <div style={{ width: '80%' }}>
                                     <img
                                         src={require('../../../assets/images/ProjectTypes/usNotTexas/12.png')}
+                                        alt="User testing observation"
                                         style={{
                                             display: 'block',
                                             width: '100%',
@@ -897,6 +905,7 @@ function JustNameless() {
 
                                     <img
                                         src={require('../../../assets/images/ProjectTypes/usNotTexas/11.png')}
+                                        alt="User testing interface"
                                         style={{
                                             display: 'block',
                                             width: '100%',
@@ -973,6 +982,7 @@ function JustNameless() {
                                 >
                                     <img
                                         src={require('../../../assets/images/ProjectTypes/usNotTexas/13.png')}
+                                        alt="Concept comparison"
                                         style={{
                                             display: 'block',
                                             width: '100%',
@@ -990,6 +1000,7 @@ function JustNameless() {
                                 >
                                     <img
                                         src={require('../../../assets/images/ProjectTypes/usNotTexas/14.png')}
+                                        alt="Concept comparison detail"
                                         style={{
                                             display: 'block',
                                             width: '100%',
@@ -1184,6 +1195,7 @@ function JustNameless() {
                                 </ProjDesc>
                                 <img
                                     src={require('../../../assets/images/ProjectTypes/usNotTexas/14a.png')}
+                                    alt="Final concept interface details"
                                     style={{
                                         display: 'block',
                                         width: '100%',

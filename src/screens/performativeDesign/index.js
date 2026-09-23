@@ -11,7 +11,11 @@ function PerformativeDesign() {
       <ProjectsContainer>
         {PROJECTS["performative-design"].map((item, index) => {
           return (
-            <Link to={`/performative-design/${item.to}`} key={index}>
+            <Link
+              to={`/performative-design/${item.to}`}
+              key={index}
+              aria-label={`View ${item.title} project`}
+            >
               <div
                 data-aos="fade-up"
                 data-aos-delay={index * 200}

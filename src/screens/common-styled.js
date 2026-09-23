@@ -27,7 +27,7 @@ export const VideoFrame = styled.iframe`
   }
 `;
 
-export const RightCaret = styled.img`
+export const RightCaret = styled.img.attrs({ alt: "Next image" })`
   width: 16px;
   cursor: pointer;
   object-fit: contain;
