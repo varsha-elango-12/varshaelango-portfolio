@@ -121,6 +121,9 @@ export const ProjDesc = styled.p`
   &.p-0 {
     padding: 0;
   }
+    &.mb-0 {
+    margin-bottom: 0;
+  }
 `;
 export const ProjDescSub = styled(ProjDesc)`
   margin-top: 10px;

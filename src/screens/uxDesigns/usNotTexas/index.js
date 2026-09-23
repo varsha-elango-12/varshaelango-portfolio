@@ -214,7 +214,7 @@ function JustNameless() {
 
                                 <span style={{ background: '#fff', padding: '8px', borderRadius: '2px' }}>
                                     2. Boolean logic in Location filters{' '}
-                                    <SBTxt style={{ color: COLORS.TEXT_COLOR[900] }}>+ all other filters</SBTxt>
+                                    <SBTxt style={{ color: COLORS.TEXT_COLOR[925] }}>+ all other filters</SBTxt>
                                 </span>
                             </ProjDesc>
 
@@ -259,22 +259,22 @@ function JustNameless() {
                     >
                         <FlexOne> </FlexOne>
                         <FlexThree>
-                            <ProjDesc style={{ display: 'flex', gap: '3px', alignItems: 'center', fontFamily: 'PM', color: COLORS.TEXT_COLOR[1100] }}>
+                            <ProjDesc style={{ display: 'flex', gap: '3px', alignItems: 'center', textAlign:'center', fontFamily: 'PM', color: COLORS.TEXT_COLOR[1100] }}>
                                 <span>Ticket</span>
-                                <span style={{ fontSize: '30px', lineHeight: 1, alignSelf: 'center', transform: 'translateY(-0.2em)' }}>&#8594;</span>
+                                <span style={{ fontSize: '35px', lineHeight: 1, alignSelf: 'center', transform: 'translateY(-5px)' }}>→</span>
                                 <span>Define the bigger scope</span>
-                                <span style={{ fontSize: '30px', lineHeight: 1, alignSelf: 'center', transform: 'translateY(-0.2em)' }}>&#8594;</span>
+                                <span style={{ fontSize: '35px', lineHeight: 1, alignSelf: 'center', transform: 'translateY(-5px)' }}>→</span>
                                 <span>Research</span>
-                                <span style={{ fontSize: '30px', lineHeight: 1, alignSelf: 'center', transform: 'translateY(-0.2em)' }}>&#8594;</span>
+                                <span style={{ fontSize: '35px', lineHeight: 1, alignSelf: 'center', transform: 'translateY(-5px)' }}>→</span>
                                 <span>Design</span>
-                                <span style={{ fontSize: '30px', lineHeight: 1, alignSelf: 'center', transform: 'translateY(-0.2em)' }}>&#8594;</span>
+                                <span style={{ fontSize: '35px', lineHeight: 1, alignSelf: 'center', transform: 'translateY(-5px)' }}>→</span>
                                 <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px' }}>
-                                    <span style={{ color: COLORS.TEXT_COLOR[900] }}>Test concepts with users</span>
+                                    <span style={{ color: COLORS.TEXT_COLOR[925] }}>Test concepts with users</span>
                                     <span className="pill-tag-green"><RegularTxt>faster with </RegularTxt><SBTxt>AI</SBTxt></span>
                                 </span>
-                                <span style={{ fontSize: '30px', lineHeight: 1, alignSelf: 'center', transform: 'translateY(-0.2em)' }}>&#8594;</span>
+                                <span style={{ fontSize: '35px', lineHeight: 1, alignSelf: 'center', transform: 'translateY(-5px)' }}>→</span>
                                 <span>Find out</span>
-                                <span style={{ fontSize: '30px', lineHeight: 1, alignSelf: 'center', transform: 'translateY(-0.2em)' }}>&#8594;</span>
+                                <span style={{ fontSize: '35px', lineHeight: 1, alignSelf: 'center', transform: 'translateY(-5px)' }}>→</span>
                                 <span>Build</span>
                             </ProjDesc>
                         </FlexThree>
@@ -936,13 +936,13 @@ function JustNameless() {
                                 <ul>
                                     <li>On Concept A, most users searched by value rather than by field - <SemiBoldTxt>"CEO" rather than "Role title."</SemiBoldTxt> A mental model worth designing to.</li>
                                     <li>Make <SemiBoldTxt>keyword search boolean-capable in its own right, </SemiBoldTxt>since that's where people instinctively went first.</li>
-                                    <li>The <SemiBoldTxt>readable summary</SemiBoldTxt> can extend <SemiBoldTxt>into exports,</SemiBoldTxt> so gift officers and managers not using the platform still see the criteria.</li>
+                                    <li>The <SemiBoldTxt>readable summary</SemiBoldTxt> can extend <SemiBoldTxt>into exports,</SemiBoldTxt> so gift officers <br/>and managers not using the platform still see the criteria.</li>
                                     <li>A <SemiBoldTxt>clearer toggle</SemiBoldTxt> for what advanced logic will do.</li>
 
                                 </ul>
 
 
-                                <span className="pill-tag-brown" style={{ display: 'inline-block', color: '#f5f5f5', fontSize: 'clamp(14px, 0.75vw, 16px)', right: '-225px', top: '75%' }}><SBTxt>Sharpened both concepts considerably.</SBTxt></span>
+                                <span className="pill-tag-brown" style={{ display: 'inline-block', color: '#f5f5f5', fontSize: 'clamp(14px, 0.75vw, 16px)', right: '-225px', top: '75   %' }}><SBTxt>Sharpened both concepts considerably.</SBTxt></span>
 
                             </HighlightCard>
 
@@ -1169,34 +1169,35 @@ function JustNameless() {
                         data-aos-delay="500"
                     >
                         <FlexOne> </FlexOne>
-                        <FlexThree className="right-aligned-content">
+                        <FlexThree>
                             <div
                                 style={{
-                                    width: '85%',
+                                    width: '100%',
                                     display: 'flex',
                                     flexDirection: 'column',
                                     alignItems: 'flex-start',
                                 }}
                             >
+                                <ProjDesc className="mb-0">
+                                    <MediumTxt>Few key details on both the concepts to validate in round 3 testing. <br/>All data shown is screenshots below are synthetic.</MediumTxt>
+                                </ProjDesc>
                                 <img
-                                    src={require('../../../assets/images/ProjectTypes/usNotTexas/15.png')}
+                                    src={require('../../../assets/images/ProjectTypes/usNotTexas/14a.png')}
                                     style={{
                                         display: 'block',
                                         width: '100%',
                                         height: 'auto',
+                                        marginLeft: '-1%',
                                     }}
                                 />
 
-                                <ProjDesc style={{ paddingLeft: '1%' }}>
-                                    Concept A, extending the search summary export into sharing an ongoing
-                                    search with teammates.
-                                </ProjDesc>
+                                
                             </div>
                         </FlexThree>
                     </FlexRowContainer>
 
                     <FlexRowContainer
-                        className="pt-0 pb-0"
+                        className="pb-0"
                         data-aos="fade-up"
                         data-aos-delay="500"
                     >
