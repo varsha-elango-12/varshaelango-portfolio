@@ -28,7 +28,8 @@ import {
     SemiBoldTxt,
     SBTxt,
     MediumTxt,
-    LightITxt
+    LightITxt,
+    Arrow
 
 } from "../../performativeDesign/styled";
 
@@ -261,20 +262,20 @@ function JustNameless() {
                         <FlexThree>
                             <ProjDesc style={{ display: 'flex', gap: '3px', alignItems: 'center', textAlign:'center', fontFamily: 'PM', color: COLORS.TEXT_COLOR[1100] }}>
                                 <span>Ticket</span>
-                                <span style={{ fontSize: '35px', lineHeight: 1, alignSelf: 'center', transform: 'translateY(-5px)' }}>→</span>
+                                <Arrow/>
                                 <span>Define the bigger scope</span>
-                                <span style={{ fontSize: '35px', lineHeight: 1, alignSelf: 'center', transform: 'translateY(-5px)' }}>→</span>
+                                <Arrow />
                                 <span>Research</span>
-                                <span style={{ fontSize: '35px', lineHeight: 1, alignSelf: 'center', transform: 'translateY(-5px)' }}>→</span>
+                                <Arrow />
                                 <span>Design</span>
-                                <span style={{ fontSize: '35px', lineHeight: 1, alignSelf: 'center', transform: 'translateY(-5px)' }}>→</span>
+                                <Arrow />
                                 <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px' }}>
                                     <span style={{ color: COLORS.TEXT_COLOR[925] }}>Test concepts with users</span>
                                     <span className="pill-tag-green"><RegularTxt>faster with </RegularTxt><SBTxt>AI</SBTxt></span>
                                 </span>
-                                <span style={{ fontSize: '35px', lineHeight: 1, alignSelf: 'center', transform: 'translateY(-5px)' }}>→</span>
+                                <Arrow />
                                 <span>Find out</span>
-                                <span style={{ fontSize: '35px', lineHeight: 1, alignSelf: 'center', transform: 'translateY(-5px)' }}>→</span>
+                                <Arrow />
                                 <span>Build</span>
                             </ProjDesc>
                         </FlexThree>
