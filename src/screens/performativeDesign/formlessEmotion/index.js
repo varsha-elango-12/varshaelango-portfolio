@@ -107,7 +107,7 @@ function FormlessEmotion() {
   return (
     <PDBg>
       <SEO
-        title="The Formless Emotions — Performative Design by Varsha Elango"
+        title="The Formless Emotions - Performative Design by Varsha Elango"
         description="The Formless Emotions explores how stories of water can be communicated through performance, research, and material experience."
       />
       <AnimateSharedLayout type="crossfade">

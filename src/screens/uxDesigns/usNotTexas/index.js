@@ -76,7 +76,7 @@ function JustNameless() {
     return (
         <PDBg>
             <SEO
-                title="Is United States, Not Texas — Product Design Case Study"
+                title="Is United States, Not Texas - Product Design Case Study"
                 description="A product design case study by Varsha Elango at Altrata, designing boolean logic for advanced people intelligence search filters in London."
             />
             <AnimatePresence>
@@ -930,7 +930,7 @@ function JustNameless() {
                                             lineHeight: '1.2',
                                         }}
                                     >
-                                        Director of Client Success leading in. The kind of signal no
+                                        Director of Client Success leaning forward. The kind of signal no
                                         transcript captures.
                                     </div>
                                 </div>

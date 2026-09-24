@@ -47,7 +47,7 @@ function ReincarnationOfViolet() {
   return (
     <PDBg>
       <SEO
-        title="Reincarnation of Violet — Performative Design by Varsha Elango"
+        title="Reincarnation of Violet - Performative Design by Varsha Elango"
         description="Reincarnation of Violet is a mixed-reality performative design project about embodying and enacting the appearance of a digital avatar."
       />
       <AnimateSharedLayout type="crossfade">

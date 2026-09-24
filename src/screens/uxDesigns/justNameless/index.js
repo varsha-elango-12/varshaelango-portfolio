@@ -48,7 +48,7 @@ function JustNameless() {
   return (
     <PDBg>
       <SEO
-        title="Sharing Codes — UX Design Case Study by Varsha Elango"
+        title="Sharing Codes - UX Design Case Study by Varsha Elango"
         description="Sharing Codes is a UX design case study with IBM about unused digital transaction allowances, research, role-play, and a live public intervention."
       />
       <AnimateSharedLayout type="crossfade">
@@ -549,7 +549,7 @@ function JustNameless() {
               <ProjDesc>
                 We chose the graffiti QR concept. It was the one that could exist
                 underground and seed a counter-culture, and the only one buildable
-                in the time available — the website and geolocation concepts had
+                in the time available - the website and geolocation concepts had
                 technical requirements we couldn't meet in a week.
                 <br /><br />
                 We picked two subscriptions to work with: a popular UK coffee chain,
@@ -620,7 +620,7 @@ function JustNameless() {
                   })}
               </ImgContainer>
               <SubDesc>
-                2. We sprayed it at Leake Street, London — a legal graffiti tunnel,
+                2. We sprayed it at Leake Street, London - a legal graffiti tunnel,
                 heavily trafficked, close to the outlets we'd chosen. Red chalk spray,
                 easy to spot and easy to remove.
               </SubDesc>

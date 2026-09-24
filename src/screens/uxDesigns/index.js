@@ -24,7 +24,7 @@ function UXDesign() {
   return (
     <PDBg>
       <SEO
-        title="UX and Product Design Projects — Varsha Elango"
+        title="UX and Product Design Projects - Varsha Elango"
         description="UX and product design case studies by Varsha Elango, covering research, enterprise platforms, interaction design, product strategy, and prototyping in London."
       />
       <h1 className="visually-hidden">UX and Product Design Projects</h1>

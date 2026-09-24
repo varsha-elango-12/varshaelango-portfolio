@@ -39,7 +39,7 @@ function CanSkinStarveForATouch() {
   return (
     <PDBg>
       <SEO
-        title="Can Skin Starve for a Touch? — UX Design by Varsha Elango"
+        title="Can Skin Starve for a Touch? - UX Design by Varsha Elango"
         description="Can Skin Starve for a Touch? is a UX research and performative design project exploring the skin and world interface."
       />
       <AnimateSharedLayout type="crossfade">

@@ -10,7 +10,7 @@ function PerformativeDesign() {
   return (
     <PDBg>
       <SEO
-        title="Performative Design Projects — Varsha Elango"
+        title="Performative Design Projects - Varsha Elango"
         description="Performative design projects by Varsha Elango, combining UX research, theatre, embodiment, storytelling, and tangible interaction."
       />
       <h1 className="visually-hidden">Performative Design Projects</h1>
