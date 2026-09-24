@@ -11,6 +11,7 @@ import UXDesign from "../screens/uxDesigns";
 import JustNameless from "../screens/uxDesigns/justNameless";
 import YellowJuice from "../screens/uxDesigns/yellowJuice";
 import USNotTexas from "../screens/uxDesigns/usNotTexas";
+import WEScoreRedesign from "../screens/uxDesigns/weScoreRedesign";
 
 export default function MainRoute() {
   return (
@@ -32,6 +33,10 @@ export default function MainRoute() {
 
       {/* ux design */}
       <Route path="/user-experience-design" element={<UXDesign />} />
+      <Route
+        path="/user-experience-design/we-score-redesign"
+        element={<WEScoreRedesign />}
+      />
       <Route
         path="/user-experience-design/us-not-texas"
         element={<USNotTexas />}

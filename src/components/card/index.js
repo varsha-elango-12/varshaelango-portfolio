@@ -11,6 +11,7 @@ import {
   CardTitleIcon,
 } from "./styled";
 import "./styles.css";
+import { COLORS } from "../../assets/styles/constant";
 
 function Card(props) {
   return (
@@ -42,6 +43,13 @@ function Card(props) {
           {props.subdesc}
         </CardDescSB>
       )}
+      <div className="tag-container">
+        {props.tags?.map((tag, index) => (
+          <span className="pill-tag" key={index} style={{padding:'0 8px 0 8px', color:COLORS.TEXT_COLOR[1000]}}>
+            {tag}
+          </span>
+        ))}
+      </div>
     </CardContainer>
   );
 }
