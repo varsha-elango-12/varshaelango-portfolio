@@ -32,6 +32,7 @@ import {
 } from "../../common-styled";
 import AnimatedImageContainer from "../../../components/animatedImageContainer";
 import { imageDetails } from "./imageDetails";
+import SEO from "../../../components/seo";
 
 function FormlessEmotion() {
   const [selectedId, setSelectedId] = useState(null);
@@ -105,6 +106,10 @@ function FormlessEmotion() {
 
   return (
     <PDBg>
+      <SEO
+        title="The Formless Emotions — Performative Design by Varsha Elango"
+        description="The Formless Emotions explores how stories of water can be communicated through performance, research, and material experience."
+      />
       <AnimateSharedLayout type="crossfade">
         <SingleProjectContainer>
           <FlexRowContainer data-aos="fade-up">

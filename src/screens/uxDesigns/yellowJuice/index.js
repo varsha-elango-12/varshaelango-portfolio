@@ -34,6 +34,7 @@ import {
 } from "../../common-styled";
 import AnimatedImageContainer from "../../../components/animatedImageContainer";
 import { imageDetails } from "./imageDetails";
+import SEO from "../../../components/seo";
 
 function YellowJuice() {
   const [selectedId, setSelectedId] = useState(null);
@@ -44,6 +45,10 @@ function YellowJuice() {
   }, []);
   return (
     <PDBg>
+      <SEO
+        title="The Yellow Juice — UX Design Case Study by Varsha Elango"
+        description="The Yellow Juice is a UX and service design case study with Gumtree, designing a trusted digital and physical marketplace for human bodily fluids."
+      />
       <AnimateSharedLayout type="crossfade">
         <SingleProjectContainer>
           <FlexRowContainer data-aos="fade-up">

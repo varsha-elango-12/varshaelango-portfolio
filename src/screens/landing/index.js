@@ -19,6 +19,7 @@ import AnimatedTxt from "../../components/animatedTxt";
 import { MainMenuText } from "../../components/constant";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import SEO from "../../components/seo";
 
 function Landing(props) {
   const [imgIndex, setimgIndex] = useState(0);
@@ -63,7 +64,18 @@ function Landing(props) {
   //   console.log(MainMenuText.menuOne.text.split(""));
 
   return (
-    <LandingContainer>
+    <>
+      <SEO
+        title="Varsha Elango — Product & UX Designer in London"
+        description="Varsha Elango is a Product and UX Designer in London at Altrata, creating clear, scalable digital systems, research-led products, and performative design work."
+      />
+      <LandingContainer>
+        <section className="visually-hidden" aria-labelledby="landing-title">
+          <h1 id="landing-title">Varsha Elango — Product &amp; UX Designer in London</h1>
+          <p>
+            Product Designer at Altrata, with an MA in User Experience Design from UAL's London College of Communication. I design clear, scalable digital systems and explore storytelling, theatre, performance, and tangible artefacts.
+          </p>
+        </section>
       <LRowContainer>
         <ImgContainer className="menu-two-img">
           <Link
@@ -227,7 +239,8 @@ function Landing(props) {
           </motion.div>
         </ImgContainer>
       </LRowContainer>
-    </LandingContainer>
+      </LandingContainer>
+    </>
   );
 }
 

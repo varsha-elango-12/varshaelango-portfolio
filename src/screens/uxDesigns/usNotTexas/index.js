@@ -53,6 +53,7 @@ import {
 } from "./styled"
 import "../../performativeDesign/style.css";
 import { trackEvent } from "../../../analytics";
+import SEO from "../../../components/seo";
 import {
     LeftCaret,
     ModalText,
@@ -74,6 +75,10 @@ function JustNameless() {
     }, []);
     return (
         <PDBg>
+            <SEO
+                title="Is United States, Not Texas — Product Design Case Study"
+                description="A product design case study by Varsha Elango at Altrata, designing boolean logic for advanced people intelligence search filters in London."
+            />
             <AnimatePresence>
                 {isEntryGateOpen && (
                     <MotionEntryGate

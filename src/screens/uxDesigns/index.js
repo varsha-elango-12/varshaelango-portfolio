@@ -5,6 +5,7 @@ import { PDBg } from "../common-styled";
 import { PROJECTS } from "../const";
 import { ProjectsContainer } from "../performativeDesign/styled";
 import styled from "styled-components";
+import SEO from "../../components/seo";
 
 const ProjectSlot = styled.div`
   display: flex;
@@ -22,6 +23,11 @@ const ProjectSlot = styled.div`
 function UXDesign() {
   return (
     <PDBg>
+      <SEO
+        title="UX and Product Design Projects — Varsha Elango"
+        description="UX and product design case studies by Varsha Elango, covering research, enterprise platforms, interaction design, product strategy, and prototyping in London."
+      />
+      <h1 className="visually-hidden">UX and Product Design Projects</h1>
       <ProjectsContainer>
         {PROJECTS["user-experience-design"].map((item, index) => {
           const card = (

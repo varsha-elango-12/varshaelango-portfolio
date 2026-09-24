@@ -27,6 +27,7 @@ import "../style.css";
 import { LeftCaret, ModalText, PDBg, RightCaret } from "../../common-styled";
 import AnimatedImageContainer from "../../../components/animatedImageContainer";
 import { imageDetails } from "./imageDetails";
+import SEO from "../../../components/seo";
 
 function CanSkinStarveForATouch() {
   const [selectedId, setSelectedId] = useState(null);
@@ -37,6 +38,10 @@ function CanSkinStarveForATouch() {
 
   return (
     <PDBg>
+      <SEO
+        title="Can Skin Starve for a Touch? — UX Design by Varsha Elango"
+        description="Can Skin Starve for a Touch? is a UX research and performative design project exploring the skin and world interface."
+      />
       <AnimateSharedLayout type="crossfade">
         <SingleProjectContainer>
           <FlexRowContainer data-aos="fade-up">

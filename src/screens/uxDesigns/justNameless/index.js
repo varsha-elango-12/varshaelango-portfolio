@@ -36,6 +36,7 @@ import {
 import { ImgContCol, ImgContContainer } from "./styled";
 import AnimatedImageContainer from "../../../components/animatedImageContainer";
 import { imageDetails } from "./imageDetails";
+import SEO from "../../../components/seo";
 
 
 function JustNameless() {
@@ -46,6 +47,10 @@ function JustNameless() {
   }, []);
   return (
     <PDBg>
+      <SEO
+        title="Sharing Codes — UX Design Case Study by Varsha Elango"
+        description="Sharing Codes is a UX design case study with IBM about unused digital transaction allowances, research, role-play, and a live public intervention."
+      />
       <AnimateSharedLayout type="crossfade">
         <SingleProjectContainer>
           <FlexRowContainer data-aos="fade-up" className='pb-0' style={{ alignItems: 'stretch' }}>

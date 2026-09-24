@@ -34,6 +34,7 @@ import {
   VideoFrame,
 } from "../../common-styled";
 import { imageDetails } from "./imageDetails";
+import SEO from "../../../components/seo";
 import AnimatedImageContainer from "../../../components/animatedImageContainer";
 
 function ReincarnationOfViolet() {
@@ -45,6 +46,10 @@ function ReincarnationOfViolet() {
 
   return (
     <PDBg>
+      <SEO
+        title="Reincarnation of Violet — Performative Design by Varsha Elango"
+        description="Reincarnation of Violet is a mixed-reality performative design project about embodying and enacting the appearance of a digital avatar."
+      />
       <AnimateSharedLayout type="crossfade">
         <SingleProjectContainer>
           <FlexRowContainer data-aos="fade-up">
