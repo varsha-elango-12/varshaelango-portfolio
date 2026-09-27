@@ -9,6 +9,7 @@ import {
   FlexTwo,
   ImgContainer,
   MITxt,
+  MediumTxt,
   ProjDesc,
   ProjTitle,
   SingleProjectContainer,
@@ -51,29 +52,54 @@ function YellowJuice() {
       />
       <AnimateSharedLayout type="crossfade">
         <SingleProjectContainer>
-          <FlexRowContainer data-aos="fade-up">
-            <ProjTitle style={{ color: COLORS.TEXT_COLOR[100] }}>
-              The Yellow Juice
+          <FlexRowContainer
+            data-aos="fade-up"
+            className="pb-0"
+            style={{ alignItems: "stretch" }}
+          >
+            <ProjTitle style={{ color: COLORS.TEXT_COLOR[50] }}>
+              A Score To Find The Right People
             </ProjTitle>
-            <FlexThree className="top-cont">
-              <FlexCol>
-                <ProjDesc style={{ color: COLORS.TEXT_COLOR[100] }}>
+            <FlexThree className="top-cont" style={{ padding: "0 0 0 1%" }}>
+              <FlexCol style={{ padding: "0 4% 0 0" }}>
+                <ProjDesc style={{ color: COLORS.TEXT_COLOR[50] }}>
                   Design a <BoldITxt>digital/physical marketplace</BoldITxt> for
                   the buying and selling of{" "}
                   <BoldITxt>human bodily fluids</BoldITxt> that prioritises
                   trust.
                 </ProjDesc>
-                <MITxt style={{ color: COLORS.TEXT_COLOR[100] }}>
-                  <span>Project Partner: Gumtree, London</span> <br /> UX
-                  Design, Research, Prototyping, Execution_ 7 weeks_ 2022
-                  <br /> Teammates: Ramya, Amber, Boxun
-                </MITxt>
               </FlexCol>
 
-              
-              <MediumImgTop
-                src={require("../../../assets/images/ProjectTypes/yellowJuice/yellowJuice.png")}
-              />
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
+                  height: "100%",
+                }}
+              >
+                <MediumImgTop
+                  src={require("../../../assets/images/ProjectTypes/yellowJuice/yellowJuice.png")}
+                  style={{ height: "max-content", width: "16.25vw" }}
+                />
+                <ProjDesc style={{ color: COLORS.TEXT_COLOR[50], marginTop: '2%' }}>
+                  <div className="project-detail-row">
+                    <span>Project Partner: </span>
+                    <MediumTxt>Gumtree, London</MediumTxt>
+                  </div>
+
+                  <div className="project-detail-row">
+                    <span>Team: </span>
+                    <MediumTxt>Ramya, Amber, Boxun</MediumTxt>
+                  </div>
+                  <div class="tag-container">
+                    <span class="pill-tag">UX Design</span>
+                    <span class="pill-tag">Research</span>
+                    <span class="pill-tag">Prototyping</span>
+                    <span class="pill-tag">Execution</span>
+                  </div>
+                </ProjDesc>
+              </div>
             </FlexThree>
           </FlexRowContainer>
 
@@ -126,7 +152,9 @@ function YellowJuice() {
                     return (
                       <AnimatedImageContainer
                         lid={ind}
-                        imgSrc={require(`../../../assets/images/ProjectTypes/yellowJuice/img${ind}.png`)}
+                        imgSrc={require(
+                          `../../../assets/images/ProjectTypes/yellowJuice/img${ind}.png`,
+                        )}
                         setId={() => {
                           setSelectedId(ind);
                           setSelectedText(imageDetails[ind].desc);
@@ -155,7 +183,9 @@ function YellowJuice() {
                     return (
                       <AnimatedImageContainer
                         lid={ind}
-                        imgSrc={require(`../../../assets/images/ProjectTypes/yellowJuice/img${ind}.png`)}
+                        imgSrc={require(
+                          `../../../assets/images/ProjectTypes/yellowJuice/img${ind}.png`,
+                        )}
                         setId={() => {
                           setSelectedId(ind);
                           setSelectedText(imageDetails[ind].desc);
@@ -190,7 +220,9 @@ function YellowJuice() {
               <div className="w-60">
                 <AnimatedImageContainer
                   lid={6}
-                  imgSrc={require(`../../../assets/images/ProjectTypes/yellowJuice/img${6}.png`)}
+                  imgSrc={require(
+                    `../../../assets/images/ProjectTypes/yellowJuice/img${6}.png`,
+                  )}
                   setId={() => {
                     setSelectedId(6);
                     setSelectedText(imageDetails[6].desc);
@@ -225,7 +257,9 @@ function YellowJuice() {
                       <AnimatedImageContainer
                         imgCls={"img-h35"}
                         lid={ind}
-                        imgSrc={require(`../../../assets/images/ProjectTypes/yellowJuice/img${ind}.png`)}
+                        imgSrc={require(
+                          `../../../assets/images/ProjectTypes/yellowJuice/img${ind}.png`,
+                        )}
                         setId={() => {
                           setSelectedId(ind);
                           setSelectedText(imageDetails[ind].desc);
@@ -257,7 +291,9 @@ function YellowJuice() {
               <div style={{ width: "100%" }}>
                 <AnimatedImageContainer
                   lid={9}
-                  imgSrc={require(`../../../assets/images/ProjectTypes/yellowJuice/img${9}.png`)}
+                  imgSrc={require(
+                    `../../../assets/images/ProjectTypes/yellowJuice/img${9}.png`,
+                  )}
                   setId={() => {
                     setSelectedId(9);
                     setSelectedText(imageDetails[9].desc);
@@ -300,7 +336,9 @@ function YellowJuice() {
                       <AnimatedImageContainer
                         imgCls={"bottom-img"}
                         lid={ind}
-                        imgSrc={require(`../../../assets/images/ProjectTypes/yellowJuice/img${ind}.png`)}
+                        imgSrc={require(
+                          `../../../assets/images/ProjectTypes/yellowJuice/img${ind}.png`,
+                        )}
                         setId={() => {
                           setSelectedId(ind);
                           setSelectedText(imageDetails[ind].desc);
@@ -355,7 +393,9 @@ function YellowJuice() {
                       <AnimatedImageContainer
                         imgCls={"bottom-img"}
                         lid={ind}
-                        imgSrc={require(`../../../assets/images/ProjectTypes/yellowJuice/img${ind}.png`)}
+                        imgSrc={require(
+                          `../../../assets/images/ProjectTypes/yellowJuice/img${ind}.png`,
+                        )}
                         setId={() => {
                           setSelectedId(ind);
                           setSelectedText(imageDetails[ind].desc);
@@ -386,7 +426,9 @@ function YellowJuice() {
               <div className="w-50">
                 <AnimatedImageContainer
                   lid={15}
-                  imgSrc={require(`../../../assets/images/ProjectTypes/yellowJuice/img${15}.png`)}
+                  imgSrc={require(
+                    `../../../assets/images/ProjectTypes/yellowJuice/img${15}.png`,
+                  )}
                   setId={() => {
                     setSelectedId(15);
                     setSelectedText(imageDetails[15].desc);
@@ -430,7 +472,9 @@ function YellowJuice() {
                       <AnimatedImageContainer
                         imgCls={"bottom-img"}
                         lid={ind}
-                        imgSrc={require(`../../../assets/images/ProjectTypes/yellowJuice/img${ind}.png`)}
+                        imgSrc={require(
+                          `../../../assets/images/ProjectTypes/yellowJuice/img${ind}.png`,
+                        )}
                         setId={() => {
                           setSelectedId(ind);
                           setSelectedText(imageDetails[ind].desc);
@@ -478,7 +522,9 @@ function YellowJuice() {
                     return (
                       <AnimatedImageContainer
                         lid={ind}
-                        imgSrc={require(`../../../assets/images/ProjectTypes/yellowJuice/img${ind}.png`)}
+                        imgSrc={require(
+                          `../../../assets/images/ProjectTypes/yellowJuice/img${ind}.png`,
+                        )}
                         setId={() => {
                           setSelectedId(ind);
                           setSelectedText(imageDetails[ind].desc);
@@ -516,7 +562,9 @@ function YellowJuice() {
                       <AnimatedImageContainer
                         imgCls="img-h11"
                         lid={ind}
-                        imgSrc={require(`../../../assets/images/ProjectTypes/yellowJuice/img${ind}.png`)}
+                        imgSrc={require(
+                          `../../../assets/images/ProjectTypes/yellowJuice/img${ind}.png`,
+                        )}
                         setId={() => {
                           setSelectedId(ind);
                           setSelectedText(imageDetails[ind].desc);
@@ -563,7 +611,9 @@ function YellowJuice() {
                     return (
                       <AnimatedImageContainer
                         lid={ind}
-                        imgSrc={require(`../../../assets/images/ProjectTypes/yellowJuice/img${ind}.png`)}
+                        imgSrc={require(
+                          `../../../assets/images/ProjectTypes/yellowJuice/img${ind}.png`,
+                        )}
                         setId={() => {
                           setSelectedId(ind);
                           setSelectedText(imageDetails[ind].desc);
@@ -594,7 +644,9 @@ function YellowJuice() {
               <div className="w-100">
                 <AnimatedImageContainer
                   lid={26}
-                  imgSrc={require(`../../../assets/images/ProjectTypes/yellowJuice/img${26}.png`)}
+                  imgSrc={require(
+                    `../../../assets/images/ProjectTypes/yellowJuice/img${26}.png`,
+                  )}
                   setId={() => {
                     setSelectedId(26);
                     setSelectedText(imageDetails[26].desc);
@@ -663,7 +715,9 @@ function YellowJuice() {
               <div className="w-100">
                 <AnimatedImageContainer
                   lid={27}
-                  imgSrc={require(`../../../assets/images/ProjectTypes/yellowJuice/img${27}.png`)}
+                  imgSrc={require(
+                    `../../../assets/images/ProjectTypes/yellowJuice/img${27}.png`,
+                  )}
                   setId={() => {
                     setSelectedId(27);
                     setSelectedText(imageDetails[27].desc);
@@ -685,7 +739,9 @@ function YellowJuice() {
               <div className="w-100">
                 <AnimatedImageContainer
                   lid={28}
-                  imgSrc={require(`../../../assets/images/ProjectTypes/yellowJuice/img${28}.png`)}
+                  imgSrc={require(
+                    `../../../assets/images/ProjectTypes/yellowJuice/img${28}.png`,
+                  )}
                   setId={() => {
                     setSelectedId(28);
                     setSelectedText(imageDetails[28].desc);
@@ -728,7 +784,9 @@ function YellowJuice() {
                     return (
                       <AnimatedImageContainer
                         lid={ind}
-                        imgSrc={require(`../../../assets/images/ProjectTypes/yellowJuice/img${ind}.png`)}
+                        imgSrc={require(
+                          `../../../assets/images/ProjectTypes/yellowJuice/img${ind}.png`,
+                        )}
                         setId={() => {
                           setSelectedId(ind);
                           setSelectedText(imageDetails[ind].desc);
@@ -738,14 +796,14 @@ function YellowJuice() {
                           ind === 29
                             ? "Finding the suitable user"
                             : ind === 30
-                            ? "Checking the purity of urine"
-                            : ind === 31
-                            ? "Safe meeting spots"
-                            : ind === 32
-                            ? "Container to collect and store urine"
-                            : ind === 33
-                            ? "Checking if it's real urine"
-                            : "Safe payment system"
+                              ? "Checking the purity of urine"
+                              : ind === 31
+                                ? "Safe meeting spots"
+                                : ind === 32
+                                  ? "Container to collect and store urine"
+                                  : ind === 33
+                                    ? "Checking if it's real urine"
+                                    : "Safe payment system"
                         }
                       ></AnimatedImageContainer>
                     );
@@ -783,7 +841,9 @@ function YellowJuice() {
                     return (
                       <AnimatedImageContainer
                         lid={ind}
-                        imgSrc={require(`../../../assets/images/ProjectTypes/yellowJuice/img${ind}.png`)}
+                        imgSrc={require(
+                          `../../../assets/images/ProjectTypes/yellowJuice/img${ind}.png`,
+                        )}
                         setId={() => {
                           setSelectedId(ind);
                           setSelectedText(imageDetails[ind].desc);
@@ -811,7 +871,9 @@ function YellowJuice() {
                     return (
                       <AnimatedImageContainer
                         lid={ind}
-                        imgSrc={require(`../../../assets/images/ProjectTypes/yellowJuice/img${ind}.png`)}
+                        imgSrc={require(
+                          `../../../assets/images/ProjectTypes/yellowJuice/img${ind}.png`,
+                        )}
                         setId={() => {
                           setSelectedId(ind);
                           setSelectedText(imageDetails[ind].desc);
@@ -835,7 +897,9 @@ function YellowJuice() {
                     return (
                       <AnimatedImageContainer
                         lid={ind}
-                        imgSrc={require(`../../../assets/images/ProjectTypes/yellowJuice/img${ind}.png`)}
+                        imgSrc={require(
+                          `../../../assets/images/ProjectTypes/yellowJuice/img${ind}.png`,
+                        )}
                         setId={() => {
                           setSelectedId(ind);
                           setSelectedText(imageDetails[ind].desc);
@@ -880,7 +944,9 @@ function YellowJuice() {
                 </div>
                 <AnimatedImageContainer
                   lid={45}
-                  imgSrc={require(`../../../assets/images/ProjectTypes/yellowJuice/img${45}.png`)}
+                  imgSrc={require(
+                    `../../../assets/images/ProjectTypes/yellowJuice/img${45}.png`,
+                  )}
                   setId={() => {
                     setSelectedId(45);
                     setSelectedText(imageDetails[45].desc);
@@ -914,7 +980,9 @@ function YellowJuice() {
                     return (
                       <AnimatedImageContainer
                         lid={ind}
-                        imgSrc={require(`../../../assets/images/ProjectTypes/yellowJuice/img${ind}.png`)}
+                        imgSrc={require(
+                          `../../../assets/images/ProjectTypes/yellowJuice/img${ind}.png`,
+                        )}
                         setId={() => {
                           setSelectedId(ind);
                           setSelectedText(imageDetails[ind].desc);
@@ -976,7 +1044,9 @@ function YellowJuice() {
                 ></div>
                 <motion.img
                   className="full-pop-image"
-                  src={require(`../../../assets/images/ProjectTypes/yellowJuice/img${selectedId}.png`)}
+                  src={require(
+                    `../../../assets/images/ProjectTypes/yellowJuice/img${selectedId}.png`,
+                  )}
                   layoutId={selectedId}
                 />
                 <motion.div class="pop-up-base-container">

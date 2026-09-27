@@ -22,6 +22,7 @@ export const TEXT_COLOR = {
   200: "#CE7777",
   150: "#D8D074",
   100: "#E4AA08",
+  50: "#B36D04",
 };
 export const WHITE = {
   1000: "#ffffff",

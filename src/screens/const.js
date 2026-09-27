@@ -24,7 +24,7 @@ export const PROJECTS = {
   "user-experience-design": [
     {
       title: "A Score To Find The Right People",
-      desc: "Redesign the wealth and P2G score visualisation on a wealth intelligence platform. ",
+      desc: "Redesign the wealth and P2G score visualisation on a wealth intelligence platform.",
       subdesc: "Project Partner: WealthEngine, Altrata, London",
       subdescX: 0,
       subdescY: 5,

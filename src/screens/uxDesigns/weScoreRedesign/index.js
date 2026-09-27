@@ -377,8 +377,8 @@ function WEScoreRedesign() {
   return (
     <PDBg>
       <SEO
-        title="Is United States, Not Texas - Product Design Case Study"
-        description="A product design case study by Varsha Elango at Altrata, designing boolean logic for advanced people intelligence search filters in London."
+        title="A Score To Find The Right People - Product Design Case Study"
+        description="A product design case study by Varsha Elango at Altrata, redesigning the wealth and P2G score visualisation on a wealth intelligence platform."
       />
       <AnimatePresence>
         {isEntryGateOpen && (

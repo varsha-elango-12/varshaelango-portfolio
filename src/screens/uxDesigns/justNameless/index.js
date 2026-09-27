@@ -24,6 +24,7 @@ import {
   BoldTxt,
   SemiBoldTxt,
   SBTxt,
+  MediumTxt,
 } from "../../performativeDesign/styled";
 import "../../performativeDesign/style.css";
 import {
@@ -81,15 +82,15 @@ function JustNameless() {
                 />
                 <ProjDesc style={{ color: COLORS.TEXT_COLOR[850] }}>
                   <div className="project-detail-row">
-                    <span style={{ fontStyle: "italic" }}>Project Partner </span>: <SemiBoldTxt>IBM, London</SemiBoldTxt>
+                    <MediumTxt>Project Partner </MediumTxt>: <SemiBoldTxt>IBM, London</SemiBoldTxt>
                   </div>
 
                   <div className="project-detail-row">
-                    <span style={{ fontStyle: "italic" }}>Timeline </span>: <SemiBoldTxt>5 weeks</SemiBoldTxt>
+                    <MediumTxt>Timeline </MediumTxt>: <SemiBoldTxt>5 weeks</SemiBoldTxt>
                   </div>
 
                   <div className="project-detail-row">
-                    <span style={{ fontStyle: "italic" }}>Team </span>: <SemiBoldTxt>Bea, Malavika, Boxun, Zhe</SemiBoldTxt>
+                    <MediumTxt>Team </MediumTxt>: <SemiBoldTxt>Bea, Malavika, Boxun, Zhe</SemiBoldTxt>
                   </div>
                   <div class="tag-container" style={{ color: "#6e6796" }}>
                     <span class="pill-tag">UX Design</span>
