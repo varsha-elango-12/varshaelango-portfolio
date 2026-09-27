@@ -4,6 +4,7 @@ export const PRIMARY = {
 };
 
 export const TEXT_COLOR = {
+  1200: "#05422A",
   1150: "#1A1A1A",
   1100: "#001A3D",
   1050: "#143764",

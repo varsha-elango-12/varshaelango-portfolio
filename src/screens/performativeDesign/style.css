@@ -2,6 +2,7 @@
 .pop-up-modal{
     pointer-events: auto;
     position: fixed;
+    z-index: 1000;
     top: 50%;
     left: 52%;
     transform: translate(-42%, -50%);

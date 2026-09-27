@@ -48,6 +48,14 @@
   font-family: 'PLI';
   src: local('PLI'), url(./assets/font/Poppins/Poppins-LightItalic.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'PL';
+  src: local('PL'), url(./assets/font/Poppins/Poppins-Light.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PEL';
+  src: local('PEL'), url(./assets/font/Poppins/Poppins-ExtraLight.ttf) format('truetype');
+}
 
 h1, h2,h3,h4,h5,h6, p, a {
   font-family: 'PR';
