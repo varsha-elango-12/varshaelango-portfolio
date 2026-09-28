@@ -43,7 +43,7 @@ function Card(props) {
           {props.subdesc}
         </CardDescSB>
       )}
-      <div className="tag-container">
+      <div className="tag-container" style={{fontSize:'clamp(13px, 0.9vw, 19px)'}}>
         {props.tags?.map((tag, index) => (
           <span className="pill-tag" key={index} style={{padding:'0 8px 0 8px', color:COLORS.TEXT_COLOR[1000]}}>
             {tag}

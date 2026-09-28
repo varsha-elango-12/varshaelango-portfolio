@@ -18,7 +18,7 @@ export const CardImgCont = styled.div`
 
 export const CardTitle = styled.h3`
   font-family: "PB";
-  font-size: clamp(13px, 0.9vw, 24px);
+  font-size: clamp(14px, 0.9vw, 24px);
   color: ${COLORS.TEXT_COLOR[1000]};
   transition: all ease 0.3s;
   margin: 0;
@@ -54,14 +54,14 @@ export const CardTitleIcon = styled.img`
 
 export const CardDesc = styled.p`
   font-family: "PR";
-  margin-top: 5px;
-  font-size: clamp(13px, 0.9vw, 24px);
+  margin: 1% 0;
+  font-size: clamp(13px, 0.9vw, 20px);
 
   color: ${COLORS.TEXT_COLOR[1000]};
   transition: all ease 0.3s;
 `;
 export const CardDescSB = styled(CardDesc)`
-  font-family: "PSB";
+  font-family: "PR";
   margin-top: 0;
   transform: translate(
     ${({ $subdescX }) => $subdescX || 0}px,
