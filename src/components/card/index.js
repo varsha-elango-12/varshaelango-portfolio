@@ -43,9 +43,9 @@ function Card(props) {
           {props.subdesc}
         </CardDescSB>
       )}
-      <div className="tag-container" style={{fontSize:'clamp(13px, 0.9vw, 19px)'}}>
+      <div className="tag-container" style={{fontSize:'clamp(12px, 0.85vw, 19px)', paddingTop: '1%'}}>
         {props.tags?.map((tag, index) => (
-          <span className="pill-tag" key={index} style={{padding:'0 8px 0 8px', color:COLORS.TEXT_COLOR[1000]}}>
+          <span className="pill-tag" key={index} style={{padding:'0 8px 0 8px', color:'#626262'}}>
             {tag}
           </span>
         ))}

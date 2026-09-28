@@ -11,7 +11,7 @@ export const CardImg = styled.img`
 `;
 export const CardImgCont = styled.div`
   width: 100%;
-  max-height: 360px;
+  // max-height: 360px;
   margin-bottom: 5%;
   overflow: hidden;
 `;
@@ -34,7 +34,7 @@ export const CardTitleRow = styled.div`
 export const CardTitleNote = styled(Link)`
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 0 6px;
   flex-shrink: 0;
   font-family: "PR";
   font-size: clamp(14px, 0.7vw, 16px);
