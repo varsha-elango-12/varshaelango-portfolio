@@ -27,8 +27,8 @@ function Card(props) {
       </CardImgCont>
       <CardTitleRow>
         <CardTitle>{props.title}</CardTitle>
-        {props.titleNote && props.titleNoteLink && (
-          <CardTitleNote to={props.titleNoteLink}>
+        {props.titleNote && (
+          <CardTitleNote>
             <CardTitleIcon src={require("../../assets/images/lock.png")} alt="" />
             <span>{props.titleNote}</span>
           </CardTitleNote>

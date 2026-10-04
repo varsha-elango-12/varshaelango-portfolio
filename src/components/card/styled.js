@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 import { COLORS } from "../../assets/styles/constant";
 
 export const CardImg = styled.img`
@@ -31,7 +30,7 @@ export const CardTitleRow = styled.div`
   gap: 12px;
 `;
 
-export const CardTitleNote = styled(Link)`
+export const CardTitleNote = styled.span`
   display: inline-flex;
   align-items: center;
   gap: 0 6px;
