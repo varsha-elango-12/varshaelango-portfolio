@@ -36,7 +36,7 @@ export const CardTitleNote = styled.span`
   gap: 0 6px;
   flex-shrink: 0;
   font-family: "PR";
-  font-size: clamp(14px, 0.7vw, 16px);
+  font-size: clamp(14px, 0.9vw, 24px);
   color: #5d5d5d;
   text-align: right;
   white-space: nowrap;
@@ -44,8 +44,8 @@ export const CardTitleNote = styled.span`
 `;
 
 export const CardTitleIcon = styled.img`
-  width: 13px;
-  height: 15px;
+  width: 14px;
+  height: 16px;
   object-fit: contain;
   display: block;
   padding-bottom: 2px;

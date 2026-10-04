@@ -405,9 +405,7 @@ function JustNameless() {
 
               <div
                 style={{
-                  width: "100%",
-                  margin: 0,
-                  padding: 0,
+                  width: "100%", padding: 0,
                 }}
               >
                 <img
@@ -417,7 +415,6 @@ function JustNameless() {
                     display: "block",
                     width: "100%",
                     height: "auto",
-                    margin: "-10px",
                     padding: 0,
                   }}
                 />
@@ -440,6 +437,7 @@ function JustNameless() {
                   columnGap: "10px",
                   rowGap: "10px",
                   alignItems: "start",
+                  paddingLeft: "0%"
                 }}
               >
                 <ProjDesc className="pb-0" style={{ margin: 0 }}>
@@ -466,7 +464,6 @@ function JustNameless() {
                       display: "block",
                       width: "100%",
                       height: "auto",
-                      margin: "-10px",
                       padding: 0,
                     }}
                   />
@@ -486,7 +483,6 @@ function JustNameless() {
                       display: "block",
                       width: "100%",
                       height: "auto",
-                      margin: "-10px",
                       padding: 0,
                     }}
                   />
@@ -506,7 +502,7 @@ function JustNameless() {
                       display: "block",
                       width: "100%",
                       height: "auto",
-                      margin: "-10px",
+                      // margin: "-10px",
                       padding: 0,
                     }}
                   />
@@ -548,6 +544,7 @@ function JustNameless() {
                   columnGap: "10px",
                   rowGap: "10px",
                   alignItems: "start",
+                  paddingLeft: "0%"
                 }}
               >
                 <ProjDesc
@@ -574,7 +571,7 @@ function JustNameless() {
                 <div
                   style={{
                     width: "100%",
-                    margin: 0,
+                    marginLeft: "-1.75%",
                     padding: 0,
                   }}
                 >
@@ -585,7 +582,6 @@ function JustNameless() {
                       display: "block",
                       width: "100%",
                       height: "auto",
-                      margin: "-10px",
                       padding: 0,
                     }}
                   />
@@ -594,7 +590,7 @@ function JustNameless() {
                 <div
                   style={{
                     width: "100%",
-                    margin: 0,
+                    marginLeft: "-1.75%",
                     padding: 0,
                   }}
                 >
@@ -605,7 +601,6 @@ function JustNameless() {
                       display: "block",
                       width: "100%",
                       height: "auto",
-                      margin: "-10px",
                       padding: 0,
                     }}
                   />

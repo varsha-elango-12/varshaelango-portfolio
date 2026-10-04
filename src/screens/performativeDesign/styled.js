@@ -9,17 +9,23 @@ export const ImageAnimContainer = styled(motion.div)`
 `;
 
 export const ProjectsContainer = styled.div`
-  padding: 7% 16% 5%;
-  min-height: 100vh;
-  @media (max-width: 1350px) {
-    padding: 7% 7% 5%;
-  }
+  position: relative;
+  left: 3.7%;
+  width: 96.3%;
+  padding: 4vw 12%;
+  background-color: #efefef;
+
   @media (max-width: 1110px) {
+    left: 0;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     row-gap: 64px;
+    min-height: 100vh;
+    padding: 7% 7% 5%;
+    background-color: transparent;
   }
   @media (max-width: 767px) {
     row-gap: 48px;

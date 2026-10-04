@@ -48,7 +48,7 @@ export const PROJECTS = {
       // pdf: "/projects/project_boolean_protected.pdf",
       // titleNote: "Contact for password",
       position: "right",
-      yOffset: -225,
+      yOffset: -275,
     },
     {
       title: "Old to New",
@@ -62,7 +62,7 @@ export const PROJECTS = {
       pdf: "/projects/old_to_new_protected.pdf",
       titleNote: "Contact for password",
       position: "left",
-      yOffset: 0,
+      yOffset: -50,
     },
     {
       title: "Sharing Codes",
