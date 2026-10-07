@@ -11,6 +11,7 @@ import {
   ImgContainer,
   MITxt,
   ProjDesc,
+  ProjectMeta,
   ProjTitle,
   SingleProjectContainer,
   SubTitleThree,
@@ -148,8 +149,8 @@ function JustNameless() {
               Is United States, <br />
               Not Texas.
             </ProjTitle>
-            <FlexThree className="top-cont">
-              <FlexCol style={{ padding: "0 4% 0 0" }}>
+            <FlexThree className="top-cont p-0">
+              <FlexCol style={{ padding: "0 3.5% 0 0" }}>
                 <ProjDesc style={{ color: COLORS.TEXT_COLOR[1050] }}>
                   <BoldTxt>
                     Design boolean logic conditions (AND/OR/NOT) into the
@@ -157,31 +158,33 @@ function JustNameless() {
                   </BoldTxt>
                 </ProjDesc>
                 <ProjDesc
+                className="pb-0"
                   style={{ color: COLORS.TEXT_COLOR[1050], marginBottom: "0" }}
                 >
+                  <SemiBoldTxt>Background:</SemiBoldTxt> Altrata is a people and
+                  wealth intelligence platform. Fundraisers use it to find
+                  donors, executive search firms use it to find candidates, and
+                  researchers use it to understand who knows whom. Advanced
+                  search is the engine underneath all of that.
                   <br />
                   <br />
+                  <SemiBoldTxt>Problem:</SemiBoldTxt> Imagine looking for CEOs
+                  in the US but not Texas, who gave $50k to education but not to
+                  Harvard. A normal question for a fundraiser, and unbuildable
+                  in the product. AND/OR/NOT existed only on a handful of
+                  filters.
+                  <br />
+                  Three of the four legacy brands being consolidated into
+                  Altrata had a version of boolean search, built badly. Users
+                  wouldn't migrate without it. The ticket scoped boolean to
+                  location filters only. I pushed for solving it across all of
+                  them, and executed it.
                   <br />
                   <br />
-                  <br />
-                  <br />
-                  <SemiBoldTxt>The problem:</SemiBoldTxt> Users couldn't search
-                  for "CEOs in the US but not Texas, who donated $20k to
-                  education but not to Harvard." AND/OR/NOT didn't extend across
-                  all available filters.
-                  <br />
-                  <br />
-                  <SemiBoldTxt>Why it mattered:</SemiBoldTxt> Four legacy brands
-                  already did this in some capacity, and we were migrating their
-                  users to Altrata. Parity was the condition of the migration,
-                  not a feature request. The cost of missing it was churn and
-                  lost renewals.
-                  <br />
-                  <br />
-                  <SemiBoldTxt>My position:</SemiBoldTxt> The immediate ticket
-                  scoped boolean to location filters only. I pushed for solving
-                  it across all of them, and got the time to do it. A partial
-                  fix would have meant rebuilding it later.
+                  <SemiBoldTxt>Where it stands:</SemiBoldTxt> Three rounds of
+                  testing, 28 participants, from internal stakeholders to
+                  clients. Round 3 running now as an A/B split. Building toward
+                  a third concept drawn from both.
                 </ProjDesc>
               </FlexCol>
 
@@ -197,31 +200,61 @@ function JustNameless() {
                   src={require("../../../assets/images/ProjectTypes/usNotTexas/thumbnail.png")}
                   style={{ height: "max-content", width: "16.25vw" }}
                 />
-                <ProjDesc style={{ color: COLORS.TEXT_COLOR[1050] }}>
-                  <div className="project-detail-row">
-                    <span>Project Partner: </span>
-                    <MediumTxt>Altrata, London</MediumTxt>
-                  </div>
-
-                  <div className="project-detail-row">
-                    <span>Lead Designer: </span>
-                    <MediumTxt>Varsha Elango</MediumTxt>
-                  </div>
-
-                  <div className="project-detail-row">
-                    <span>Team: </span>
-                    <MediumTxt>Designer, Project Manager</MediumTxt>
-                  </div>
-                  <div class="tag-container">
-                    <span class="pill-tag">UX/UI Design</span>
-                    <span class="pill-tag">Interaction Design</span>
-                    <span class="pill-tag">User Testing</span>
-                    <span class="pill-tag">Prototyping</span>
-                    <span class="pill-tag">Product Strategy</span>
-                  </div>
-                </ProjDesc>
               </div>
             </FlexThree>
+          </FlexRowContainer>
+
+          <FlexRowContainer
+            className="pt-0"
+            data-aos="fade-up"
+            style={{ alignItems: "stretch", color: COLORS.TEXT_COLOR[1050]}}
+          >
+            <div className="project-meta__divider" />
+            <ProjectMeta
+              items={[
+                {
+                  label: "Users",
+                  value:
+                    "Researchers, fundraisers and account managers across financial services, educational institutions and nonprofits.",
+                },
+                {
+                  label: "Partner",
+                  value: "Altrata, London (ongoing)",
+                },
+                {
+                  label: "Team",
+                  value: (
+                    <>
+                      Senior Designer (me)
+                      <br />
+                      Junior Designer
+                      <br />
+                      Product Owner
+                      <br />
+                      Project Manager
+                    </>
+                  ),
+                },
+                {
+                  label: "What I did",
+                  value: (
+                    <>
+                      Discovery
+                      <br />
+                      Conceptualization
+                      <br />
+                      Prototyping
+                      <br />
+                      Usability testing
+                    </>
+                  ),
+                },
+                {
+                  label: "Duration",
+                  value: "2 Months",
+                },
+              ]}
+            />
           </FlexRowContainer>
 
           <TitleTwo data-aos="fade-up" data-aos-delay="300">
@@ -405,7 +438,8 @@ function JustNameless() {
 
               <div
                 style={{
-                  width: "100%", padding: 0,
+                  width: "100%",
+                  padding: 0,
                 }}
               >
                 <img
@@ -437,7 +471,7 @@ function JustNameless() {
                   columnGap: "10px",
                   rowGap: "10px",
                   alignItems: "start",
-                  paddingLeft: "0%"
+                  paddingLeft: "0%",
                 }}
               >
                 <ProjDesc className="pb-0" style={{ margin: 0 }}>
@@ -544,7 +578,7 @@ function JustNameless() {
                   columnGap: "10px",
                   rowGap: "10px",
                   alignItems: "start",
-                  paddingLeft: "0%"
+                  paddingLeft: "0%",
                 }}
               >
                 <ProjDesc

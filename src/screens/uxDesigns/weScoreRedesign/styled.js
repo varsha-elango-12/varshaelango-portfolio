@@ -1,9 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 
-export const QuoteCard = ({ items = [], variant = "default", gap = 16, color}) => {
+export const QuoteCard = ({
+  items = [],
+  variant = "default",
+  gap = 16,
+  color,
+  padding = "16px",
+}) => {
   return (
-    <QuoteCardContainer $variant={variant} $color={color}>
+    <QuoteCardContainer $variant={variant} $color={color} $padding={padding}>
       {items.map((item, index) => (
         <QuoteRow
           key={index}
@@ -52,10 +58,12 @@ const QuoteCardContainer = styled.div`
   max-width: 100%;
   box-sizing: border-box;
 
-  padding: 16px;
+  padding: ${({ $padding }) => 
+    typeof $padding === "number" ? `${$padding}px` : $padding || "16px"};
   margin: 12px 0 12px 0;
 
-  background-color: ${({ $color }) => $color};
+  background: ${({ $color }) =>
+    $color || "linear-gradient(90deg, #FFFFFF 0%, #E5FFE3 100%)"};
   border-radius: 8px;
 
   gap: ${({ $variant }) => ($variant === "compact" ? "0px" : "16px")};
@@ -372,7 +380,6 @@ export const QuoteMiniImage = styled.img`
   object-fit: contain;
   display: block;
 `;
-
 
 export const ScorePrinciplesContainer = styled.div`
   width: 100%;

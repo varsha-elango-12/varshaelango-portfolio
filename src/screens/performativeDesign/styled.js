@@ -510,3 +510,26 @@ export const Arrow = () => (
         </svg>
     </span>
 );
+
+export const ProjectMeta = ({ items, columns = 5 }) => {
+  const threeColumn = columns === 3;
+
+  return (
+    <div
+      className={`project-meta ${
+        threeColumn ? "project-meta--three" : ""
+      }`}
+    >
+      {threeColumn && <div />}
+
+      {items.map((item) => (
+        <div className="project-meta__item" key={item.label}>
+          <div className="project-meta__label">{item.label}</div>
+          <div className="project-meta__value">{item.value}</div>
+        </div>
+      ))}
+
+      {threeColumn && <div />}
+    </div>
+  );
+};

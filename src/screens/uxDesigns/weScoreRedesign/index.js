@@ -11,6 +11,7 @@ import {
   ImgContainer,
   MediumImgTop,
   ProjDesc,
+  ProjectMeta,
   FlexHalf,
   ProjTitle,
   SingleProjectContainer,
@@ -87,7 +88,6 @@ import { trackEvent } from "../../../analytics";
 import SEO from "../../../components/seo";
 import { LeftCaret, ModalText, PDBg, RightCaret } from "../../common-styled";
 import { imageDetails } from "./imageDetails";
-
 
 import quoteMiniIcon from "../../../assets/images/ProjectTypes/weScoreRedesign/quote-mini-icon.svg";
 import quotePersonOne from "../../../assets/images/ProjectTypes/weScoreRedesign/quote-person-1.svg";
@@ -416,7 +416,8 @@ function WEScoreRedesign() {
                   onClick={() => {
                     trackEvent("full_view_click", {
                       project: "is-united-states-not-texas",
-                      destination: "/projects/project_we_score_redesign_protected.pdf",
+                      destination:
+                        "/projects/project_we_score_redesign_protected.pdf",
                     });
                     window.open(
                       "/projects/project_we_score_redesign_protected.pdf",
@@ -449,39 +450,65 @@ function WEScoreRedesign() {
             <ProjTitle style={{ color: COLORS.TEXT_COLOR[1200] }}>
               A Score To Find The Right People
             </ProjTitle>
-            <FlexThree className="top-cont" style={{ padding: "0 0 0 1%" }}>
+            <FlexThree className="top-cont p-0">
               <FlexCol style={{ padding: "0 4% 0 0" }}>
                 <ProjDesc style={{ color: COLORS.TEXT_COLOR[1200] }}>
                   <BoldTxt>
                     Redesign the wealth and P2G score visualisation on a wealth
                     intelligence platform.
-                    <br />
-                    WealthEngine is one of the brands under Altrata.
                   </BoldTxt>
                 </ProjDesc>
                 <ProjDesc
                   style={{ color: COLORS.TEXT_COLOR[1200], marginBottom: "0" }}
                 >
                   <br />
-                  <br />
-                  <SemiBoldTxt>The problem:</SemiBoldTxt> Two scores side by
-                  side, running in opposite directions, one legend between them.
-                  The people who used the platform most had stopped looking.
-                  <br />
-                  <br />
-                  <SemiBoldTxt>Why it mattered:</SemiBoldTxt> The score is the
-                  primary filter for prospecting and fundraising campaigns. It
-                  decides who gets prospected. It hadn't been revisited since
-                  launch, and users had built workarounds rather than ask for
-                  changes.
+                  <SemiBoldTxt>Background:</SemiBoldTxt> WealthEngine scores
+                  every profile on two things: how much money someone has, and
+                  how likely they are to give it away. Those two numbers are the
+                  first thing a fundraiser looks at and the filter that decides
+                  who gets contacted at all.
                   <br />
                   <br />
-                  <SemiBoldTxt>My position:</SemiBoldTxt> The brief was to make
-                  the score clearer. Research showed nobody stops at the score,
-                  and the verifying and cross-referencing that follows is where
-                  the time goes. I proposed the redesign should serve that, not
-                  just the number. That reframe is in production.
+                  <SemiBoldTxt>Problem:</SemiBoldTxt> Two scores side by side,
+                  one legend between them. Higher was better on one, lower on
+                  the other.
+                  <br />
+                  Neither had a reference point. The same person can be a major
+                  prospect for a small charity and below the threshold for a
+                  national one, and the score couldn't tell you which you were
+                  looking at. The people who used the platform most had stopped
+                  looking at it entirely.
+                  <br />
+                  The brief was to make the score clearer. Research showed
+                  nobody stops at the score, so I proposed the redesign should
+                  serve what happens after it.
+                  <br />
+                  <br />
+                  <SemiBoldTxt>Impact:</SemiBoldTxt> In production. Across eight
+                  organisations, clarity moved from confusion to 4s and 5s.
+                  Trust stayed at 3–4, for reasons outside the design.
                 </ProjDesc>
+                {/* <QuoteCard
+                  items={
+                    ""
+                  }
+                  variant="default"
+                  color={"#E5FFE3"}
+                ></QuoteCard> */}
+
+                <QuoteCard
+                  color="linear-gradient(90deg, #FFFFFF 0%, #E5FFE3 100%)"
+                  padding="12px"
+                  items={[
+                    {
+                      quote: "“I could have a staff member look at this and go right to where I need them to go.”",
+                      author: "President & CEO, community foundation",
+                      image: quotePersonNine,
+                      imagePosition: "left",
+                      imageSize: 45,
+                    }
+                  ]}
+                />
               </FlexCol>
 
               <div
@@ -496,30 +523,63 @@ function WEScoreRedesign() {
                   src={require("../../../assets/images/ProjectTypes/weScoreRedesign/thumbnail.png")}
                   style={{ height: "max-content", width: "16.25vw" }}
                 />
-                <ProjDesc style={{ color: COLORS.TEXT_COLOR[1200] }}>
-                  <div className="project-detail-row">
-                    <span>Project Partner: </span>
-                    <MediumTxt>Altrata, London</MediumTxt>
-                  </div>
-
-                  <div className="project-detail-row">
-                    <span>Lead Designer: </span>
-                    <MediumTxt>Varsha Elango</MediumTxt>
-                  </div>
-
-                  <div className="project-detail-row">
-                    <span>Team: </span>
-                    <MediumTxt>UX Director, Project Manager</MediumTxt>
-                  </div>
-                  <div class="tag-container">
-                    <span class="pill-tag">UX/UI Design</span>
-                    <span class="pill-tag">Conceptualization</span>
-                    <span class="pill-tag">Data Visualization</span>
-                    <span class="pill-tag">User Research</span>
-                  </div>
-                </ProjDesc>
               </div>
             </FlexThree>
+          </FlexRowContainer>
+
+          <FlexRowContainer
+            className="pt-0"
+            data-aos="fade-up"
+            style={{ alignItems: "stretch", color: COLORS.TEXT_COLOR[1200] }}
+          >
+            <div className="project-meta__divider" />
+            <ProjectMeta
+              items={[
+                {
+                  label: "Users",
+                  value:
+                    "Fundraisers, prospect researchers, gift officers, and outreach teams",
+                },
+                {
+                  label: "Partner",
+                  value: "WealthEngine, Altrata, London (in production)",
+                },
+                {
+                  label: "Team",
+                  value: (
+                    <>
+                      Lead Designer (me)
+                      <br />
+                      UI/UX Director
+                      <br />
+                      Project Manager
+                      <br />
+                      Data Architect
+                    </>
+                  ),
+                },
+                {
+                  label: "What I did",
+                  value: (
+                    <>
+                      User Research
+                      <br />
+                      Problem Statement
+                      <br />
+                      Conceptualization
+                      <br />
+                      User testing
+                      <br />
+                      Dev handoff
+                    </>
+                  ),
+                },
+                {
+                  label: "Duration",
+                  value: "3 Months",
+                },
+              ]}
+            />
           </FlexRowContainer>
 
           <TitleTwo data-aos="fade-up" data-aos-delay="300">
@@ -564,7 +624,9 @@ function WEScoreRedesign() {
                   }}
                   mediumImg={true}
                 ></AnimatedImageContainer>
-                <SubDesc style={{ width: "100%", textAlign: "center", margin: "0"}}>
+                <SubDesc
+                  style={{ width: "100%", textAlign: "center", margin: "0" }}
+                >
                   Existing profile page with score in WE
                 </SubDesc>
               </div>
@@ -1574,7 +1636,8 @@ function WEScoreRedesign() {
                   onClick={() => {
                     trackEvent("full_view_click", {
                       project: "is-united-states-not-texas",
-                      destination: "/projects/project_we_score_redesign_protected.pdf",
+                      destination:
+                        "/projects/project_we_score_redesign_protected.pdf",
                     });
                     window.open(
                       "/projects/project_we_score_redesign_protected.pdf",

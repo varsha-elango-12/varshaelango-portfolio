@@ -62,3 +62,48 @@
 width:80%
 }
 }
+
+.project-meta {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1.3fr 1.1fr 1fr 0.9fr 0.7fr;
+  justify-content: space-between;
+  align-items: start;
+  gap: 5%;
+
+  margin-bottom: 2%;
+  font-family: "PR";
+}
+
+.project-meta--three {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.project-meta__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.project-meta__label {
+  font-size: clamp(14px, 0.84vw, 24px);
+  font-family: "PSB";
+  line-height: clamp(18px, 1.1vw, 28px);
+
+}
+
+.project-meta__value {
+  font-size: clamp(14px, 0.84vw, 24px);
+  font-family: "PR";
+
+  line-height: clamp(18px, 1.1vw, 28px);
+  
+}
+
+.project-meta__divider {
+  width: 100%;
+  border-top: 1.5px dashed #143764; /* Increasing thickness makes dashes longer */
+  margin: 24px 0;
+}
