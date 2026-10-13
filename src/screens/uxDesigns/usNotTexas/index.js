@@ -158,12 +158,12 @@ function JustNameless() {
                   </BoldTxt>
                 </ProjDesc>
                 <ProjDesc
-                className="pb-0"
+                  className="pb-0"
                   style={{ color: COLORS.TEXT_COLOR[1050], marginBottom: "0" }}
                 >
                   <SemiBoldTxt>Background:</SemiBoldTxt> Altrata is a people and
-                  wealth intelligence platform. Fundraisers use it to find
-                  donors, executive search firms use it to find candidates, and
+                  wealth intelligence platform. Executive search firms use it to
+                  find candidates, fundraisers use it to find donors, and
                   researchers use it to understand who knows whom. Advanced
                   search is the engine underneath all of that.
                   <br />
@@ -181,10 +181,10 @@ function JustNameless() {
                   them, and executed it.
                   <br />
                   <br />
-                  <SemiBoldTxt>Where it stands:</SemiBoldTxt> Three rounds of
-                  testing, 28 participants, from internal stakeholders to
-                  clients. Round 3 running now as an A/B split. Building toward
-                  a third concept drawn from both.
+                  <SemiBoldTxt>Impact:</SemiBoldTxt> Shipped. Two rounds of
+                  testing with 18 participants established keyword search as the
+                  thing people actually use. The first release was built around
+                  it, and we're tracking adoption now.
                 </ProjDesc>
               </FlexCol>
 
@@ -207,7 +207,7 @@ function JustNameless() {
           <FlexRowContainer
             className="pt-0"
             data-aos="fade-up"
-            style={{ alignItems: "stretch", color: COLORS.TEXT_COLOR[1050]}}
+            style={{ alignItems: "stretch", color: COLORS.TEXT_COLOR[1050] }}
           >
             <div className="project-meta__divider" />
             <ProjectMeta
@@ -239,19 +239,23 @@ function JustNameless() {
                   label: "What I did",
                   value: (
                     <>
-                      Discovery
+                      Scoping
                       <br />
-                      Conceptualization
+                      Team Direction
                       <br />
-                      Prototyping
+                      Research
                       <br />
-                      Usability testing
+                      Concept Design
+                      <br />
+                      Usability Testing
+                      <br />
+                      Dev Handoff
                     </>
                   ),
                 },
                 {
                   label: "Duration",
-                  value: "2 Months",
+                  value: "3 Weeks",
                 },
               ]}
             />
@@ -260,37 +264,23 @@ function JustNameless() {
           <TitleTwo data-aos="fade-up" data-aos-delay="300">
             Process
           </TitleTwo>
-          <FlexRowContainer
-            className="pb-0"
-            data-aos="fade-up"
-            data-aos-delay="500"
-          >
+          <FlexRowContainer data-aos="fade-up" data-aos-delay="500">
             <FlexOne>
               <TitleThree>The Problem’s Problem</TitleThree>
               <SubTitleThree>Zooming out</SubTitleThree>
             </FlexOne>
-            <FlexTwo>
-              <ProjDesc>
+            <FlexThree>
+              <ProjDesc style={{marginBottom: "2%"}}>
                 Two requirements arrived with almost the same need.{" "}
                 <SemiBoldTxt>One was urgent</SemiBoldTxt> and
                 <SemiBoldTxt> small, one larger</SemiBoldTxt> and{" "}
                 <SemiBoldTxt>scheduled for later. </SemiBoldTxt>A quick win
                 would hit parity fast, but guarantee a revision loop for
-                everything else.
+                everything else.{" "}
                 <SemiBoldTxt> Double the work, double the time.</SemiBoldTxt>
               </ProjDesc>
-            </FlexTwo>
-            <FlexOne></FlexOne>
-          </FlexRowContainer>
 
-          <FlexRowContainer
-            className="pt-0 pb-0"
-            data-aos="fade-up"
-            data-aos-delay="500"
-          >
-            <FlexOne> </FlexOne>
-            <FlexThree>
-              <ProjDesc style={{ display: "flex", gap: "12px" }}>
+              <ProjDesc style={{ display: "flex", gap: "12px", marginBottom: "2%" }}>
                 <span
                   style={{
                     background: "#fff",
@@ -314,46 +304,36 @@ function JustNameless() {
                   </SBTxt>
                 </span>
               </ProjDesc>
-            </FlexThree>
-          </FlexRowContainer>
 
-          <FlexRowContainer
-            className="pt-0"
-            data-aos="fade-up"
-            data-aos-delay="500"
-          >
-            <FlexOne></FlexOne>
-            <FlexTwo>
               <ProjDesc>
-                I made the case for solving it once, properly, and got the scope
-                changed.
+                I made the case for solving it once, properly. What moved the PM
+                was pointing out that a quick fix now meant doing the whole
+                thing again in six months. The scope changed.
                 <SemiBoldTxt>
                   {" "}
                   Solve for tomorrow, and today solves itself.{" "}
                 </SemiBoldTxt>
               </ProjDesc>
-            </FlexTwo>
-            <FlexOne></FlexOne>
+            </FlexThree>
           </FlexRowContainer>
 
           <FlexRowContainer
-            className="p-0"
+            className="pt-0 pb-0"
             data-aos="fade-up"
             data-aos-delay="500"
           >
             <FlexOne>
               <TitleThree>Design Approach</TitleThree>
             </FlexOne>
-            <FlexTwo>
-              <ProjDesc className="pb-0">
+            <FlexThree>
+              <ProjDesc style={{ marginBottom: "2%" }}>
                 I set out a clear approach for my team to proceed with.
               </ProjDesc>
-            </FlexTwo>
-            <FlexOne></FlexOne>
+            </FlexThree>
           </FlexRowContainer>
 
           <FlexRowContainer
-            className="p-0"
+            className="pt-0 pb-0"
             data-aos="fade-up"
             data-aos-delay="500"
           >
@@ -377,24 +357,9 @@ function JustNameless() {
                 <Arrow />
                 <span>Design</span>
                 <Arrow />
-                <span
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    gap: "4px",
-                  }}
-                >
-                  <span style={{ color: COLORS.TEXT_COLOR[925] }}>
-                    Test concepts with users
-                  </span>
-                  <span className="pill-tag-green">
-                    <RegularTxt>faster with </RegularTxt>
-                    <SBTxt>AI</SBTxt>
-                  </span>
-                </span>
+                Test concepts with users
                 <Arrow />
-                <span>Find out</span>
+                <span>Synthesise</span>
                 <Arrow />
                 <span>Build</span>
               </ProjDesc>
@@ -409,8 +374,8 @@ function JustNameless() {
             <FlexOne>
               <TitleThree>Research + Conceptualisation</TitleThree>
             </FlexOne>
-            <FlexTwo>
-              <ProjDesc>
+            <FlexThree>
+              <ProjDesc style={{ marginBottom: "2%" }}>
                 We started from{" "}
                 <SemiBoldTxt>past session recordings</SemiBoldTxt> of clients
                 using advanced search, alongside{" "}
@@ -426,20 +391,35 @@ function JustNameless() {
                 advanced search, and took the opposite brief myself: question
                 the current approach and{" "}
                 <SemiBoldTxt>design from a new perspective. </SemiBoldTxt>
-                Testing could then tell us whether something better existed.
-              </ProjDesc>
-              <ProjDesc>
-                <span className="pill-tag-green" style={{ fontFamily: "PR" }}>
-                  I drew variations and used
-                  <SBTxt> Claude</SBTxt> to translate them into low-fi
-                  wireframes.
-                </span>
+                Testing could then tell us whether something better existed. I
+                drew variations and used Claude to translate them into low-fi
+                wireframes.
               </ProjDesc>
 
               <div
                 style={{
                   width: "100%",
-                  padding: 0,
+                  paddingBottom: "1%",
+                }}
+              >
+                <img
+                  src={require("../../../assets/images/ProjectTypes/usNotTexas/0.png")}
+                  alt="Boolean search concept exploration"
+                  style={{
+                    display: "block",
+                    width: "100%",
+                    height: "auto",
+                  }}
+                />
+              </div>
+              <ProjDesc style={{ marginBottom: "2%" }}>
+                Existing advanced search without boolean logic
+              </ProjDesc>
+
+              <div
+                style={{
+                  width: "100%",
+                  padding: "1% 0",
                 }}
               >
                 <img
@@ -453,12 +433,11 @@ function JustNameless() {
                   }}
                 />
               </div>
-            </FlexTwo>
-            <FlexOne></FlexOne>
+            </FlexThree>
           </FlexRowContainer>
 
           <FlexRowContainer
-            className="pb-0"
+            className="pt-0 pb-0"
             data-aos="fade-up"
             data-aos-delay="500"
           >
@@ -474,16 +453,6 @@ function JustNameless() {
                   paddingLeft: "0%",
                 }}
               >
-                <ProjDesc className="pb-0" style={{ margin: 0 }}>
-                  Inline operators - one flat list, operator lives between rows
-                </ProjDesc>
-                <ProjDesc className="pb-0" style={{ margin: 0 }}>
-                  Query groups - nested brackets, operator owned by the group
-                </ProjDesc>
-                <ProjDesc className="pb-0" style={{ margin: 0 }}>
-                  Buckets - drag fields into must / any / exclude columns
-                </ProjDesc>
-
                 <div
                   style={{
                     width: "100%",
@@ -536,11 +505,20 @@ function JustNameless() {
                       display: "block",
                       width: "100%",
                       height: "auto",
-                      // margin: "-10px",
                       padding: 0,
                     }}
                   />
                 </div>
+
+                <ProjDesc className="pb-0" style={{ margin: 0 }}>
+                  Inline operators - one flat list, operator lives between rows
+                </ProjDesc>
+                <ProjDesc className="pb-0" style={{ margin: 0 }}>
+                  Query groups - nested brackets, operator owned by the group
+                </ProjDesc>
+                <ProjDesc className="pb-0" style={{ margin: 0 }}>
+                  Buckets - drag fields into must / any / exclude columns
+                </ProjDesc>
               </div>
             </FlexThree>
           </FlexRowContainer>
@@ -551,8 +529,8 @@ function JustNameless() {
             data-aos-delay="500"
           >
             <FlexOne></FlexOne>
-            <FlexTwo>
-              <ProjDesc>
+            <FlexThree>
+              <ProjDesc className="pb-0">
                 Several iterations later, the two briefs had resolved into
                 <SemiBoldTxt> genuinely different concepts. </SemiBoldTxt>
                 One was a new approach none of the legacy brands had, closer to
@@ -560,8 +538,7 @@ function JustNameless() {
                 Altrata. The other embedded boolean into the current structure,
                 with all filters displayed at once.
               </ProjDesc>
-            </FlexTwo>
-            <FlexOne></FlexOne>
+            </FlexThree>
           </FlexRowContainer>
 
           <FlexRowContainer
@@ -649,19 +626,17 @@ function JustNameless() {
             data-aos-delay="500"
           >
             <FlexOne></FlexOne>
-            <FlexTwo>
+            <FlexThree>
               <ProjDesc>
                 The question was what users preferred,{" "}
                 <SemiBoldTxt>how much complexity they'd tolerate,</SemiBoldTxt>
                 and whether one{" "}
                 <SemiBoldTxt>
                   product could serve both or needed to let users choose.
-                </SemiBoldTxt>
-                <br />
+                </SemiBoldTxt>{" "}
                 Every round of testing ahead was an attempt to answer that.
               </ProjDesc>
-            </FlexTwo>
-            <FlexOne></FlexOne>
+            </FlexThree>
           </FlexRowContainer>
 
           <FlexRowContainer
@@ -673,7 +648,7 @@ function JustNameless() {
               <TitleThree>Design Toolkit</TitleThree>
               <SubTitleThree>Prepping for Testing</SubTitleThree>
             </FlexOne>
-            <FlexTwo>
+            <FlexThree>
               <ProjDesc>
                 The concepts were still low-fidelity and light on detail, so
                 clients weren't the right audience yet. I{" "}
@@ -683,8 +658,7 @@ function JustNameless() {
                 people who could tell us quickly whether the two directions
                 worked, aligned with strategy, and were worth taking further.
               </ProjDesc>
-            </FlexTwo>
-            <FlexOne></FlexOne>
+            </FlexThree>
           </FlexRowContainer>
 
           <FlexRowContainer
@@ -696,6 +670,7 @@ function JustNameless() {
             <FlexThree>
               <div
                 style={{
+                  fontFamily: "PR",
                   fontSize: "clamp(16px, 1vw, 20px)",
                   display: "grid",
                   gridTemplateColumns: "repeat(4, 1fr)",
@@ -769,53 +744,15 @@ function JustNameless() {
                   marginTop: "20px",
                   fontSize: "clamp(14px, 0.84vw, 24px)",
                 }}
-              >
-                <span
-                  className="pill-tag-green"
-                  style={{ display: "inline-block" }}
-                >
-                  with interactive prototypes, built with{" "}
-                  <SBTxt>Claude AI</SBTxt>
-                </span>
-              </div>
+              ></div>
+
+              <ProjDesc>
+                We built{" "}
+                <SemiBoldTxt>interactive prototypes with Claude.</SemiBoldTxt>
+                18 participants across two rounds in 5 weeks, clicking real
+                interactions rather than static screens.
+              </ProjDesc>
             </FlexThree>
-          </FlexRowContainer>
-
-          <FlexRowContainer
-            data-aos="fade-up"
-            data-aos-delay="500"
-            style={{ paddingTop: "2%" }}
-          >
-            <ResearchCallout>
-              <ResearchCalloutIcon>
-                <img
-                  src={require("../../../assets/images/ProjectTypes/usNotTexas/ai-robo.png")}
-                  alt=""
-                />
-              </ResearchCalloutIcon>
-
-              <ResearchCalloutTitle style={{ marginRight: "12%" }}>
-                <MediumTxt>Speed as a research method.</MediumTxt>
-              </ResearchCalloutTitle>
-
-              <ResearchCalloutBody style={{ marginLeft: "10%" }}>
-                <RegularTxt>
-                  Claude turned sketches into low-fi wireframes and interactive
-                  prototypes fast enough to test with evidence. That meant{" "}
-                  <SemiBoldTxt>
-                    28 participants across 3 rounds in 6 weeks
-                  </SemiBoldTxt>
-                  , clicking real interactions rather than static screens.
-                </RegularTxt>
-              </ResearchCalloutBody>
-
-              <ResearchCalloutBody style={{ marginLeft: "10%" }}>
-                <RegularITxt>
-                  For a problem this abstract, that was the difference between
-                  opinion and evidence.
-                </RegularITxt>
-              </ResearchCalloutBody>
-            </ResearchCallout>
           </FlexRowContainer>
 
           <FlexRowContainer
@@ -838,67 +775,69 @@ function JustNameless() {
                   gridTemplateColumns: "1fr 1fr",
                   columnGap: "10px",
                   alignItems: "start",
+                  color: "#001A3D",
+                  marginBottom: "2%",
                 }}
               >
                 <ProjDesc>
                   <SemiBoldTxt
                     style={{
-                      color: "#206dc0",
+                      color: "#000000",
                       fontSize: "clamp(20px, 0.84vw, 28px)",
                     }}
                   >
-                    we love Concept A! (50%)
+                    we love Concept A! (5/5)
                   </SemiBoldTxt>
                 </ProjDesc>
                 <ProjDesc>
                   <SemiBoldTxt
                     style={{
-                      color: "#0b7d4c",
+                      color: "#000000",
                       fontSize: "clamp(20px, 0.84vw, 28px)",
                     }}
                   >
-                    we love Concept B! (50%)
+                    we love Concept B! (5/5)
                   </SemiBoldTxt>
                 </ProjDesc>
 
                 <ProjDesc className="shantell-sans-font">
                   “Rule builders are the new age filters now.”{" "}
-                  <span style={{ color: "#206dc0", fontWeight: "100" }}>
+                  <span style={{ color: "#000000", fontWeight: "100" }}>
                     (Data Product Manager)
                   </span>
                 </ProjDesc>
                 <ProjDesc className="shantell-sans-font">
                   “I like to see all the options available to me. That helps me
                   make a decision.”{" "}
-                  <span style={{ color: "#0b7d4c", fontWeight: "100" }}>
+                  <span style={{ color: "#000000", fontWeight: "100" }}>
                     (Developer)
                   </span>
                 </ProjDesc>
                 <ProjDesc className="shantell-sans-font">
                   “I got something pretty complex in like a minute and a half,
                   that’s very helpful.”{" "}
-                  <span style={{ color: "#206dc0", fontWeight: "100" }}>
+                  <span style={{ color: "#000000", fontWeight: "100" }}>
                     (Account Manager)
                   </span>
                 </ProjDesc>
                 <ProjDesc className="shantell-sans-font">
                   “I feel like it should just be baked in. It's just an extra
                   step that I don't think I need to take.”{" "}
-                  <span style={{ color: "#0b7d4c", fontWeight: "100" }}>
+                  <span style={{ color: "#000000", fontWeight: "100" }}>
                     (Senior Product Manager)
                   </span>
                 </ProjDesc>
                 <ProjDesc className="shantell-sans-font">
                   “Having and/or idea on each filter makes it quite confusing
                   for me. Whereas this makes it incredibly simple."{" "}
-                  <span style={{ color: "#206dc0", fontWeight: "100" }}>
+                  <span style={{ color: "#000000", fontWeight: "100" }}>
                     (Product Director)
                   </span>
                 </ProjDesc>
                 <ProjDesc className="shantell-sans-font">
                   “It opens a completely new UI for us to build a query, and it
                   was not very intuitive for me.”{" "}
-                  <span style={{ color: "#0b7d4c", fontWeight: "100" }}>
+                  <span style={{ color: "#000000", fontWeight: "100" }}>
                     (Product Manager)
                   </span>
                 </ProjDesc>
@@ -941,8 +880,8 @@ function JustNameless() {
                   />
                   <li>
                     Group multiple values of the same field together rather than
-                    stacking them separately. The UI automatically combine
-                    values of duplicate fields.
+                    stacking them separately. <br />
+                    The UI automatically combine values of duplicate fields.
                   </li>
                   <li>
                     Reduce the burden of knowing what sits behind each filter
@@ -979,7 +918,6 @@ function JustNameless() {
           </FlexRowContainer>
 
           <FlexRowContainer
-            className="pb-0"
             data-aos="fade-up"
             data-aos-delay="500"
             style={{ paddingTop: "1%" }}
@@ -1012,14 +950,13 @@ function JustNameless() {
               <TitleThree>The Upgrade</TitleThree>
               <SubTitleThree>Round 2 of testing</SubTitleThree>
             </FlexOne>
-            <FlexTwo>
+            <FlexThree>
               <ProjDesc>
                 To fill that gap I proposed a closer proxy: Commercial and
                 Customer Success, who spend the most time with clients. It also
                 bought time to deepen the concepts before reaching real users.
               </ProjDesc>
-            </FlexTwo>
-            <FlexOne></FlexOne>
+            </FlexThree>
           </FlexRowContainer>
 
           <FlexRowContainer
@@ -1031,6 +968,7 @@ function JustNameless() {
             <FlexThree>
               <div
                 style={{
+                  fontFamily: "PR",
                   fontSize: "clamp(16px, 1vw, 20px)",
                   display: "grid",
                   gridTemplateColumns: "repeat(4, 1fr)",
@@ -1103,15 +1041,7 @@ function JustNameless() {
                   marginTop: "20px",
                   fontSize: "clamp(14px, 0.84vw, 24px)",
                 }}
-              >
-                <span
-                  className="pill-tag-green"
-                  style={{ display: "inline-block" }}
-                >
-                  with interactive prototypes, built with{" "}
-                  <SBTxt>Claude AI</SBTxt>
-                </span>
-              </div>
+              ></div>
             </FlexThree>
           </FlexRowContainer>
 
@@ -1121,14 +1051,13 @@ function JustNameless() {
             data-aos-delay="500"
           >
             <FlexOne></FlexOne>
-            <FlexTwo>
+            <FlexThree>
               <ProjDesc>
                 <br />
                 Round 2 gave us a lot of insight, alongside a pattern of bias.
                 Close as they were to clients, their read was still secondhand.
               </ProjDesc>
-            </FlexTwo>
-            <FlexOne></FlexOne>
+            </FlexThree>
           </FlexRowContainer>
 
           <FlexRowContainer
@@ -1185,7 +1114,7 @@ function JustNameless() {
                     manual pass on interactions, facial reactions, and physical
                     movement
                   </SemiBoldTxt>{" "}
-                  toward the screen.
+                  towards the screen.
                 </p>
               </HighlightCard>
             </FlexThree>
@@ -1207,7 +1136,7 @@ function JustNameless() {
                   rowGap: "10px",
                 }}
               >
-                <div style={{ width: "80%" }}>
+                <div style={{ width: "90%" }}>
                   <img
                     src={require("../../../assets/images/ProjectTypes/usNotTexas/12.png")}
                     alt="User testing observation"
@@ -1240,8 +1169,9 @@ function JustNameless() {
                       lineHeight: "1.2",
                     }}
                   >
-                    Director of Client Success leaning forward. The kind of
-                    signal no transcript captures.
+                    Director of Client Success leaning in. <br />
+                    The moment five of eight participants had, silently. No
+                    transcript records it.
                   </div>
                 </div>
               </div>
@@ -1304,7 +1234,7 @@ function JustNameless() {
           </FlexRowContainer>
 
           <FlexRowContainer
-            className="pt-0 pb-0"
+            className="pb-0"
             data-aos="fade-up"
             data-aos-delay="500"
           >
@@ -1313,7 +1243,7 @@ function JustNameless() {
               <div
                 style={{
                   display: "grid",
-                  gridTemplateColumns: "2.65fr 7.35fr",
+                  gridTemplateColumns: "1fr",
                   columnGap: "10px",
                   alignItems: "start",
                 }}
@@ -1336,6 +1266,11 @@ function JustNameless() {
                   />
                 </div>
 
+                <ProjDesc style={{ marginLeft: "0.75%" }}>
+                  Concept A, with keyword search now boolean across all filters.
+                  The same improvement carried into Concept B.
+                </ProjDesc>
+
                 <div
                   style={{
                     width: "100%",
@@ -1354,13 +1289,92 @@ function JustNameless() {
                   />
                 </div>
 
-                <ProjDesc style={{ marginLeft: "1%" }}>
+                <ProjDesc style={{ marginLeft: "0.75%" }}>
+                  Concept A, extending the search summary export into sharing an
+                  ongoing search with teammates.
+                </ProjDesc>
+              </div>
+            </FlexThree>
+          </FlexRowContainer>
+
+          <FlexRowContainer className="pt-0" data-aos="fade-up" data-aos-delay="500">
+            <FlexOne> </FlexOne>
+            <FlexThree>
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "1fr 1fr 1fr",
+                  columnGap: "10px",
+                  alignItems: "start",
+                }}
+              >
+                <div
+                  style={{
+                    width: "100%",
+                    overflow: "hidden",
+                  }}
+                >
+                  <img
+                    src={require("../../../assets/images/ProjectTypes/usNotTexas/16.png")}
+                    alt="Concept comparison"
+                    style={{
+                      display: "block",
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "contain",
+                    }}
+                  />
+                </div>
+
+                <div
+                  style={{
+                    width: "100%",
+                    overflow: "hidden",
+                  }}
+                >
+                  <img
+                    src={require("../../../assets/images/ProjectTypes/usNotTexas/17.png")}
+                    alt="Concept comparison"
+                    style={{
+                      display: "block",
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "contain",
+                    }}
+                  />
+                </div>
+
+                <div
+                  style={{
+                    width: "100%",
+                    overflow: "hidden",
+                  }}
+                >
+                  <img
+                    src={require("../../../assets/images/ProjectTypes/usNotTexas/18.png")}
+                    alt="Concept comparison"
+                    style={{
+                      display: "block",
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "contain",
+                    }}
+                  />
+                </div>
+
+                <ProjDesc style={{ marginLeft: "0.75%" }}>
+                  Concept B hides the and/or toggle until more than one option
+                  is selected. Moving it from the filter title to the selections
+                  applies the law of proximity.
+                </ProjDesc>
+
+                <ProjDesc style={{ marginLeft: "0.75%" }}>
                   Concept A, allowing search by values while adding conditions.
                 </ProjDesc>
 
-                <ProjDesc style={{ marginLeft: "1%" }}>
-                  Concept A, extending the search summary export into sharing an
-                  ongoing search with teammates.
+                <ProjDesc style={{ marginLeft: "0.75%" }}>
+                  Switching from current filters into Concept A, with a clearer
+                  explanation and an example.
                 </ProjDesc>
               </div>
             </FlexThree>
@@ -1411,7 +1425,7 @@ function JustNameless() {
           </FlexRowContainer>
 
           <FlexRowContainer
-            className="pt-0 pb-0"
+            className="pt-0"
             data-aos="fade-up"
             data-aos-delay="500"
           >
@@ -1457,8 +1471,8 @@ function JustNameless() {
               <TitleThree>Getting to the clients</TitleThree>
               <SubTitleThree>Round 3 - A/B Split</SubTitleThree>
             </FlexOne>
-            <FlexTwo>
-              <ProjDesc>
+            <FlexThree>
+              <ProjDesc style={{ marginBottom: "2%" }}>
                 To{" "}
                 <SemiBoldTxt>
                   tackle concept bias, I proposed an A/B split{" "}
@@ -1472,117 +1486,23 @@ function JustNameless() {
                   client time is the scarcest resource.
                 </SemiBoldTxt>
                 What comes back from commercial is consistently "clients are
-                busy," "we can't bother them now," "show them the final
-                version." Round 3 took Two weeks against one for the earlier
-                rounds, and that's why.
+                busy", "we can't bother them now". Round 3 didn’t run, due to
+                business constraints.
               </ProjDesc>
-            </FlexTwo>
-            <FlexOne> </FlexOne>
-          </FlexRowContainer>
 
-          <FlexRowContainer
-            className="pt-0 pb-0"
-            data-aos="fade-up"
-            data-aos-delay="500"
-          >
-            <FlexOne></FlexOne>
-            <FlexThree>
-              <div
-                style={{
-                  fontSize: "clamp(16px, 1vw, 20px)",
-                  display: "grid",
-                  gridTemplateColumns: "repeat(5, 1fr)",
-                  textAlign: "center",
-                  columnGap: "clamp(10px, 2vw, 40px)",
-                  width: "100%",
-                  margin: "0 auto",
-                }}
-              >
-                <div>
-                  <div
-                    style={{
-                      fontSize: "clamp(18px, 1.2vw, 32px)",
-                      fontFamily: "PSB",
-                    }}
-                  >
-                    2
-                  </div>
-                  <div style={{ fontSize: "clamp(14px, 0.84vw, 24px)" }}>
-                    Refined high-fidelity concepts
-                  </div>
-                </div>
-
-                <div>
-                  <div
-                    style={{
-                      fontSize: "clamp(18px, 1.2vw, 32px)",
-                      fontFamily: "PSB",
-                    }}
-                  >
-                    10
-                  </div>
-                  <div style={{ fontSize: "clamp(14px, 0.84vw, 24px)" }}>
-                    Clients from a minimum 4 verticals
-                  </div>
-                </div>
-
-                <div>
-                  <div
-                    style={{
-                      fontSize: "clamp(18px, 1.2vw, 32px)",
-                      fontFamily: "PSB",
-                    }}
-                  >
-                    A/B Split
-                  </div>
-                  <div style={{ fontSize: "clamp(14px, 0.84vw, 24px)" }}>
-                    Design research method
-                  </div>
-                </div>
-
-                <div>
-                  <div
-                    style={{
-                      fontSize: "clamp(18px, 1.2vw, 32px)",
-                      fontFamily: "PSB",
-                    }}
-                  >
-                    30-40 mins
-                  </div>
-                  <div style={{ fontSize: "clamp(14px, 0.84vw, 24px)" }}>
-                    per session
-                  </div>
-                </div>
-
-                <div>
-                  <div
-                    style={{
-                      fontSize: "clamp(18px, 1.2vw, 32px)",
-                      fontFamily: "PSB",
-                    }}
-                  >
-                    3
-                  </div>
-                  <div style={{ fontSize: "clamp(14px, 0.84vw, 24px)" }}>
-                    weeks
-                  </div>
-                </div>
-              </div>
-              <div
-                style={{
-                  textAlign: "center",
-                  marginTop: "20px",
-                  fontSize: "clamp(14px, 0.84vw, 24px)",
-                }}
-              >
-                <span
-                  className="pill-tag-green"
-                  style={{ display: "inline-block" }}
-                >
-                  with interactive prototypes, built with{" "}
-                  <SBTxt>Claude AI</SBTxt>
-                </span>
-              </div>
+              <ProjDesc>
+                Two rounds across two populations had already settled the thing
+                that mattered:
+                <SemiBoldTxt>
+                  {" "}
+                  people go to keyword search first, and the readable statement
+                  works for everyone who sees it.
+                </SemiBoldTxt>{" "}
+                What they hadn’t settled was whether Concept A’s learning curve
+                is a real barrier or just an unfamiliar one, and five users a
+                side wouldn’t have answered that fully. So I made the call on
+                what we had.
+              </ProjDesc>
             </FlexThree>
           </FlexRowContainer>
 
@@ -1591,78 +1511,46 @@ function JustNameless() {
             data-aos="fade-up"
             data-aos-delay="500"
           >
-            <FlexOne> </FlexOne>
+            <FlexOne>
+              <TitleThree>What shipped</TitleThree>
+            </FlexOne>
             <FlexThree>
+              <ProjDesc>
+                The first release
+                <SemiBoldTxt> leads with keyword search, </SemiBoldTxt>
+                with Concept B’s subtler route into boolean and the
+                <SemiBoldTxt>readable statement throughout.</SemiBoldTxt>
+                It’s where the behaviour already was, it was quicker to build,
+                and usage will answer the question testing couldn’t. <br />
+                It’s live, and we’re tracking adoption now.
+              </ProjDesc>
+
               <div
                 style={{
                   width: "100%",
+                  minHeight: "122px",
+                  padding: "24px 16px",
+                  boxSizing: "border-box",
+                  background: "#FFFFFF",
                   display: "flex",
-                  flexDirection: "column",
-                  alignItems: "flex-start",
+                  alignItems: "center",
+                  justifyContent: "center",
                 }}
               >
-                <ProjDesc className="mb-0">
-                  <MediumTxt>
-                    Few key details on both the concepts to validate in round 3
-                    testing. <br />
-                    All data shown is screenshots below are synthetic.
-                  </MediumTxt>
-                </ProjDesc>
-                <img
-                  src={require("../../../assets/images/ProjectTypes/usNotTexas/14a.png")}
-                  alt="Final concept interface details"
+                <p
                   style={{
-                    display: "block",
-                    width: "100%",
-                    height: "auto",
-                    marginLeft: "-1%",
-                  }}
-                />
-              </div>
-            </FlexThree>
-          </FlexRowContainer>
-
-          <FlexRowContainer
-            className="pb-0"
-            data-aos="fade-up"
-            data-aos-delay="500"
-          >
-            <FlexOne></FlexOne>
-            <FlexThree>
-              <HighlightCard className="color-3">
-                <div className="grain" />
-                <h3>We are at:</h3>
-                <ul>
-                  <li>
-                    <SemiBoldTxt>Round 3 is running now:</SemiBoldTxt> <br />
-                    A/B split with 10 clients across four verticals, tracking
-                    discoverability, onboarding and feature adoption.
-                  </li>
-                  <li>
-                    <SemiBoldTxt>What I'm betting on is Concept C:</SemiBoldTxt>{" "}
-                    <br />A balanced in-between, a powerful keyword search, and
-                    a readable summary of the criteria, letting users move from
-                    ready-made filters toward personalised ones at their own
-                    pace. The split test exists to check that bet, not confirm
-                    it.
-                  </li>
-                </ul>
-
-                <span
-                  className="pill-tag-brown"
-                  style={{
-                    display: "inline-block",
-                    color: "#FFF8EA",
-                    fontSize: "clamp(14px, 0.75vw, 16px)",
-                    right: "-265px",
-                    top: "50%",
-                    whiteSpace: "nowrap",
-                    width: "max-content",
+                    margin: 0,
+                    maxWidth: "100%",
+                    fontFamily: "PMI",
+                    fontSize: "clamp(14px, 0.84vw, 24px);",
+                    textAlign: "center",
+                    color: "#5B5B5B",
+                    overflowWrap: "break-word",
                   }}
                 >
-                  <SBTxt>...further testings as it demands.</SBTxt>
-                </span>
-              </HighlightCard>
+                  Final screens available on request.
+                </p>
+              </div>
             </FlexThree>
           </FlexRowContainer>
 
@@ -1710,8 +1598,6 @@ function JustNameless() {
                 exit={{ opacity: 1, transition: { duration: 0.15 } }}
                 transition={{ duration: 0.2, delay: 0.15 }}
                 className="pop-up-modal"
-
-                // onClick={() => setSelectedId(null)}
               >
                 <div
                   className="pop-up-overlay"
