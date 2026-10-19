@@ -328,7 +328,7 @@ function RatingTable({ rows = [], insight }) {
         <div>Participant</div>
 
         <div>
-          Concept 1 Rating
+          Rating
           <br />
           (Clarity, Usefulness, Trust)
         </div>
@@ -501,12 +501,13 @@ function WEScoreRedesign() {
                   padding="12px"
                   items={[
                     {
-                      quote: "“I could have a staff member look at this and go right to where I need them to go.”",
+                      quote:
+                        "“I could have a staff member look at this and go right to where I need them to go.”",
                       author: "President & CEO, community foundation",
                       image: quotePersonNine,
                       imagePosition: "left",
                       imageSize: 45,
-                    }
+                    },
                   ]}
                 />
               </FlexCol>
@@ -541,7 +542,7 @@ function WEScoreRedesign() {
                     "Fundraisers, prospect researchers, gift officers, and outreach teams",
                 },
                 {
-                  label: "Partner",
+                  label: "Company",
                   value: "WealthEngine, Altrata, London (in production)",
                 },
                 {
@@ -591,21 +592,20 @@ function WEScoreRedesign() {
             data-aos-delay="500"
           >
             <FlexOne>
-              <TitleThree>Identified problem</TitleThree>
+              <TitleThree>Identified problems</TitleThree>
               <SubTitleThree>Design Audit & User Research</SubTitleThree>
             </FlexOne>
-            <FlexTwo>
+            <FlexThree>
               <ProjDesc>
                 I audited WealthEngine's two proprietary scores, Wealth Score
                 and P2G (Propensity to Give), then ran research across eight
-                organisations, from solo fundraisers to national nonprofits.{" "}
+                organisations, from solo fundraisers to national nonprofits.
                 <br />
                 Different verticals had different use cases, and daily users had
                 different problems from occasional ones. The product treated
                 them all the same.
               </ProjDesc>
-            </FlexTwo>
-            <FlexOne></FlexOne>
+            </FlexThree>
           </FlexRowContainer>
 
           <FlexRowContainer
@@ -865,7 +865,6 @@ function WEScoreRedesign() {
           </FlexRowContainer>
 
           <FlexRowContainer
-            className="pb-0"
             data-aos="fade-up"
             data-aos-delay="500"
           >
@@ -890,7 +889,6 @@ function WEScoreRedesign() {
           </FlexRowContainer>
 
           <FlexRowContainer
-            className="pb-0"
             data-aos="fade-up"
             data-aos-delay="500"
           >
@@ -938,7 +936,7 @@ function WEScoreRedesign() {
               <TitleThree>Ideation</TitleThree>
               <SubTitleThree>Freehand to digitising</SubTitleThree>
             </FlexOne>
-            <FlexTwo>
+            <FlexThree>
               <ProjDesc>
                 With permission to rewrite the score logic rather than restyle
                 it, the range of answers opened up. Five aims carried into every
@@ -979,8 +977,7 @@ function WEScoreRedesign() {
                   Freehand meter gauge explorations
                 </SubDesc>
               </div>
-            </FlexTwo>
-            <FlexOne></FlexOne>
+            </FlexThree>
           </FlexRowContainer>
 
           <FlexRowContainer
@@ -1018,14 +1015,13 @@ function WEScoreRedesign() {
                 What was taken to the clients as the first draft
               </SubTitleThree>
             </FlexOne>
-            <FlexTwo>
+            <FlexThree>
               <ProjDesc>
                 There were 3 concepts, explorative but sufficient enough to
                 consume feedback to know if we were on the right track. A few
                 things that stayed across the concepts were,
               </ProjDesc>
-            </FlexTwo>
-            <FlexOne></FlexOne>
+            </FlexThree>
           </FlexRowContainer>
 
           <FlexRowContainer
@@ -1040,7 +1036,7 @@ function WEScoreRedesign() {
           </FlexRowContainer>
 
           <FlexRowContainer
-            className="pt-0 pb-0"
+            className="pt-0"
             data-aos="fade-up"
             data-aos-delay="500"
           >
@@ -1102,7 +1098,7 @@ function WEScoreRedesign() {
                 Four organizations, four industries, three time zones
               </SubTitleThree>
             </FlexOne>
-            <FlexTwo>
+            <FlexThree>
               <ProjDesc className="pb-0" style={{ marginBottom: "1%" }}>
                 <SemiBoldTxt>
                   Concept 1 was the direction, with one objection worth
@@ -1111,15 +1107,14 @@ function WEScoreRedesign() {
               </ProjDesc>
               <ProjDesc className="pt-0 pb-0" style={{ marginBottom: "1%" }}>
                 Three of four rated it 4 or 5 for clarity and usefulness. It was
-                the easiest to read and the least decorative.
+                the easiest to read and comprehensive.
               </ProjDesc>
               <ProjDesc>
                 The fourth rated it 2. She's the most experienced researcher in
                 the sample, and when she shared her screen she scrolled straight
                 past the score.
               </ProjDesc>
-            </FlexTwo>
-            <FlexOne></FlexOne>
+            </FlexThree>
           </FlexRowContainer>
 
           <FlexRowContainer
@@ -1313,7 +1308,7 @@ function WEScoreRedesign() {
             <FlexThree className="right-aligned-content">
               <InsightCard
                 title="6. The score leaves the product as an image."
-                description="The score has to survive being cropped out and dropped into a document. No surrounding UI, no hover, no explanation. That rules out anything interaction-dependent, and it's why concept 2 scored lowest."
+                description="The score has to survive being cropped out and dropped into a document. No surrounding UI, no hover, no explanation. That rules out anything interaction-dependent."
                 cardWidth="62%"
                 mainCardColor="#C5E2D2"
                 quoteCardColor="#F7FFF9"
@@ -1332,7 +1327,6 @@ function WEScoreRedesign() {
           </FlexRowContainer>
 
           <FlexRowContainer
-            className="pb-0"
             data-aos="fade-up"
             data-aos-delay="500"
           >
@@ -1409,19 +1403,18 @@ function WEScoreRedesign() {
               <TitleThree>Version Two</TitleThree>
               <SubTitleThree>Evolution of Concept 1</SubTitleThree>
             </FlexOne>
-            <FlexTwo>
+            <FlexThree>
               <ProjDesc>
                 Seven of the eight round 1 findings are answered here. The
                 eighth, planned giving, is a data problem rather than a design
                 one, and sits with another team. Design has provided a
                 placeholder.
               </ProjDesc>
-            </FlexTwo>
-            <FlexOne />
+            </FlexThree>
           </FlexRowContainer>
 
           <FlexRowContainer
-            className="pt-0 pb-0"
+            className="pt-0"
             data-aos="fade-up"
             data-aos-delay="500"
           >
@@ -1451,8 +1444,8 @@ function WEScoreRedesign() {
                 Four organizations, four industries, three time zones
               </SubTitleThree>
             </FlexOne>
-            <FlexTwo>
-              <ProjDesc>
+            <FlexThree>
+              <ProjDesc className="mb-0">
                 Every participant rated it 4 or 5 for clarity. The layout
                 worked, the scale gave people something to read against, and
                 nobody had to be talked through it.
@@ -1461,8 +1454,7 @@ function WEScoreRedesign() {
                 Seven changes came out of round 2, covering asset signals,
                 giving context and client-level personalisation.{" "}
               </ProjDesc>
-            </FlexTwo>
-            <FlexOne />
+            </FlexThree>
           </FlexRowContainer>
 
           <FlexRowContainer
@@ -1500,7 +1492,6 @@ function WEScoreRedesign() {
           </FlexRowContainer>
 
           <FlexRowContainer
-            className="pb-0"
             data-aos="fade-up"
             data-aos-delay="500"
           >
@@ -1520,7 +1511,6 @@ function WEScoreRedesign() {
           </FlexRowContainer>
 
           <FlexRowContainer
-            className="pb-0"
             data-aos="fade-up"
             data-aos-delay="500"
           >
@@ -1528,22 +1518,12 @@ function WEScoreRedesign() {
               <TitleThree>Clarity moved. Trust didn't.</TitleThree>
               <SubTitleThree>The Finding</SubTitleThree>
             </FlexOne>
-            <FlexTwo>
-              <ProjDesc>
+            <FlexThree>
+              <ProjDesc className="mb-0">
                 Trust sat at 3–4 across every participant, both rounds, and
                 every concept. Almost none of the reasons were about the design.
               </ProjDesc>
-            </FlexTwo>
-            <FlexOne />
-          </FlexRowContainer>
-
-          <FlexRowContainer
-            className="pt-0 pb-0"
-            data-aos="fade-up"
-            data-aos-delay="500"
-          >
-            <FlexOne />
-            <FlexThree>
+            
               <div
                 style={{
                   display: "grid",
@@ -1584,7 +1564,6 @@ function WEScoreRedesign() {
           </FlexRowContainer>
 
           <FlexRowContainer
-            className="pb-0"
             data-aos="fade-up"
             data-aos-delay="500"
           >
@@ -1592,7 +1571,7 @@ function WEScoreRedesign() {
               <TitleThree>What that told me</TitleThree>
               <SubTitleThree>The Reflection</SubTitleThree>
             </FlexOne>
-            <FlexTwo>
+            <FlexThree>
               <ProjDesc>
                 Trust is bounded by data quality and professional scepticism.
                 Design can't manufacture it, but it can shorten the checking
@@ -1600,8 +1579,7 @@ function WEScoreRedesign() {
                 requirement, and the redesign supports verification rather than
                 replacing it.
               </ProjDesc>
-            </FlexTwo>
-            <FlexOne />
+            </FlexThree>
           </FlexRowContainer>
 
           <FlexRowContainer
@@ -1612,15 +1590,14 @@ function WEScoreRedesign() {
             <FlexOne>
               <TitleThree>The Outcome</TitleThree>
             </FlexOne>
-            <FlexTwo>
+            <FlexThree>
               <ProjDesc style={{ filter: "blur(4px)" }}>
                 Product, engineering, architecture, commercial and customer
                 success were all walked through the research and bought into the
                 direction. The design is in production, with the full anchor
                 scoped for a later release.
               </ProjDesc>
-            </FlexTwo>
-            <FlexOne />
+            </FlexThree>
           </FlexRowContainer>
 
           <FlexRowContainer data-aos="fade-up" data-aos-delay="500">

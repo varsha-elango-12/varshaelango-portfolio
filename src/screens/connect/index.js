@@ -56,6 +56,9 @@ function Connect() {
           <p data-aos="fade-up" data-aos-delay="300">
             Phone:<span>+44-7535243664</span>
           </p>
+          <p data-aos="fade-up" data-aos-delay="300">
+            Location:<span>London, United Kingdom</span>
+          </p>
           <br />
           <br />
           <p data-aos="fade-up" data-aos-delay="400">

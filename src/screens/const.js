@@ -25,7 +25,7 @@ export const PROJECTS = {
     {
       title: "Is United States, Not Texas",
       desc: "Design boolean logic conditions (AND/OR/NOT) into the Advanced search filters of a people intelligence platform.",
-      subdesc: "Project Partner: Altrata, London",
+      subdesc: "Company: Altrata, London",
       subdescX: 0,
       subdescY: 0,
       imgSrc: require("../assets/images/ProjectTypes/usNotTexas/thumbnail.png"),
@@ -39,7 +39,7 @@ export const PROJECTS = {
     {
       title: "A Score To Find The Right People",
       desc: "Redesign the wealth and P2G score visualisation on a wealth intelligence platform.",
-      subdesc: "Project Partner: WealthEngine, Altrata, London",
+      subdesc: "Company: WealthEngine, London",
       subdescX: 0,
       subdescY: 0,
       imgSrc: require("../assets/images/ProjectTypes/weScoreRedesign/thumbnail.png"),
@@ -53,7 +53,7 @@ export const PROJECTS = {
     {
       title: "Old to New",
       desc: "A set of design decisions made while building Altrata, the single product consolidating four legacy brands.",
-      subdesc: "Project Partner: Altrata, London",
+      subdesc: "Company: Altrata, London",
       subdescX: 0,
       subdescY: 0,
       imgSrc: require("../assets/images/ProjectTypes/newToOld/thumbnail.png"),
@@ -67,7 +67,7 @@ export const PROJECTS = {
     {
       title: "Sharing Codes",
       desc: "Design a way to take advantage of other peoples’ digital transactions without them knowing.",
-      subdesc: "Project Partner: IBM, London",
+      subdesc: "Company: IBM, London",
       subdescX: 0,
       subdescY: 0,
       imgSrc: require("../assets/images/ProjectTypes/justNameless/justNameless.png"),

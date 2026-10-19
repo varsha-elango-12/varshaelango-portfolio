@@ -218,8 +218,8 @@ function JustNameless() {
                     "Researchers, fundraisers and account managers across financial services, educational institutions and nonprofits.",
                 },
                 {
-                  label: "Partner",
-                  value: "Altrata, London (ongoing)",
+                  label: "Company",
+                  value: "Altrata, London",
                 },
                 {
                   label: "Team",
