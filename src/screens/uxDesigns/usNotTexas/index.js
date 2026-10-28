@@ -1468,8 +1468,8 @@ function JustNameless() {
             data-aos-delay="500"
           >
             <FlexOne>
-              <TitleThree>Getting to the clients</TitleThree>
-              <SubTitleThree>Round 3 - A/B Split</SubTitleThree>
+              <TitleThree>The call I made</TitleThree>
+              <SubTitleThree>Round 3</SubTitleThree>
             </FlexOne>
             <FlexThree>
               <ProjDesc style={{ marginBottom: "2%" }}>
